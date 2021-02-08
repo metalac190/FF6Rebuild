@@ -75,17 +75,17 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Pause"",
+                    ""name"": ""Skip"",
                     ""type"": ""Button"",
-                    ""id"": ""50ffbbd4-972f-4508-9e10-d035c3b53958"",
+                    ""id"": ""32453c25-00ac-4b12-a1c8-c1108ac6f725"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Skip"",
+                    ""name"": ""PauseGame"",
                     ""type"": ""Button"",
-                    ""id"": ""32453c25-00ac-4b12-a1c8-c1108ac6f725"",
+                    ""id"": ""4dcb50cf-6516-44ce-83bd-eb858e1d1581"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -237,23 +237,23 @@ public class @Controls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f7a11d77-6b77-4027-bed9-1398c2755945"",
-                    ""path"": ""<Keyboard>/enter"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""KeyboardAndMouse"",
-                    ""action"": ""Pause"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""b231c178-9a30-4daa-a274-a7cf7eb53637"",
                     ""path"": ""<Keyboard>/tab"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""KeyboardAndMouse"",
                     ""action"": ""Skip"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""511b2417-2fcc-42fd-9622-ef90a8a1665a"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardAndMouse"",
+                    ""action"": ""PauseGame"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -277,8 +277,8 @@ public class @Controls : IInputActionCollection, IDisposable
         m_Encounter_Confirm = m_Encounter.FindAction("Confirm", throwIfNotFound: true);
         m_Encounter_Cancel = m_Encounter.FindAction("Cancel", throwIfNotFound: true);
         m_Encounter_SelectToggle = m_Encounter.FindAction("SelectToggle", throwIfNotFound: true);
-        m_Encounter_Pause = m_Encounter.FindAction("Pause", throwIfNotFound: true);
         m_Encounter_Skip = m_Encounter.FindAction("Skip", throwIfNotFound: true);
+        m_Encounter_PauseGame = m_Encounter.FindAction("PauseGame", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -335,8 +335,8 @@ public class @Controls : IInputActionCollection, IDisposable
     private readonly InputAction m_Encounter_Confirm;
     private readonly InputAction m_Encounter_Cancel;
     private readonly InputAction m_Encounter_SelectToggle;
-    private readonly InputAction m_Encounter_Pause;
     private readonly InputAction m_Encounter_Skip;
+    private readonly InputAction m_Encounter_PauseGame;
     public struct EncounterActions
     {
         private @Controls m_Wrapper;
@@ -348,8 +348,8 @@ public class @Controls : IInputActionCollection, IDisposable
         public InputAction @Confirm => m_Wrapper.m_Encounter_Confirm;
         public InputAction @Cancel => m_Wrapper.m_Encounter_Cancel;
         public InputAction @SelectToggle => m_Wrapper.m_Encounter_SelectToggle;
-        public InputAction @Pause => m_Wrapper.m_Encounter_Pause;
         public InputAction @Skip => m_Wrapper.m_Encounter_Skip;
+        public InputAction @PauseGame => m_Wrapper.m_Encounter_PauseGame;
         public InputActionMap Get() { return m_Wrapper.m_Encounter; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -380,12 +380,12 @@ public class @Controls : IInputActionCollection, IDisposable
                 @SelectToggle.started -= m_Wrapper.m_EncounterActionsCallbackInterface.OnSelectToggle;
                 @SelectToggle.performed -= m_Wrapper.m_EncounterActionsCallbackInterface.OnSelectToggle;
                 @SelectToggle.canceled -= m_Wrapper.m_EncounterActionsCallbackInterface.OnSelectToggle;
-                @Pause.started -= m_Wrapper.m_EncounterActionsCallbackInterface.OnPause;
-                @Pause.performed -= m_Wrapper.m_EncounterActionsCallbackInterface.OnPause;
-                @Pause.canceled -= m_Wrapper.m_EncounterActionsCallbackInterface.OnPause;
                 @Skip.started -= m_Wrapper.m_EncounterActionsCallbackInterface.OnSkip;
                 @Skip.performed -= m_Wrapper.m_EncounterActionsCallbackInterface.OnSkip;
                 @Skip.canceled -= m_Wrapper.m_EncounterActionsCallbackInterface.OnSkip;
+                @PauseGame.started -= m_Wrapper.m_EncounterActionsCallbackInterface.OnPauseGame;
+                @PauseGame.performed -= m_Wrapper.m_EncounterActionsCallbackInterface.OnPauseGame;
+                @PauseGame.canceled -= m_Wrapper.m_EncounterActionsCallbackInterface.OnPauseGame;
             }
             m_Wrapper.m_EncounterActionsCallbackInterface = instance;
             if (instance != null)
@@ -411,12 +411,12 @@ public class @Controls : IInputActionCollection, IDisposable
                 @SelectToggle.started += instance.OnSelectToggle;
                 @SelectToggle.performed += instance.OnSelectToggle;
                 @SelectToggle.canceled += instance.OnSelectToggle;
-                @Pause.started += instance.OnPause;
-                @Pause.performed += instance.OnPause;
-                @Pause.canceled += instance.OnPause;
                 @Skip.started += instance.OnSkip;
                 @Skip.performed += instance.OnSkip;
                 @Skip.canceled += instance.OnSkip;
+                @PauseGame.started += instance.OnPauseGame;
+                @PauseGame.performed += instance.OnPauseGame;
+                @PauseGame.canceled += instance.OnPauseGame;
             }
         }
     }
@@ -439,7 +439,7 @@ public class @Controls : IInputActionCollection, IDisposable
         void OnConfirm(InputAction.CallbackContext context);
         void OnCancel(InputAction.CallbackContext context);
         void OnSelectToggle(InputAction.CallbackContext context);
-        void OnPause(InputAction.CallbackContext context);
         void OnSkip(InputAction.CallbackContext context);
+        void OnPauseGame(InputAction.CallbackContext context);
     }
 }

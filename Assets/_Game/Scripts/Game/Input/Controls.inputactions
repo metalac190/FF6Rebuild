@@ -62,17 +62,17 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Pause",
+                    "name": "Skip",
                     "type": "Button",
-                    "id": "50ffbbd4-972f-4508-9e10-d035c3b53958",
+                    "id": "32453c25-00ac-4b12-a1c8-c1108ac6f725",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 },
                 {
-                    "name": "Skip",
+                    "name": "PauseGame",
                     "type": "Button",
-                    "id": "32453c25-00ac-4b12-a1c8-c1108ac6f725",
+                    "id": "4dcb50cf-6516-44ce-83bd-eb858e1d1581",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -224,23 +224,23 @@
                 },
                 {
                     "name": "",
-                    "id": "f7a11d77-6b77-4027-bed9-1398c2755945",
-                    "path": "<Keyboard>/enter",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardAndMouse",
-                    "action": "Pause",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "b231c178-9a30-4daa-a274-a7cf7eb53637",
                     "path": "<Keyboard>/tab",
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardAndMouse",
                     "action": "Skip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "511b2417-2fcc-42fd-9622-ef90a8a1665a",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardAndMouse",
+                    "action": "PauseGame",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
