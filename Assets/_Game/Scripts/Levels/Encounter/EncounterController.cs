@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EncounterController : MonoBehaviour
 {
-    List<Unit> Enemies;
-    List<Unit> PartyMembers;
+    [SerializeField] EncounterData _encounterData;
+    public EncounterData EncounterData => _encounterData;
+
+    public List<Unit> PartyMembers;
+    public List<Unit> Enemies;
 }

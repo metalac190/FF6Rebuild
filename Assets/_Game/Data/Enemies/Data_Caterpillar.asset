@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310d52c9632c8074bb2138585fcbee56, type: 3}
   m_Name: Data_Caterpillar
   m_EditorClassIdentifier: 
-  _maxHP: 1
-  _currentHP: 1
-  _maxMP: 1
-  _currentMP: 1
-  _currentAT: 20
-  _level: 1
-  _position: {x: 0, y: 0}
-  _graphic: {fileID: 0}
+  _maxHP: 400
+  _currentHP: 400
+  _maxMP: 500
+  _currentMP: 500
+  _currentAT: 30
+  _level: 12
+  _graphic: {fileID: 2800000, guid: 810c063555af8b84385cc582582a1783, type: 3}
+  _invertFaceDirection: 0

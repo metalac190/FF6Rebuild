@@ -27,8 +27,8 @@ public class UnitData : ScriptableObject
     [SerializeField] Texture2D _graphic;
     public Texture2D Graphic => _graphic;
 
-    [SerializeField] bool _invertDirectionFacing = false;
-    public bool InverDirectionFacing => _invertDirectionFacing;
+    [SerializeField] bool _invertFaceDirection = false;
+    public bool InvertFaceDirection => _invertFaceDirection;
 
     // animations
     // status effects

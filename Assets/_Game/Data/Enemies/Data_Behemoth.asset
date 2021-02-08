@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310d52c9632c8074bb2138585fcbee56, type: 3}
   m_Name: Data_Behemoth
   m_EditorClassIdentifier: 
-  _maxHP: 1
-  _currentHP: 1
-  _maxMP: 1
-  _currentMP: 1
+  _maxHP: 1200
+  _currentHP: 1200
+  _maxMP: 100
+  _currentMP: 100
   _currentAT: 20
-  _level: 1
+  _level: 15
+  _graphic: {fileID: 2800000, guid: 75d2e478745ef0e4ab98850023a6cf79, type: 3}
+  _invertDirectionFacing: 0
   _position: {x: 0, y: 0}
-  _graphic: {fileID: 0}

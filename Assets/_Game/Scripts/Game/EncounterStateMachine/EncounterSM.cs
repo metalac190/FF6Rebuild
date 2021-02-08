@@ -36,6 +36,6 @@ public class EncounterSM : StateMachineMB
 
     private void Start()
     {
-        ChangeState(IntroState);
+        Initialize(IntroState);
     }
 }

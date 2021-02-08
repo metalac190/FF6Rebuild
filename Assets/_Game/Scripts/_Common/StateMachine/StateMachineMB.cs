@@ -19,6 +19,12 @@ public abstract class StateMachineMB : MonoBehaviour
 
 	bool _inTransition = false;
 
+    public void Initialize(IState startingState)
+    {
+        CurrentState = startingState;
+        _previousState = startingState;
+    }
+
 	public void ChangeState(IState newState)
 	{
 		// ensure we're ready for a new state
