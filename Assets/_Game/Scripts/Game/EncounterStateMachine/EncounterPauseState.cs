@@ -16,14 +16,13 @@ public class EncounterPauseState : IState
 
     public void Enter()
     {
-        Debug.Log("Pause State ENTER");
-        _input.Controls.Encounter.PauseGame.performed += OnPauseInput;
+        Debug.Log("STATE: Encounter Pause");
+        _input.Controls.Encounter.Pause.performed += OnPauseInput;
     }
 
     public void Exit()
     {
-        Debug.Log("Pause State EXIT");
-        _input.Controls.Encounter.PauseGame.performed -= OnPauseInput;
+        _input.Controls.Encounter.Pause.performed -= OnPauseInput;
     }
 
     public void FixedTick()
@@ -38,7 +37,7 @@ public class EncounterPauseState : IState
 
     void OnPauseInput(InputAction.CallbackContext context)
     {
-        Debug.Log("Pause received");
+        Debug.Log("Input: Pause");
         _stateMachine.ChangeStateToPrevious();
     }
 }

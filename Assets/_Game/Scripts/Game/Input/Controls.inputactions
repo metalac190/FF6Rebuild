@@ -70,7 +70,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "PauseGame",
+                    "name": "Pause",
                     "type": "Button",
                     "id": "4dcb50cf-6516-44ce-83bd-eb858e1d1581",
                     "expectedControlType": "Button",
@@ -240,7 +240,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardAndMouse",
-                    "action": "PauseGame",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

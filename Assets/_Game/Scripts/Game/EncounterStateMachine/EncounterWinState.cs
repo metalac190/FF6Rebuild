@@ -13,7 +13,7 @@ public class EncounterWinState : IState
 
     public void Enter()
     {
-        Debug.Log("Encounter Win State");
+        Debug.Log("STATE: Encounter Win");
     }
 
     public void Exit()

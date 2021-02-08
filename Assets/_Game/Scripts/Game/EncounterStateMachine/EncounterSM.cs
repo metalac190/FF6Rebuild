@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(EncounterController))]
 public class EncounterSM : StateMachineMB
 {
     [SerializeField] InputController _input = null;
+
+    EncounterController _levelController = null;
 
     // states
     public EncounterIntroState IntroState { get; private set; }
@@ -18,6 +21,8 @@ public class EncounterSM : StateMachineMB
 
     private void Awake()
     {
+        // get references
+        _levelController = GetComponent<EncounterController>();
         // initialize states
         IntroState = new EncounterIntroState(this);
         ActiveState = new EncounterActiveState(this, _input);

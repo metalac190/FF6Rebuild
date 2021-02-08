@@ -83,7 +83,7 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""PauseGame"",
+                    ""name"": ""Pause"",
                     ""type"": ""Button"",
                     ""id"": ""4dcb50cf-6516-44ce-83bd-eb858e1d1581"",
                     ""expectedControlType"": ""Button"",
@@ -253,7 +253,7 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""KeyboardAndMouse"",
-                    ""action"": ""PauseGame"",
+                    ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -278,7 +278,7 @@ public class @Controls : IInputActionCollection, IDisposable
         m_Encounter_Cancel = m_Encounter.FindAction("Cancel", throwIfNotFound: true);
         m_Encounter_SelectToggle = m_Encounter.FindAction("SelectToggle", throwIfNotFound: true);
         m_Encounter_Skip = m_Encounter.FindAction("Skip", throwIfNotFound: true);
-        m_Encounter_PauseGame = m_Encounter.FindAction("PauseGame", throwIfNotFound: true);
+        m_Encounter_Pause = m_Encounter.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -336,7 +336,7 @@ public class @Controls : IInputActionCollection, IDisposable
     private readonly InputAction m_Encounter_Cancel;
     private readonly InputAction m_Encounter_SelectToggle;
     private readonly InputAction m_Encounter_Skip;
-    private readonly InputAction m_Encounter_PauseGame;
+    private readonly InputAction m_Encounter_Pause;
     public struct EncounterActions
     {
         private @Controls m_Wrapper;
@@ -349,7 +349,7 @@ public class @Controls : IInputActionCollection, IDisposable
         public InputAction @Cancel => m_Wrapper.m_Encounter_Cancel;
         public InputAction @SelectToggle => m_Wrapper.m_Encounter_SelectToggle;
         public InputAction @Skip => m_Wrapper.m_Encounter_Skip;
-        public InputAction @PauseGame => m_Wrapper.m_Encounter_PauseGame;
+        public InputAction @Pause => m_Wrapper.m_Encounter_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Encounter; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -383,9 +383,9 @@ public class @Controls : IInputActionCollection, IDisposable
                 @Skip.started -= m_Wrapper.m_EncounterActionsCallbackInterface.OnSkip;
                 @Skip.performed -= m_Wrapper.m_EncounterActionsCallbackInterface.OnSkip;
                 @Skip.canceled -= m_Wrapper.m_EncounterActionsCallbackInterface.OnSkip;
-                @PauseGame.started -= m_Wrapper.m_EncounterActionsCallbackInterface.OnPauseGame;
-                @PauseGame.performed -= m_Wrapper.m_EncounterActionsCallbackInterface.OnPauseGame;
-                @PauseGame.canceled -= m_Wrapper.m_EncounterActionsCallbackInterface.OnPauseGame;
+                @Pause.started -= m_Wrapper.m_EncounterActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_EncounterActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_EncounterActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_EncounterActionsCallbackInterface = instance;
             if (instance != null)
@@ -414,9 +414,9 @@ public class @Controls : IInputActionCollection, IDisposable
                 @Skip.started += instance.OnSkip;
                 @Skip.performed += instance.OnSkip;
                 @Skip.canceled += instance.OnSkip;
-                @PauseGame.started += instance.OnPauseGame;
-                @PauseGame.performed += instance.OnPauseGame;
-                @PauseGame.canceled += instance.OnPauseGame;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -440,6 +440,6 @@ public class @Controls : IInputActionCollection, IDisposable
         void OnCancel(InputAction.CallbackContext context);
         void OnSelectToggle(InputAction.CallbackContext context);
         void OnSkip(InputAction.CallbackContext context);
-        void OnPauseGame(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }

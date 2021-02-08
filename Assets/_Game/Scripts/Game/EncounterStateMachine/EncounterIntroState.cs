@@ -13,7 +13,7 @@ public class EncounterIntroState : IState
 
     public void Enter()
     {
-        Debug.Log("Encounter Intro State");
+        Debug.Log("STATE: Encounter Intro");
         Debug.Log("Setup Encounter Units");
         Debug.Log("Play intro animations");
     }
@@ -29,6 +29,11 @@ public class EncounterIntroState : IState
     }
 
     public void Tick()
+    {
+        SetupComplete();    // currently no setup, transition immediately
+    }
+
+    void SetupComplete()
     {
         _stateMachine.ChangeState(_stateMachine.ActiveState);
     }
