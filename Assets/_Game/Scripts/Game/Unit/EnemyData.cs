@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewEnemy", menuName = "Units/Enemy")]
+[CreateAssetMenu(fileName = "EnemyData_", menuName = "Units/Enemy")]
 public class EnemyData : UnitData
 {
 

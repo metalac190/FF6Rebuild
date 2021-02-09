@@ -9,14 +9,14 @@ public class UnitData : ScriptableObject
     [SerializeField] int _maxHP = 1;
     public int MaxHP => _maxHP;
 
-    [SerializeField] int _currentHP = 1;
-    public int CurrentHP => _currentHP;
+    [SerializeField] int _startingHP = 1;
+    public int StartingHP => _startingHP;
 
     [SerializeField] int _maxMP = 1;
     public int MaxMP => _maxMP;
 
-    [SerializeField] int _currentMP = 1;
-    public int CurrentMP => _maxMP;
+    [SerializeField] int _startingMP = 1;
+    public int StartingMP => _maxMP;
 
     [SerializeField] int _currentAT = 20;
     public int CurrentAT => _currentAT;
@@ -24,8 +24,8 @@ public class UnitData : ScriptableObject
     [SerializeField] int _level = 1;
     public int Level => _level;
 
-    [SerializeField] Texture2D _graphic;
-    public Texture2D Graphic => _graphic;
+    [SerializeField] Sprite _graphic;
+    public Sprite Graphic => _graphic;
 
     [SerializeField] bool _invertFaceDirection = false;
     public bool InvertFaceDirection => _invertFaceDirection;

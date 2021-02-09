@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa37463d1112a0d49b195d7b99909a88, type: 3}
+  m_Name: AreaEncounterData_New
+  m_EditorClassIdentifier: 
+  _music: {fileID: 8300000, guid: 87f87b4912fe7a4489ed3f1be0f1c9e0, type: 3}
+  _background: {fileID: 21300000, guid: ee2b444946e4f114e9729c8c9f6a62a3, type: 3}
+  _encounterGroups:
+  - _enemies:
+    - _data: {fileID: 11400000, guid: 665f62d48cb756d408d6a6619f87a7c2, type: 2}
+      _xPos: 0.593
+      _yPos: 0.764
+    - _data: {fileID: 11400000, guid: 888c9ca5c823fef44a9807077a8342ec, type: 2}
+      _xPos: 0.27
+      _yPos: 0.777
+    - _data: {fileID: 11400000, guid: 4efe0388f013cd2488930465020d3f0a, type: 2}
+      _xPos: 0
+      _yPos: 0
+  - _enemies: []
+  - _enemies: []

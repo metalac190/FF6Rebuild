@@ -1,127 +1,112 @@
 fileFormatVersion: 2
-guid: 611b3e9f496b63e498c9bd1635290e50
+guid: d0fbedb6118b4784e966b2cb405e0890
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4344580066947705144
-    second: sprite-sheet-249x100_0
+      213: -3547271500766619433
+    second: Boar_B_Sprites_239x178_0
   - first:
-      213: -2059993454654911822
-    second: sprite-sheet-249x100_1
+      213: -3439817739775039552
+    second: Boar_B_Sprites_239x178_1
   - first:
-      213: 7923406865473956385
-    second: sprite-sheet-249x100_2
+      213: 2534628589350462222
+    second: Boar_B_Sprites_239x178_2
   - first:
-      213: -3670754436965036243
-    second: sprite-sheet-249x100_3
+      213: -3799052344629125609
+    second: Boar_B_Sprites_239x178_3
   - first:
-      213: -7416659034681025952
-    second: sprite-sheet-249x100_4
+      213: -8805673944463656266
+    second: Boar_B_Sprites_239x178_4
   - first:
-      213: 8842615726906264294
-    second: sprite-sheet-249x100_5
+      213: -3197097561323727622
+    second: Boar_B_Sprites_239x178_5
   - first:
-      213: 3110989167953360914
-    second: sprite-sheet-249x100_6
+      213: -5342652948284861003
+    second: Boar_B_Sprites_239x178_6
   - first:
-      213: 1917840015716836961
-    second: sprite-sheet-249x100_7
+      213: -6067252126407617415
+    second: Boar_B_Sprites_239x178_7
   - first:
-      213: 929747616229168797
-    second: sprite-sheet-249x100_8
+      213: -6049524185413635879
+    second: Boar_B_Sprites_239x178_8
   - first:
-      213: -8613893559307406191
-    second: sprite-sheet-249x100_9
+      213: -3210534046273442651
+    second: Boar_B_Sprites_239x178_9
   - first:
-      213: 4992966174507967389
-    second: sprite-sheet-249x100_10
+      213: 3683251421379021104
+    second: Boar_B_Sprites_239x178_10
   - first:
-      213: -608106345311185100
-    second: sprite-sheet-249x100_11
+      213: 200733698806850274
+    second: Boar_B_Sprites_239x178_11
   - first:
-      213: 1328181545973392355
-    second: sprite-sheet-249x100_12
+      213: -3064178668841435824
+    second: Boar_B_Sprites_239x178_12
   - first:
-      213: -9026265515335879138
-    second: sprite-sheet-249x100_13
+      213: 616365951883912740
+    second: Boar_B_Sprites_239x178_13
   - first:
-      213: -4084878617026229775
-    second: sprite-sheet-249x100_14
+      213: 3553233096497184971
+    second: Boar_B_Sprites_239x178_14
   - first:
-      213: -7526501678190853256
-    second: sprite-sheet-249x100_15
+      213: 1994387962035504537
+    second: Boar_B_Sprites_239x178_15
   - first:
-      213: 4253578787339828477
-    second: sprite-sheet-249x100_16
+      213: -3474780382876712834
+    second: Boar_B_Sprites_239x178_16
   - first:
-      213: -7836013898870580239
-    second: sprite-sheet-249x100_17
+      213: -7359002327353358750
+    second: Boar_B_Sprites_239x178_17
   - first:
-      213: 7758931403693586281
-    second: sprite-sheet-249x100_18
+      213: -7386616566926306172
+    second: Boar_B_Sprites_239x178_18
   - first:
-      213: 339060721102170803
-    second: sprite-sheet-249x100_19
+      213: -1524756460733981243
+    second: Boar_B_Sprites_239x178_19
   - first:
-      213: 1117975591344982352
-    second: sprite-sheet-249x100_20
+      213: -5139319916111319002
+    second: Boar_B_Sprites_239x178_20
   - first:
-      213: 3351632499509304258
-    second: sprite-sheet-249x100_21
+      213: 2430247575534103899
+    second: Boar_B_Sprites_239x178_21
   - first:
-      213: -5632424067176655265
-    second: sprite-sheet-249x100_22
+      213: 4831872441144364833
+    second: Boar_B_Sprites_239x178_22
   - first:
-      213: 898003864772971652
-    second: sprite-sheet-249x100_23
+      213: 6459633360838143239
+    second: Boar_B_Sprites_239x178_23
   - first:
-      213: -6632047995552750301
-    second: sprite-sheet-249x100_24
+      213: -1613110730039421058
+    second: Boar_B_Sprites_239x178_24
   - first:
-      213: -4633149616323996092
-    second: sprite-sheet-249x100_25
+      213: -2121228853078354108
+    second: Boar_B_Sprites_239x178_25
   - first:
-      213: 8356485366382868613
-    second: sprite-sheet-249x100_26
+      213: -2330041333344365
+    second: Boar_B_Sprites_239x178_26
   - first:
-      213: -4061380520215030878
-    second: sprite-sheet-249x100_27
+      213: 739339142377167742
+    second: Boar_B_Sprites_239x178_27
   - first:
-      213: -3629878756419059036
-    second: sprite-sheet-249x100_28
+      213: 8445002287773257469
+    second: Boar_B_Sprites_239x178_28
   - first:
-      213: -2425382465978509080
-    second: sprite-sheet-249x100_29
+      213: -4289106113039950388
+    second: Boar_B_Sprites_239x178_29
   - first:
-      213: 7525348938034381734
-    second: sprite-sheet-249x100_30
+      213: -5650332272371059291
+    second: Boar_B_Sprites_239x178_30
   - first:
-      213: 490070667003992671
-    second: sprite-sheet-249x100_31
+      213: -1245248168628025169
+    second: Boar_B_Sprites_239x178_31
   - first:
-      213: 3040157198031161620
-    second: sprite-sheet-249x100_32
+      213: -439242752674535491
+    second: Boar_B_Sprites_239x178_32
   - first:
-      213: -1908345968141342479
-    second: sprite-sheet-249x100_33
+      213: 2240656155183941473
+    second: Boar_B_Sprites_239x178_33
   - first:
-      213: -7476553441226343555
-    second: sprite-sheet-249x100_34
-  - first:
-      213: -5029846570485910795
-    second: sprite-sheet-249x100_35
-  - first:
-      213: -6556984259340593470
-    second: sprite-sheet-249x100_36
-  - first:
-      213: -2510673650037105437
-    second: sprite-sheet-249x100_37
-  - first:
-      213: 1711748637350433867
-    second: sprite-sheet-249x100_38
-  - first:
-      213: -5496679626655491183
-    second: sprite-sheet-249x100_39
+      213: 3111408399718704333
+    second: Boar_B_Sprites_239x178_34
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -259,13 +244,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite-sheet-249x100_0
+      name: Boar_B_Sprites_239x178_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 600
-        width: 249
-        height: 100
+        y: 890
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,20 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83929a46d8c0b4c30800000000000000
-      internalID: 4344580066947705144
+      spriteID: 7d850f24d5f85cec0800000000000000
+      internalID: -3547271500766619433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_1
+      name: Boar_B_Sprites_239x178_1
       rect:
         serializedVersion: 2
-        x: 249
-        y: 600
-        width: 249
-        height: 100
+        x: 239
+        y: 890
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,20 +279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ba0aa70ede6963e0800000000000000
-      internalID: -2059993454654911822
+      spriteID: 0c72f989dff4340d0800000000000000
+      internalID: -3439817739775039552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_2
+      name: Boar_B_Sprites_239x178_2
       rect:
         serializedVersion: 2
-        x: 498
-        y: 600
-        width: 249
-        height: 100
+        x: 478
+        y: 890
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,20 +300,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12a677b609895fd60800000000000000
-      internalID: 7923406865473956385
+      spriteID: e03a8c1e54fcc2320800000000000000
+      internalID: 2534628589350462222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_3
+      name: Boar_B_Sprites_239x178_3
       rect:
         serializedVersion: 2
-        x: 747
-        y: 600
-        width: 249
-        height: 100
+        x: 717
+        y: 890
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,20 +321,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2f820fb94cde0dc0800000000000000
-      internalID: -3670754436965036243
+      spriteID: 71e1443550e074bc0800000000000000
+      internalID: -3799052344629125609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_4
+      name: Boar_B_Sprites_239x178_4
       rect:
         serializedVersion: 2
-        x: 996
-        y: 600
-        width: 249
-        height: 100
+        x: 956
+        y: 890
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,20 +342,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06a55a137ebb21990800000000000000
-      internalID: -7416659034681025952
+      spriteID: 6bab454b336fbc580800000000000000
+      internalID: -8805673944463656266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_5
+      name: Boar_B_Sprites_239x178_5
       rect:
         serializedVersion: 2
-        x: 1245
-        y: 600
-        width: 249
-        height: 100
+        x: 1195
+        y: 890
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,146 +363,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6eac787472847ba70800000000000000
-      internalID: 8842615726906264294
+      spriteID: af41809f4b0a1a3d0800000000000000
+      internalID: -3197097561323727622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 500
-        width: 249
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 218b2ff5a247c2b20800000000000000
-      internalID: 3110989167953360914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-249x100_7
-      rect:
-        serializedVersion: 2
-        x: 249
-        y: 500
-        width: 249
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 166e4d845598d9a10800000000000000
-      internalID: 1917840015716836961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-249x100_8
-      rect:
-        serializedVersion: 2
-        x: 498
-        y: 500
-        width: 249
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d961b1ce78027ec00800000000000000
-      internalID: 929747616229168797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-249x100_9
-      rect:
-        serializedVersion: 2
-        x: 747
-        y: 500
-        width: 249
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 194f478327d457880800000000000000
-      internalID: -8613893559307406191
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-249x100_10
-      rect:
-        serializedVersion: 2
-        x: 996
-        y: 500
-        width: 249
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d93a61728449a4540800000000000000
-      internalID: 4992966174507967389
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-249x100_11
-      rect:
-        serializedVersion: 2
-        x: 1245
-        y: 500
-        width: 249
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 437d01630829f87f0800000000000000
-      internalID: -608106345311185100
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-249x100_12
+      name: Boar_B_Sprites_239x178_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 400
-        width: 249
-        height: 100
+        y: 712
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,20 +384,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e329fc3416ae6210800000000000000
-      internalID: 1328181545973392355
+      spriteID: 5b5994b33751bd5b0800000000000000
+      internalID: -5342652948284861003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_13
+      name: Boar_B_Sprites_239x178_7
       rect:
         serializedVersion: 2
-        x: 249
-        y: 400
-        width: 249
-        height: 100
+        x: 239
+        y: 712
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -546,20 +405,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e16fb0646534cb280800000000000000
-      internalID: -9026265515335879138
+      spriteID: 9749db2365acccba0800000000000000
+      internalID: -6067252126407617415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_14
+      name: Boar_B_Sprites_239x178_8
       rect:
         serializedVersion: 2
-        x: 498
-        y: 400
-        width: 249
-        height: 100
+        x: 478
+        y: 712
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -567,20 +426,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f900995a889f47c0800000000000000
-      internalID: -4084878617026229775
+      spriteID: 9d0394c1ec5cb0ca0800000000000000
+      internalID: -6049524185413635879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_15
+      name: Boar_B_Sprites_239x178_9
       rect:
         serializedVersion: 2
-        x: 747
-        y: 400
-        width: 249
-        height: 100
+        x: 717
+        y: 712
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -588,20 +447,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8738d0ec99e7c8790800000000000000
-      internalID: -7526501678190853256
+      spriteID: 5ace2988b44e173d0800000000000000
+      internalID: -3210534046273442651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_16
+      name: Boar_B_Sprites_239x178_10
       rect:
         serializedVersion: 2
-        x: 996
-        y: 400
-        width: 249
-        height: 100
+        x: 956
+        y: 712
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,20 +468,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfcf683ee5fb70b30800000000000000
-      internalID: 4253578787339828477
+      spriteID: 039cfbd27a98d1330800000000000000
+      internalID: 3683251421379021104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_17
+      name: Boar_B_Sprites_239x178_11
       rect:
         serializedVersion: 2
-        x: 1245
-        y: 400
-        width: 249
-        height: 100
+        x: 1195
+        y: 712
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -630,146 +489,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fb9bce30e2e04390800000000000000
-      internalID: -7836013898870580239
+      spriteID: 2e225db4c3629c200800000000000000
+      internalID: 200733698806850274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_18
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 300
-        width: 249
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96777c9c0034dab60800000000000000
-      internalID: 7758931403693586281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-249x100_19
-      rect:
-        serializedVersion: 2
-        x: 249
-        y: 300
-        width: 249
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ba259eede594b400800000000000000
-      internalID: 339060721102170803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-249x100_20
-      rect:
-        serializedVersion: 2
-        x: 498
-        y: 300
-        width: 249
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 059cca580e8d38f00800000000000000
-      internalID: 1117975591344982352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-249x100_21
-      rect:
-        serializedVersion: 2
-        x: 747
-        y: 300
-        width: 249
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2cb18e62004638e20800000000000000
-      internalID: 3351632499509304258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-249x100_22
-      rect:
-        serializedVersion: 2
-        x: 996
-        y: 300
-        width: 249
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f56139b172c95d1b0800000000000000
-      internalID: -5632424067176655265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-249x100_23
-      rect:
-        serializedVersion: 2
-        x: 1245
-        y: 300
-        width: 249
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48c88b6d1c9567c00800000000000000
-      internalID: 898003864772971652
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-249x100_24
+      name: Boar_B_Sprites_239x178_12
       rect:
         serializedVersion: 2
         x: 0
-        y: 200
-        width: 249
-        height: 100
+        y: 534
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -777,20 +510,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 325acb37c7b36f3a0800000000000000
-      internalID: -6632047995552750301
+      spriteID: 05d70634cb9d975d0800000000000000
+      internalID: -3064178668841435824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_25
+      name: Boar_B_Sprites_239x178_13
       rect:
         serializedVersion: 2
-        x: 249
-        y: 200
-        width: 249
-        height: 100
+        x: 239
+        y: 534
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -798,20 +531,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44655cfa8feb3bfb0800000000000000
-      internalID: -4633149616323996092
+      spriteID: 426afad4195cd8800800000000000000
+      internalID: 616365951883912740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_26
+      name: Boar_B_Sprites_239x178_14
       rect:
         serializedVersion: 2
-        x: 498
-        y: 200
-        width: 249
-        height: 100
+        x: 478
+        y: 534
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -819,20 +552,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 588300a8a2338f370800000000000000
-      internalID: 8356485366382868613
+      spriteID: bc040e8ecae9f4130800000000000000
+      internalID: 3553233096497184971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_27
+      name: Boar_B_Sprites_239x178_15
       rect:
         serializedVersion: 2
-        x: 747
-        y: 200
-        width: 249
-        height: 100
+        x: 717
+        y: 534
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -840,20 +573,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a354ea5fe313a7c0800000000000000
-      internalID: -4061380520215030878
+      spriteID: 9950175e84d7dab10800000000000000
+      internalID: 1994387962035504537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_28
+      name: Boar_B_Sprites_239x178_16
       rect:
         serializedVersion: 2
-        x: 996
-        y: 200
-        width: 249
-        height: 100
+        x: 956
+        y: 534
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -861,20 +594,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a2c7e1c08410adc0800000000000000
-      internalID: -3629878756419059036
+      spriteID: e704326e6a917cfc0800000000000000
+      internalID: -3474780382876712834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_29
+      name: Boar_B_Sprites_239x178_17
       rect:
         serializedVersion: 2
-        x: 1245
-        y: 200
-        width: 249
-        height: 100
+        x: 1195
+        y: 534
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -882,20 +615,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e8d3e65f7f475ed0800000000000000
-      internalID: -2425382465978509080
+      spriteID: 26684d87f529fd990800000000000000
+      internalID: -7359002327353358750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_30
+      name: Boar_B_Sprites_239x178_18
       rect:
         serializedVersion: 2
         x: 0
-        y: 100
-        width: 249
-        height: 100
+        y: 356
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -903,20 +636,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a30766fcf86f6860800000000000000
-      internalID: 7525348938034381734
+      spriteID: 484975c4e577d7990800000000000000
+      internalID: -7386616566926306172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_31
+      name: Boar_B_Sprites_239x178_19
       rect:
         serializedVersion: 2
-        x: 249
-        y: 100
-        width: 249
-        height: 100
+        x: 239
+        y: 356
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -924,20 +657,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5a9c95dca41dc600800000000000000
-      internalID: 490070667003992671
+      spriteID: 5cd18f4d31af6dae0800000000000000
+      internalID: -1524756460733981243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_32
+      name: Boar_B_Sprites_239x178_20
       rect:
         serializedVersion: 2
-        x: 498
-        y: 100
-        width: 249
-        height: 100
+        x: 478
+        y: 356
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -945,20 +678,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4198ef93ddec03a20800000000000000
-      internalID: 3040157198031161620
+      spriteID: 620381df3c77da8b0800000000000000
+      internalID: -5139319916111319002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_33
+      name: Boar_B_Sprites_239x178_21
       rect:
         serializedVersion: 2
-        x: 747
-        y: 100
-        width: 249
-        height: 100
+        x: 717
+        y: 356
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -966,20 +699,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f8e26ce3713485e0800000000000000
-      internalID: -1908345968141342479
+      spriteID: b5de6ff3b49f9b120800000000000000
+      internalID: 2430247575534103899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_34
+      name: Boar_B_Sprites_239x178_22
       rect:
         serializedVersion: 2
-        x: 996
-        y: 100
-        width: 249
-        height: 100
+        x: 956
+        y: 356
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -987,20 +720,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7bba77f142fd3890800000000000000
-      internalID: -7476553441226343555
+      spriteID: 12fc86682624e0340800000000000000
+      internalID: 4831872441144364833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_35
+      name: Boar_B_Sprites_239x178_23
       rect:
         serializedVersion: 2
-        x: 1245
-        y: 100
-        width: 249
-        height: 100
+        x: 1195
+        y: 356
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1008,20 +741,146 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f278738135623ab0800000000000000
-      internalID: -5029846570485910795
+      spriteID: 70d250c215a35a950800000000000000
+      internalID: 6459633360838143239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_36
+      name: Boar_B_Sprites_239x178_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 178
+        width: 239
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7711a076541d99e0800000000000000
+      internalID: -1613110730039421058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_B_Sprites_239x178_25
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 178
+        width: 239
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44794fcc891ef82e0800000000000000
+      internalID: -2121228853078354108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_B_Sprites_239x178_26
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 178
+        width: 239
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397930af6d8b7fff0800000000000000
+      internalID: -2330041333344365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_B_Sprites_239x178_27
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 178
+        width: 239
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bdee56809a24a00800000000000000
+      internalID: 739339142377167742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_B_Sprites_239x178_28
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 178
+        width: 239
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe061256dca23570800000000000000
+      internalID: 8445002287773257469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_B_Sprites_239x178_29
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 178
+        width: 239
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd1c4007b80a74c0800000000000000
+      internalID: -4289106113039950388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_B_Sprites_239x178_30
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 249
-        height: 100
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1029,20 +888,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c61d287e89e005a0800000000000000
-      internalID: -6556984259340593470
+      spriteID: 5a5b56a2cbcf591b0800000000000000
+      internalID: -5650332272371059291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_37
+      name: Boar_B_Sprites_239x178_31
       rect:
         serializedVersion: 2
-        x: 249
+        x: 239
         y: 0
-        width: 249
-        height: 100
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1050,20 +909,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ecda9e0e9b482dd0800000000000000
-      internalID: -2510673650037105437
+      spriteID: fa888b3636df7bee0800000000000000
+      internalID: -1245248168628025169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_38
+      name: Boar_B_Sprites_239x178_32
       rect:
         serializedVersion: 2
-        x: 498
+        x: 478
         y: 0
-        width: 249
-        height: 100
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1071,20 +930,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b441802015a51c710800000000000000
-      internalID: 1711748637350433867
+      spriteID: db76bac2b0f77e9f0800000000000000
+      internalID: -439242752674535491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-249x100_39
+      name: Boar_B_Sprites_239x178_33
       rect:
         serializedVersion: 2
-        x: 747
+        x: 717
         y: 0
-        width: 249
-        height: 100
+        width: 239
+        height: 178
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1092,8 +951,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19b9211900fd7b3b0800000000000000
-      internalID: -5496679626655491183
+      spriteID: 1670881d6e8681f10800000000000000
+      internalID: 2240656155183941473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boar_B_Sprites_239x178_34
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 0
+        width: 239
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc466606471fd2b20800000000000000
+      internalID: 3111408399718704333
       vertices: []
       indices: 
       edges: []

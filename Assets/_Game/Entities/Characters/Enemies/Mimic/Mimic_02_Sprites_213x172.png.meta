@@ -1,70 +1,82 @@
 fileFormatVersion: 2
-guid: e2879149ed80e7c42acd6e143434eb1e
+guid: 8149ba66924c3f64c81fa42400a3a8a6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1937349601187026274
-    second: sprite-sheet-b-183-123_0
+      213: 8639079320284970056
+    second: Mimic_02_Sprites_213x172_0
   - first:
-      213: -3238883947309956738
-    second: sprite-sheet-b-183-123_1
+      213: 6075693834747669295
+    second: Mimic_02_Sprites_213x172_1
   - first:
-      213: -8173243471208239650
-    second: sprite-sheet-b-183-123_2
+      213: 6960076687523353437
+    second: Mimic_02_Sprites_213x172_2
   - first:
-      213: -5823848422722629834
-    second: sprite-sheet-b-183-123_3
+      213: 2371575215548254216
+    second: Mimic_02_Sprites_213x172_3
   - first:
-      213: -3935447094680956372
-    second: sprite-sheet-b-183-123_4
+      213: -1108181249382794617
+    second: Mimic_02_Sprites_213x172_4
   - first:
-      213: -4168412915705247567
-    second: sprite-sheet-b-183-123_5
+      213: -3775332669910587889
+    second: Mimic_02_Sprites_213x172_5
   - first:
-      213: -7726630363430067064
-    second: sprite-sheet-b-183-123_6
+      213: 3508989258846212751
+    second: Mimic_02_Sprites_213x172_6
   - first:
-      213: 6607462108884283435
-    second: sprite-sheet-b-183-123_7
+      213: 7497571653503316256
+    second: Mimic_02_Sprites_213x172_7
   - first:
-      213: -8434627671023123045
-    second: sprite-sheet-b-183-123_8
+      213: 392439002325060772
+    second: Mimic_02_Sprites_213x172_8
   - first:
-      213: -6456350941362064466
-    second: sprite-sheet-b-183-123_9
+      213: 3907753837365435423
+    second: Mimic_02_Sprites_213x172_9
   - first:
-      213: -1352115511917601169
-    second: sprite-sheet-b-183-123_10
+      213: 6584393671079545357
+    second: Mimic_02_Sprites_213x172_10
   - first:
-      213: -6211473368422740199
-    second: sprite-sheet-b-183-123_11
+      213: 3174326956069747987
+    second: Mimic_02_Sprites_213x172_11
   - first:
-      213: -7721397707235751176
-    second: sprite-sheet-b-183-123_12
+      213: -477431250140393070
+    second: Mimic_02_Sprites_213x172_12
   - first:
-      213: 3404549858784097252
-    second: sprite-sheet-b-183-123_13
+      213: -1260098515692768290
+    second: Mimic_02_Sprites_213x172_13
   - first:
-      213: -6826683136113843182
-    second: sprite-sheet-b-183-123_14
+      213: 8304661687852297114
+    second: Mimic_02_Sprites_213x172_14
   - first:
-      213: 1914763003812560877
-    second: sprite-sheet-b-183-123_15
+      213: 8544444525645271787
+    second: Mimic_02_Sprites_213x172_15
   - first:
-      213: -595647568148012254
-    second: sprite-sheet-b-183-123_16
+      213: 5015405509180152659
+    second: Mimic_02_Sprites_213x172_16
   - first:
-      213: 6343685202755804341
-    second: sprite-sheet-b-183-123_17
+      213: 2904898133181922291
+    second: Mimic_02_Sprites_213x172_17
   - first:
-      213: 1526388775508791707
-    second: sprite-sheet-b-183-123_18
+      213: -4826435166979684500
+    second: Mimic_02_Sprites_213x172_18
   - first:
-      213: 5714365877755328719
-    second: sprite-sheet-b-183-123_19
+      213: 5259516937362769976
+    second: Mimic_02_Sprites_213x172_19
   - first:
-      213: -7663057488318092602
-    second: sprite-sheet-b-183-123_20
+      213: 4130910545504605260
+    second: Mimic_02_Sprites_213x172_20
+  - first:
+      213: 7670183339009421104
+    second: Mimic_02_Sprites_213x172_21
+  - first:
+      213: 2068480019128812615
+    second: Mimic_02_Sprites_213x172_22
+  - first:
+      213: 2780232756213346723
+    second: Mimic_02_Sprites_213x172_23
+  - first:
+      213: -6828613489619542478
+    second: Mimic_02_Sprites_213x172_24
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -202,442 +214,526 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_0
+      name: Mimic_02_Sprites_213x172_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 492
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 688
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9aa08f5dc62d15e0800000000000000
-      internalID: -1937349601187026274
+      spriteID: 84c3208bedc24e770800000000000000
+      internalID: 8639079320284970056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_1
+      name: Mimic_02_Sprites_213x172_1
       rect:
         serializedVersion: 2
-        x: 183
-        y: 492
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 213
+        y: 688
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7100e3d53c2d03d0800000000000000
-      internalID: -3238883947309956738
+      spriteID: f2b6a203a53315450800000000000000
+      internalID: 6075693834747669295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_2
+      name: Mimic_02_Sprites_213x172_2
       rect:
         serializedVersion: 2
-        x: 366
-        y: 492
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 426
+        y: 688
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edd2adbdd5ec29e80800000000000000
-      internalID: -8173243471208239650
+      spriteID: d539e490fd8279060800000000000000
+      internalID: 6960076687523353437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_3
+      name: Mimic_02_Sprites_213x172_3
       rect:
         serializedVersion: 2
-        x: 549
-        y: 492
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 639
+        y: 688
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63f06e137b88d2fa0800000000000000
-      internalID: -5823848422722629834
+      spriteID: 808cfd8e71789e020800000000000000
+      internalID: 2371575215548254216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_4
+      name: Mimic_02_Sprites_213x172_4
       rect:
         serializedVersion: 2
-        x: 732
-        y: 492
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 852
+        y: 688
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c22d231e7bb7269c0800000000000000
-      internalID: -3935447094680956372
+      spriteID: 78a3acb6603fe90f0800000000000000
+      internalID: -1108181249382794617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_5
+      name: Mimic_02_Sprites_213x172_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 369
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1065
+        y: 688
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b80d32d982d626c0800000000000000
-      internalID: -4168412915705247567
+      spriteID: f066d0570f25b9bc0800000000000000
+      internalID: -3775332669910587889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_6
-      rect:
-        serializedVersion: 2
-        x: 183
-        y: 369
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 884e0053f9e75c490800000000000000
-      internalID: -7726630363430067064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-b-183-123_7
-      rect:
-        serializedVersion: 2
-        x: 366
-        y: 369
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b20b6eab7cb62bb50800000000000000
-      internalID: 6607462108884283435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-b-183-123_8
-      rect:
-        serializedVersion: 2
-        x: 549
-        y: 369
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b958cff52de22fa80800000000000000
-      internalID: -8434627671023123045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-b-183-123_9
-      rect:
-        serializedVersion: 2
-        x: 732
-        y: 369
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea3fadaa60f6666a0800000000000000
-      internalID: -6456350941362064466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-b-183-123_10
+      name: Mimic_02_Sprites_213x172_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 246
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 516
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6e1bd01b125c3de0800000000000000
-      internalID: -1352115511917601169
+      spriteID: f829036b32f62b030800000000000000
+      internalID: 3508989258846212751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_11
+      name: Mimic_02_Sprites_213x172_7
       rect:
         serializedVersion: 2
-        x: 183
-        y: 246
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 213
+        y: 516
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91f0d5791e96cc9a0800000000000000
-      internalID: -6211473368422740199
+      spriteID: 0217a1de1b9bc0860800000000000000
+      internalID: 7497571653503316256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_12
+      name: Mimic_02_Sprites_213x172_8
       rect:
         serializedVersion: 2
-        x: 366
-        y: 246
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 426
+        y: 516
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fa82bae1b518d490800000000000000
-      internalID: -7721397707235751176
+      spriteID: 4ac08918139327500800000000000000
+      internalID: 392439002325060772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_13
+      name: Mimic_02_Sprites_213x172_9
       rect:
         serializedVersion: 2
-        x: 549
-        y: 246
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 639
+        y: 516
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e3bee8fe046f3f20800000000000000
-      internalID: 3404549858784097252
+      spriteID: f1c16d139612b3630800000000000000
+      internalID: 3907753837365435423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_14
+      name: Mimic_02_Sprites_213x172_10
       rect:
         serializedVersion: 2
-        x: 732
-        y: 246
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 852
+        y: 516
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 214e8c56bdfb241a0800000000000000
-      internalID: -6826683136113843182
+      spriteID: d0ac6028827706b50800000000000000
+      internalID: 6584393671079545357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_15
+      name: Mimic_02_Sprites_213x172_11
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 516
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31dfb795c897d0c20800000000000000
+      internalID: 3174326956069747987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic_02_Sprites_213x172_12
       rect:
         serializedVersion: 2
         x: 0
-        y: 123
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 344
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: defbe4f9eca929a10800000000000000
-      internalID: 1914763003812560877
+      spriteID: 29116babec2df59f0800000000000000
+      internalID: -477431250140393070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_16
+      name: Mimic_02_Sprites_213x172_13
       rect:
         serializedVersion: 2
-        x: 183
-        y: 123
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 213
+        y: 344
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 223663151b5dbb7f0800000000000000
-      internalID: -595647568148012254
+      spriteID: ed3b226831b338ee0800000000000000
+      internalID: -1260098515692768290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_17
+      name: Mimic_02_Sprites_213x172_14
       rect:
         serializedVersion: 2
-        x: 366
-        y: 123
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 426
+        y: 344
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bc5925e41c490850800000000000000
-      internalID: 6343685202755804341
+      spriteID: a9b6b3c1ec5104370800000000000000
+      internalID: 8304661687852297114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_18
+      name: Mimic_02_Sprites_213x172_15
       rect:
         serializedVersion: 2
-        x: 549
-        y: 123
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 639
+        y: 344
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9158511182de2510800000000000000
-      internalID: 1526388775508791707
+      spriteID: be21e129607f39670800000000000000
+      internalID: 8544444525645271787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_19
+      name: Mimic_02_Sprites_213x172_16
       rect:
         serializedVersion: 2
-        x: 732
-        y: 123
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 852
+        y: 344
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc838346d718d4f40800000000000000
-      internalID: 5714365877755328719
+      spriteID: 35b5833ecbc4a9540800000000000000
+      internalID: 5015405509180152659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-183-123_20
+      name: Mimic_02_Sprites_213x172_17
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 344
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fbf0091675405820800000000000000
+      internalID: 2904898133181922291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic_02_Sprites_213x172_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 172
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6709b489ce050db0800000000000000
+      internalID: -4826435166979684500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic_02_Sprites_213x172_19
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 172
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83888a5d9ce8df840800000000000000
+      internalID: 5259516937362769976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic_02_Sprites_213x172_20
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 172
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4497bf2141f35930800000000000000
+      internalID: 4130910545504605260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic_02_Sprites_213x172_21
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 172
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fa6c3cb17f17a60800000000000000
+      internalID: 7670183339009421104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic_02_Sprites_213x172_22
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 172
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7448a2d3e97b4bc10800000000000000
+      internalID: 2068480019128812615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic_02_Sprites_213x172_23
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 172
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1700326fe559620800000000000000
+      internalID: 2780232756213346723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic_02_Sprites_213x172_24
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 183
-        height: 123
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ca2763a0d957a590800000000000000
-      internalID: -7663057488318092602
+      spriteID: 23e59c2f534eb31a0800000000000000
+      internalID: -6828613489619542478
       vertices: []
       indices: 
       edges: []

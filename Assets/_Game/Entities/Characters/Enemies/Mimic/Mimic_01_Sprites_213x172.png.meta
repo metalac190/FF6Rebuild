@@ -1,103 +1,145 @@
 fileFormatVersion: 2
-guid: d96a8d59415cc6947858c28939e214bc
+guid: 345b0f4290b6f5a4f89123a41133e73c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5324495225812558450
-    second: Giant_01_Sprites_385x318_0
+      213: -2019083303301011506
+    second: Mimic_01_Sprites_231x172_0
   - first:
-      213: -4824537305004800949
-    second: Giant_01_Sprites_385x318_1
+      213: -926518612044974143
+    second: Mimic_01_Sprites_231x172_1
   - first:
-      213: -1335419806561119908
-    second: Giant_01_Sprites_385x318_2
+      213: 1097181844819670419
+    second: Mimic_01_Sprites_231x172_2
   - first:
-      213: 6910385140750198184
-    second: Giant_01_Sprites_385x318_3
+      213: 6348863335604967265
+    second: Mimic_01_Sprites_231x172_3
   - first:
-      213: 9210987044621824058
-    second: Giant_01_Sprites_385x318_4
+      213: -5607947057884036990
+    second: Mimic_01_Sprites_231x172_4
   - first:
-      213: -3508868298257808730
-    second: Giant_01_Sprites_385x318_5
+      213: -3062545838381392908
+    second: Mimic_01_Sprites_231x172_5
   - first:
-      213: 6344598403958066451
-    second: Giant_01_Sprites_385x318_6
+      213: 2662631879817224213
+    second: Mimic_01_Sprites_231x172_6
   - first:
-      213: -738330004689465929
-    second: Giant_01_Sprites_385x318_7
+      213: -3214228720728527665
+    second: Mimic_01_Sprites_231x172_7
   - first:
-      213: -906663643352446317
-    second: Giant_01_Sprites_385x318_8
+      213: -6979827793928549686
+    second: Mimic_01_Sprites_231x172_8
   - first:
-      213: 8023822505587919389
-    second: Giant_01_Sprites_385x318_9
+      213: -8151277489314491714
+    second: Mimic_01_Sprites_231x172_9
   - first:
-      213: 4086965315088608183
-    second: Giant_01_Sprites_385x318_10
+      213: -2768764620371688348
+    second: Mimic_01_Sprites_231x172_10
   - first:
-      213: -7511165299186096681
-    second: Giant_01_Sprites_385x318_11
+      213: 3729632638071936868
+    second: Mimic_01_Sprites_231x172_11
   - first:
-      213: 5819494212689595985
-    second: Giant_01_Sprites_385x318_12
+      213: -990026454938519599
+    second: Mimic_01_Sprites_231x172_12
   - first:
-      213: -5028887121748616022
-    second: Giant_01_Sprites_385x318_13
+      213: -6321401637012570891
+    second: Mimic_01_Sprites_231x172_13
   - first:
-      213: 6874892744867415313
-    second: Giant_01_Sprites_385x318_14
+      213: -7276282808088096710
+    second: Mimic_01_Sprites_231x172_14
   - first:
-      213: 5060883045718005717
-    second: Giant_01_Sprites_385x318_15
+      213: 3115972266375932619
+    second: Mimic_01_Sprites_231x172_15
   - first:
-      213: 1160973661575947521
-    second: Giant_01_Sprites_385x318_16
+      213: 3929094341380407409
+    second: Mimic_01_Sprites_231x172_16
   - first:
-      213: -478776238827686603
-    second: Giant_01_Sprites_385x318_17
+      213: -1265119330315686322
+    second: Mimic_01_Sprites_231x172_17
   - first:
-      213: 363269556336975792
-    second: Giant_01_Sprites_385x318_18
+      213: 9073479054063150930
+    second: Mimic_01_Sprites_231x172_18
   - first:
-      213: -8464381918283212024
-    second: Giant_01_Sprites_385x318_19
+      213: -4910345946077473267
+    second: Mimic_01_Sprites_231x172_19
   - first:
-      213: -50276862894718554
-    second: Giant_01_Sprites_385x318_20
+      213: -4637779967210094954
+    second: Mimic_01_Sprites_231x172_20
   - first:
-      213: -980523471035974220
-    second: Giant_01_Sprites_385x318_21
+      213: -1470080384592409212
+    second: Mimic_01_Sprites_213x172_0
   - first:
-      213: -7603644157299173627
-    second: Giant_01_Sprites_385x318_22
+      213: 7267844214678691559
+    second: Mimic_01_Sprites_213x172_1
   - first:
-      213: -7082369016536755839
-    second: Giant_01_Sprites_385x318_23
+      213: -4139842204933337690
+    second: Mimic_01_Sprites_213x172_2
   - first:
-      213: 5947295139250141886
-    second: Giant_01_Sprites_385x318_24
+      213: -7662331360812956701
+    second: Mimic_01_Sprites_213x172_3
   - first:
-      213: -2482188140098321686
-    second: Giant_01_Sprites_385x318_25
+      213: 261523180323547616
+    second: Mimic_01_Sprites_213x172_4
   - first:
-      213: 6230069966821326779
-    second: Giant_01_Sprites_385x318_26
+      213: -2172327071890584199
+    second: Mimic_01_Sprites_213x172_5
   - first:
-      213: 8459032027775603777
-    second: Giant_01_Sprites_385x318_27
+      213: 337943362622860
+    second: Mimic_01_Sprites_213x172_6
   - first:
-      213: -5428533246582646211
-    second: Giant_01_Sprites_385x318_28
+      213: 1320314253371822713
+    second: Mimic_01_Sprites_213x172_7
   - first:
-      213: 4956599958984356508
-    second: Giant_01_Sprites_385x318_29
+      213: -7090745341951107099
+    second: Mimic_01_Sprites_213x172_8
   - first:
-      213: -9093123397825340069
-    second: Giant_01_Sprites_385x318_30
+      213: -1302319862696188667
+    second: Mimic_01_Sprites_213x172_9
   - first:
-      213: 9108312720516747724
-    second: Giant_01_Sprites_385x318_31
+      213: 2754479912799476627
+    second: Mimic_01_Sprites_213x172_10
+  - first:
+      213: -1229875697725649863
+    second: Mimic_01_Sprites_213x172_11
+  - first:
+      213: -2173923010121231890
+    second: Mimic_01_Sprites_213x172_12
+  - first:
+      213: 5779501870846793611
+    second: Mimic_01_Sprites_213x172_13
+  - first:
+      213: -3822363194652234759
+    second: Mimic_01_Sprites_213x172_14
+  - first:
+      213: -3796615692042438725
+    second: Mimic_01_Sprites_213x172_15
+  - first:
+      213: -4410561291525344732
+    second: Mimic_01_Sprites_213x172_16
+  - first:
+      213: -4347772882152804781
+    second: Mimic_01_Sprites_213x172_17
+  - first:
+      213: -8096952477488871665
+    second: Mimic_01_Sprites_213x172_18
+  - first:
+      213: -7702518619590098576
+    second: Mimic_01_Sprites_213x172_19
+  - first:
+      213: -2144044341349339436
+    second: Mimic_01_Sprites_213x172_20
+  - first:
+      213: 4359268564606308328
+    second: Mimic_01_Sprites_213x172_21
+  - first:
+      213: 7074265616062121627
+    second: Mimic_01_Sprites_213x172_22
+  - first:
+      213: -12174106117080217
+    second: Mimic_01_Sprites_213x172_23
+  - first:
+      213: -3030601271167212366
+    second: Mimic_01_Sprites_213x172_24
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -235,13 +277,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_0
+      name: Mimic_01_Sprites_213x172_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 954
-        width: 385
-        height: 318
+        y: 688
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,20 +291,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8ddd217dc79b16b0800000000000000
-      internalID: -5324495225812558450
+      spriteID: 48d8915dda9399be0800000000000000
+      internalID: -1470080384592409212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_1
+      name: Mimic_01_Sprites_213x172_1
       rect:
         serializedVersion: 2
-        x: 385
-        y: 954
-        width: 385
-        height: 318
+        x: 213
+        y: 688
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,20 +312,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b448191f1eccb0db0800000000000000
-      internalID: -4824537305004800949
+      spriteID: 7ee1dca7ec19cd460800000000000000
+      internalID: 7267844214678691559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_2
+      name: Mimic_01_Sprites_213x172_2
       rect:
         serializedVersion: 2
-        x: 770
-        y: 954
-        width: 385
-        height: 318
+        x: 426
+        y: 688
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,20 +333,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5157e3e2c2a77de0800000000000000
-      internalID: -1335419806561119908
+      spriteID: 6ad47ccc2735c86c0800000000000000
+      internalID: -4139842204933337690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_3
+      name: Mimic_01_Sprites_213x172_3
       rect:
         serializedVersion: 2
-        x: 1155
-        y: 954
-        width: 385
-        height: 318
+        x: 639
+        y: 688
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a5ad873cae96ef50800000000000000
-      internalID: 6910385140750198184
+      spriteID: 3e3886f593ee9a590800000000000000
+      internalID: -7662331360812956701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_4
+      name: Mimic_01_Sprites_213x172_4
       rect:
         serializedVersion: 2
-        x: 1540
-        y: 954
-        width: 385
-        height: 318
+        x: 852
+        y: 688
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,20 +375,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a30b8694aeff3df70800000000000000
-      internalID: 9210987044621824058
+      spriteID: 0e927b762fd11a300800000000000000
+      internalID: 261523180323547616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_5
+      name: Mimic_01_Sprites_213x172_5
       rect:
         serializedVersion: 2
-        x: 1925
-        y: 954
-        width: 385
-        height: 318
+        x: 1065
+        y: 688
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,62 +396,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a2c6be9fdefd4fc0800000000000000
-      internalID: -3508868298257808730
+      spriteID: 97d4fff99085ad1e0800000000000000
+      internalID: -2172327071890584199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_6
-      rect:
-        serializedVersion: 2
-        x: 2310
-        y: 954
-        width: 385
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31d4e6e12aa8c0850800000000000000
-      internalID: 6344598403958066451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_7
-      rect:
-        serializedVersion: 2
-        x: 2695
-        y: 954
-        width: 385
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bdc877c5cce0c5f0800000000000000
-      internalID: -738330004689465929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_8
+      name: Mimic_01_Sprites_213x172_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 636
-        width: 385
-        height: 318
+        y: 516
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,20 +417,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39a47375832ea63f0800000000000000
-      internalID: -906663643352446317
+      spriteID: c8555129b53310000800000000000000
+      internalID: 337943362622860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_9
+      name: Mimic_01_Sprites_213x172_7
       rect:
         serializedVersion: 2
-        x: 385
-        y: 636
-        width: 385
-        height: 318
+        x: 213
+        y: 516
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -438,20 +438,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1a4a5a8e085a5f60800000000000000
-      internalID: 8023822505587919389
+      spriteID: 972dc1071d2b25210800000000000000
+      internalID: 1320314253371822713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_10
+      name: Mimic_01_Sprites_213x172_8
       rect:
         serializedVersion: 2
-        x: 770
-        y: 636
-        width: 385
-        height: 318
+        x: 426
+        y: 516
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -459,20 +459,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bbe237ec41d7b830800000000000000
-      internalID: 4086965315088608183
+      spriteID: 5ef9f3c0eac989d90800000000000000
+      internalID: -7090745341951107099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_11
+      name: Mimic_01_Sprites_213x172_9
       rect:
         serializedVersion: 2
-        x: 1155
-        y: 636
-        width: 385
-        height: 318
+        x: 639
+        y: 516
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -480,20 +480,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d5a5ccc4faf2c790800000000000000
-      internalID: -7511165299186096681
+      spriteID: 505ee002cfa3dede0800000000000000
+      internalID: -1302319862696188667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_12
+      name: Mimic_01_Sprites_213x172_10
       rect:
         serializedVersion: 2
-        x: 1540
-        y: 636
-        width: 385
-        height: 318
+        x: 852
+        y: 516
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -501,20 +501,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15e0ec7472ff2c050800000000000000
-      internalID: 5819494212689595985
+      spriteID: 39b9c5703e0e93620800000000000000
+      internalID: 2754479912799476627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_13
+      name: Mimic_01_Sprites_213x172_11
       rect:
         serializedVersion: 2
-        x: 1925
-        y: 636
-        width: 385
-        height: 318
+        x: 1065
+        y: 516
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,62 +522,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aac13a49ecdc53ab0800000000000000
-      internalID: -5028887121748616022
+      spriteID: 93c4d2fa19a9eeee0800000000000000
+      internalID: -1229875697725649863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_14
-      rect:
-        serializedVersion: 2
-        x: 2310
-        y: 636
-        width: 385
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1158bb6d686886f50800000000000000
-      internalID: 6874892744867415313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_15
-      rect:
-        serializedVersion: 2
-        x: 2695
-        y: 636
-        width: 385
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d791ddf05edb3640800000000000000
-      internalID: 5060883045718005717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_16
+      name: Mimic_01_Sprites_213x172_12
       rect:
         serializedVersion: 2
         x: 0
-        y: 318
-        width: 385
-        height: 318
+        y: 344
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -585,20 +543,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 105a1d3e46b9c1010800000000000000
-      internalID: 1160973661575947521
+      spriteID: ee11dac4a8ca4d1e0800000000000000
+      internalID: -2173923010121231890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_17
+      name: Mimic_01_Sprites_213x172_13
       rect:
         serializedVersion: 2
-        x: 385
-        y: 318
-        width: 385
-        height: 318
+        x: 213
+        y: 344
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -606,20 +564,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53537c52c8b0b59f0800000000000000
-      internalID: -478776238827686603
+      spriteID: b875786945ae43050800000000000000
+      internalID: 5779501870846793611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_18
+      name: Mimic_01_Sprites_213x172_14
       rect:
         serializedVersion: 2
-        x: 770
-        y: 318
-        width: 385
-        height: 318
+        x: 426
+        y: 344
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -627,20 +585,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bfdd2f9cb79a0500800000000000000
-      internalID: 363269556336975792
+      spriteID: 9fbe93c1dec34fac0800000000000000
+      internalID: -3822363194652234759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_19
+      name: Mimic_01_Sprites_213x172_15
       rect:
         serializedVersion: 2
-        x: 1155
-        y: 318
-        width: 385
-        height: 318
+        x: 639
+        y: 344
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -648,20 +606,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80b5d75dd79788a80800000000000000
-      internalID: -8464381918283212024
+      spriteID: bb7f227b426bf4bc0800000000000000
+      internalID: -3796615692042438725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_20
+      name: Mimic_01_Sprites_213x172_16
       rect:
         serializedVersion: 2
-        x: 1540
-        y: 318
-        width: 385
-        height: 318
+        x: 852
+        y: 344
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -669,20 +627,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a14db6a5716d4ff0800000000000000
-      internalID: -50276862894718554
+      spriteID: 4223b8e9fd98ac2c0800000000000000
+      internalID: -4410561291525344732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_21
+      name: Mimic_01_Sprites_213x172_17
       rect:
         serializedVersion: 2
-        x: 1925
-        y: 318
-        width: 385
-        height: 318
+        x: 1065
+        y: 344
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -690,20 +648,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bdb7fe191b7462f0800000000000000
-      internalID: -980523471035974220
+      spriteID: 35ea433699b99a3c0800000000000000
+      internalID: -4347772882152804781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_22
+      name: Mimic_01_Sprites_213x172_18
       rect:
         serializedVersion: 2
-        x: 2310
-        y: 318
-        width: 385
-        height: 318
+        x: 0
+        y: 172
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -711,20 +669,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50755bdbced6a7690800000000000000
-      internalID: -7603644157299173627
+      spriteID: f078e080f98d1af80800000000000000
+      internalID: -8096952477488871665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_23
+      name: Mimic_01_Sprites_213x172_19
       rect:
         serializedVersion: 2
-        x: 2695
-        y: 318
-        width: 385
-        height: 318
+        x: 213
+        y: 172
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -732,20 +690,104 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 181181947ee56bd90800000000000000
-      internalID: -7082369016536755839
+      spriteID: 071008b00282b1590800000000000000
+      internalID: -7702518619590098576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_24
+      name: Mimic_01_Sprites_213x172_20
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 172
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4deaf2bf703de32e0800000000000000
+      internalID: -2144044341349339436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic_01_Sprites_213x172_21
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 172
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efc2e1c9ab3f7c30800000000000000
+      internalID: 4359268564606308328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic_01_Sprites_213x172_22
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 172
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b968424c817dc2260800000000000000
+      internalID: 7074265616062121627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic_01_Sprites_213x172_23
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 172
+        width: 213
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bfe6907bfb4dff0800000000000000
+      internalID: -12174106117080217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mimic_01_Sprites_213x172_24
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 385
-        height: 318
+        width: 213
+        height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -753,155 +795,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eba79654b69098250800000000000000
-      internalID: 5947295139250141886
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_25
-      rect:
-        serializedVersion: 2
-        x: 385
-        y: 0
-        width: 385
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae280cba90f7d8dd0800000000000000
-      internalID: -2482188140098321686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_26
-      rect:
-        serializedVersion: 2
-        x: 770
-        y: 0
-        width: 385
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbff63260a7a57650800000000000000
-      internalID: 6230069966821326779
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_27
-      rect:
-        serializedVersion: 2
-        x: 1155
-        y: 0
-        width: 385
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1449737bfc4846570800000000000000
-      internalID: 8459032027775603777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_28
-      rect:
-        serializedVersion: 2
-        x: 1540
-        y: 0
-        width: 385
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3a1b0a16c9f9a4b0800000000000000
-      internalID: -5428533246582646211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_29
-      rect:
-        serializedVersion: 2
-        x: 1925
-        y: 0
-        width: 385
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c927af8c66169c440800000000000000
-      internalID: 4956599958984356508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_30
-      rect:
-        serializedVersion: 2
-        x: 2310
-        y: 0
-        width: 385
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5dd3d5727cbec180800000000000000
-      internalID: -9093123397825340069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Giant_01_Sprites_385x318_31
-      rect:
-        serializedVersion: 2
-        x: 2695
-        y: 0
-        width: 385
-        height: 318
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc19291592a376e70800000000000000
-      internalID: 9108312720516747724
+      spriteID: 2b42b30633421f5d0800000000000000
+      internalID: -3030601271167212366
       vertices: []
       indices: 
       edges: []

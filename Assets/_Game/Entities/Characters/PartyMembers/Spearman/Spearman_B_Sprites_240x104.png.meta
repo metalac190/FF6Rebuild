@@ -1,55 +1,61 @@
 fileFormatVersion: 2
-guid: dc02dabffa42cb043bee9522a9368c75
+guid: 289a5c37355bdba43999d7d41f5e223e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5209265702918886532
-    second: sprite-sheet-b-151x100_0
+      213: 7046190353977997302
+    second: Spearman_B_Sprites_240x104_0
   - first:
-      213: 2939161610087865832
-    second: sprite-sheet-b-151x100_1
+      213: -8969541999455288876
+    second: Spearman_B_Sprites_240x104_1
   - first:
-      213: 209513996619754322
-    second: sprite-sheet-b-151x100_2
+      213: -6369933067899710360
+    second: Spearman_B_Sprites_240x104_2
   - first:
-      213: -8463717362281581678
-    second: sprite-sheet-b-151x100_3
+      213: -7799697481084200551
+    second: Spearman_B_Sprites_240x104_3
   - first:
-      213: 1285014662957761367
-    second: sprite-sheet-b-151x100_4
+      213: -981819361991764082
+    second: Spearman_B_Sprites_240x104_4
   - first:
-      213: -5791056761977328691
-    second: sprite-sheet-b-151x100_5
+      213: -1309770465689513250
+    second: Spearman_B_Sprites_240x104_5
   - first:
-      213: -2306558211835842138
-    second: sprite-sheet-b-151x100_6
+      213: 5040990098453107343
+    second: Spearman_B_Sprites_240x104_6
   - first:
-      213: 4109753215705854683
-    second: sprite-sheet-b-151x100_7
+      213: 196859997052544144
+    second: Spearman_B_Sprites_240x104_7
   - first:
-      213: 1907932838995782244
-    second: sprite-sheet-b-151x100_8
+      213: 7562059801714588168
+    second: Spearman_B_Sprites_240x104_8
   - first:
-      213: -1739232027048122743
-    second: sprite-sheet-b-151x100_9
+      213: 952460971172428788
+    second: Spearman_B_Sprites_240x104_9
   - first:
-      213: 8977643088699450255
-    second: sprite-sheet-b-151x100_10
+      213: -5334816840560208697
+    second: Spearman_B_Sprites_240x104_10
   - first:
-      213: -846646792381399893
-    second: sprite-sheet-b-151x100_11
+      213: 8822125154375144278
+    second: Spearman_B_Sprites_240x104_11
   - first:
-      213: 3775402033125917558
-    second: sprite-sheet-b-151x100_12
+      213: 8220436118599378151
+    second: Spearman_B_Sprites_240x104_12
   - first:
-      213: -5655893975484080062
-    second: sprite-sheet-b-151x100_13
+      213: 6045280555167103172
+    second: Spearman_B_Sprites_240x104_13
   - first:
-      213: -1528659849220175205
-    second: sprite-sheet-b-151x100_14
+      213: -3472779323848897446
+    second: Spearman_B_Sprites_240x104_14
   - first:
-      213: 7620319586095514382
-    second: sprite-sheet-b-151x100_15
+      213: -1516562519536209491
+    second: Spearman_B_Sprites_240x104_15
+  - first:
+      213: 143444020977060906
+    second: Spearman_B_Sprites_240x104_16
+  - first:
+      213: -1821068833356178724
+    second: Spearman_B_Sprites_240x104_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -187,13 +193,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite-sheet-b-151x100_0
+      name: Spearman_B_Sprites_240x104_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 300
-        width: 151
-        height: 100
+        y: 312
+        width: 240
+        height: 104
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4841b139e870b4840800000000000000
-      internalID: 5209265702918886532
+      spriteID: 6f774ac6bc819c160800000000000000
+      internalID: 7046190353977997302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-151x100_1
+      name: Spearman_B_Sprites_240x104_1
       rect:
         serializedVersion: 2
-        x: 151
-        y: 300
-        width: 151
-        height: 100
+        x: 240
+        y: 312
+        width: 240
+        height: 104
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ed90ca79eff9c820800000000000000
-      internalID: 2939161610087865832
+      spriteID: 4d1458cf219c58380800000000000000
+      internalID: -8969541999455288876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-151x100_2
+      name: Spearman_B_Sprites_240x104_2
       rect:
         serializedVersion: 2
-        x: 302
-        y: 300
-        width: 151
-        height: 100
+        x: 480
+        y: 312
+        width: 240
+        height: 104
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25b2effaed758e200800000000000000
-      internalID: 209513996619754322
+      spriteID: 864d2d4cf937997a0800000000000000
+      internalID: -6369933067899710360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-151x100_3
+      name: Spearman_B_Sprites_240x104_3
       rect:
         serializedVersion: 2
-        x: 453
-        y: 300
-        width: 151
-        height: 100
+        x: 720
+        y: 312
+        width: 240
+        height: 104
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,20 +270,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29376e5d6e5da8a80800000000000000
-      internalID: -8463717362281581678
+      spriteID: 999977c2778e1c390800000000000000
+      internalID: -7799697481084200551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-151x100_4
+      name: Spearman_B_Sprites_240x104_4
       rect:
         serializedVersion: 2
-        x: 604
-        y: 300
-        width: 151
-        height: 100
+        x: 960
+        y: 312
+        width: 240
+        height: 104
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,125 +291,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75304c4170a45d110800000000000000
-      internalID: 1285014662957761367
+      spriteID: e8751eefd70ef52f0800000000000000
+      internalID: -981819361991764082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-151x100_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 200
-        width: 151
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dcba73cae8802afa0800000000000000
-      internalID: -5791056761977328691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-b-151x100_6
-      rect:
-        serializedVersion: 2
-        x: 151
-        y: 200
-        width: 151
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a1b3c9e6857dffd0800000000000000
-      internalID: -2306558211835842138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-b-151x100_7
-      rect:
-        serializedVersion: 2
-        x: 302
-        y: 200
-        width: 151
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd2baa876c6c80930800000000000000
-      internalID: 4109753215705854683
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-b-151x100_8
-      rect:
-        serializedVersion: 2
-        x: 453
-        y: 200
-        width: 151
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46a65a3fec65a7a10800000000000000
-      internalID: 1907932838995782244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-b-151x100_9
-      rect:
-        serializedVersion: 2
-        x: 604
-        y: 200
-        width: 151
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98660ddafa10dd7e0800000000000000
-      internalID: -1739232027048122743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite-sheet-b-151x100_10
+      name: Spearman_B_Sprites_240x104_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 100
-        width: 151
-        height: 100
+        y: 208
+        width: 240
+        height: 104
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,20 +312,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f83eb26d2def69c70800000000000000
-      internalID: 8977643088699450255
+      spriteID: ed2574f63b2c2dde0800000000000000
+      internalID: -1309770465689513250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-151x100_11
+      name: Spearman_B_Sprites_240x104_6
       rect:
         serializedVersion: 2
-        x: 151
-        y: 100
-        width: 151
-        height: 100
+        x: 240
+        y: 208
+        width: 240
+        height: 104
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -432,20 +333,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bacf1e16a3b1044f0800000000000000
-      internalID: -846646792381399893
+      spriteID: f821f8649c135f540800000000000000
+      internalID: 5040990098453107343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-151x100_12
+      name: Spearman_B_Sprites_240x104_7
       rect:
         serializedVersion: 2
-        x: 302
-        y: 100
-        width: 151
-        height: 100
+        x: 480
+        y: 208
+        width: 240
+        height: 104
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -453,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67302cc652ce46430800000000000000
-      internalID: 3775402033125917558
+      spriteID: 0942dc2df136bb200800000000000000
+      internalID: 196859997052544144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-151x100_13
+      name: Spearman_B_Sprites_240x104_8
       rect:
         serializedVersion: 2
-        x: 453
-        y: 100
-        width: 151
-        height: 100
+        x: 720
+        y: 208
+        width: 240
+        height: 104
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -474,20 +375,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 240efff356a3281b0800000000000000
-      internalID: -5655893975484080062
+      spriteID: 80a757bf255d1f860800000000000000
+      internalID: 7562059801714588168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-151x100_14
+      name: Spearman_B_Sprites_240x104_9
       rect:
         serializedVersion: 2
-        x: 604
-        y: 100
-        width: 151
-        height: 100
+        x: 960
+        y: 208
+        width: 240
+        height: 104
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -495,20 +396,125 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9a44d067fb19cae0800000000000000
-      internalID: -1528659849220175205
+      spriteID: 4fbf729f432d73d00800000000000000
+      internalID: 952460971172428788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-b-151x100_15
+      name: Spearman_B_Sprites_240x104_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 240
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c413ac395ce6f5b0800000000000000
+      internalID: -5334816840560208697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spearman_B_Sprites_240x104_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 104
+        width: 240
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6539196161c7e6a70800000000000000
+      internalID: 8822125154375144278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spearman_B_Sprites_240x104_12
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 104
+        width: 240
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e428eb981bd41270800000000000000
+      internalID: 8220436118599378151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spearman_B_Sprites_240x104_13
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 104
+        width: 240
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8bf4ab2a625e350800000000000000
+      internalID: 6045280555167103172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spearman_B_Sprites_240x104_14
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 104
+        width: 240
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c4aa2ca953ecfc0800000000000000
+      internalID: -3472779323848897446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spearman_B_Sprites_240x104_15
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 151
-        height: 100
+        width: 240
+        height: 104
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -516,8 +522,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e03cc241a40d0c960800000000000000
-      internalID: 7620319586095514382
+      spriteID: da17f5f6c6614fae0800000000000000
+      internalID: -1516562519536209491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spearman_B_Sprites_240x104_16
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 240
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ccd7bb39d9df100800000000000000
+      internalID: 143444020977060906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spearman_B_Sprites_240x104_17
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 240
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda15446b834ab6e0800000000000000
+      internalID: -1821068833356178724
       vertices: []
       indices: 
       edges: []
