@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 8431547747865113625
-    second: sprite-sheet-158x173_0
+    second: Bowman_A_Sprites_158x173
   - first:
       213: -5527498000293629391
     second: sprite-sheet-158x173_1
@@ -140,6 +140,144 @@ TextureImporter:
   - first:
       213: -5112991006592862483
     second: sprite-sheet-158x173_45
+  - first:
+      213: 1328089099890217899
+    second: Bowman_A_Sprites_158x173_0
+  - first:
+      213: 2123691722291466069
+    second: Bowman_A_Sprites_158x173_1
+  - first:
+      213: -1384747329378351026
+    second: Bowman_A_Sprites_158x173_2
+  - first:
+      213: -1836330891819076372
+    second: Bowman_A_Sprites_158x173_3
+  - first:
+      213: 444722902596304971
+    second: Bowman_A_Sprites_158x173_4
+  - first:
+      213: -7080474593081305446
+    second: Bowman_A_Sprites_158x173_5
+  - first:
+      213: -6728382657750016351
+    second: Bowman_A_Sprites_158x173_6
+  - first:
+      213: 4269753536212346780
+    second: Bowman_A_Sprites_158x173_7
+  - first:
+      213: 2570421928909038262
+    second: Bowman_A_Sprites_158x173_8
+  - first:
+      213: -7926051960734142490
+    second: Bowman_A_Sprites_158x173_9
+  - first:
+      213: 214222505057472446
+    second: Bowman_A_Sprites_158x173_10
+  - first:
+      213: 8335606738977183573
+    second: Bowman_A_Sprites_158x173_11
+  - first:
+      213: -3348436678815409111
+    second: Bowman_A_Sprites_158x173_12
+  - first:
+      213: -8976946161751677865
+    second: Bowman_A_Sprites_158x173_13
+  - first:
+      213: 9031090747737151078
+    second: Bowman_A_Sprites_158x173_14
+  - first:
+      213: -1831203793488402399
+    second: Bowman_A_Sprites_158x173_15
+  - first:
+      213: -1381723366829625908
+    second: Bowman_A_Sprites_158x173_16
+  - first:
+      213: -2846096147782077065
+    second: Bowman_A_Sprites_158x173_17
+  - first:
+      213: 1244619212931699752
+    second: Bowman_A_Sprites_158x173_18
+  - first:
+      213: -3945008479983014333
+    second: Bowman_A_Sprites_158x173_19
+  - first:
+      213: -6717837616375820762
+    second: Bowman_A_Sprites_158x173_20
+  - first:
+      213: 3988062420946072910
+    second: Bowman_A_Sprites_158x173_21
+  - first:
+      213: -4275643152729493683
+    second: Bowman_A_Sprites_158x173_22
+  - first:
+      213: -9144406194376795254
+    second: Bowman_A_Sprites_158x173_23
+  - first:
+      213: -1032837422281877254
+    second: Bowman_A_Sprites_158x173_24
+  - first:
+      213: 3490910949717864262
+    second: Bowman_A_Sprites_158x173_25
+  - first:
+      213: -4744923528359751568
+    second: Bowman_A_Sprites_158x173_26
+  - first:
+      213: 4743561329785010887
+    second: Bowman_A_Sprites_158x173_27
+  - first:
+      213: -7092273331449366076
+    second: Bowman_A_Sprites_158x173_28
+  - first:
+      213: -1891954082807352765
+    second: Bowman_A_Sprites_158x173_29
+  - first:
+      213: 4623885511681713461
+    second: Bowman_A_Sprites_158x173_30
+  - first:
+      213: -595791530515440918
+    second: Bowman_A_Sprites_158x173_31
+  - first:
+      213: -6510677813857961650
+    second: Bowman_A_Sprites_158x173_32
+  - first:
+      213: 5996475173853478537
+    second: Bowman_A_Sprites_158x173_33
+  - first:
+      213: 194916496559204917
+    second: Bowman_A_Sprites_158x173_34
+  - first:
+      213: -5494807465003337265
+    second: Bowman_A_Sprites_158x173_35
+  - first:
+      213: 1010321162972809555
+    second: Bowman_A_Sprites_158x173_36
+  - first:
+      213: -5221867933102719487
+    second: Bowman_A_Sprites_158x173_37
+  - first:
+      213: -5669400073607648356
+    second: Bowman_A_Sprites_158x173_38
+  - first:
+      213: 888247832115307674
+    second: Bowman_A_Sprites_158x173_39
+  - first:
+      213: 7014362684673662337
+    second: Bowman_A_Sprites_158x173_40
+  - first:
+      213: -4970244747179517194
+    second: Bowman_A_Sprites_158x173_41
+  - first:
+      213: -3351651043687296050
+    second: Bowman_A_Sprites_158x173_42
+  - first:
+      213: -5554931456402372089
+    second: Bowman_A_Sprites_158x173_43
+  - first:
+      213: -5300302520790550945
+    second: Bowman_A_Sprites_158x173_44
+  - first:
+      213: 7233178252753665989
+    second: Bowman_A_Sprites_158x173_45
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -277,7 +415,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite-sheet-158x173_0
+      name: Bowman_A_Sprites_158x173_0
       rect:
         serializedVersion: 2
         x: 0
@@ -291,14 +429,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 914be322100e20570800000000000000
-      internalID: 8431547747865113625
+      spriteID: ba35605fff15e6210800000000000000
+      internalID: 1328089099890217899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_1
+      name: Bowman_A_Sprites_158x173_1
       rect:
         serializedVersion: 2
         x: 158
@@ -312,14 +450,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 132f0dbcad16a43b0800000000000000
-      internalID: -5527498000293629391
+      spriteID: 55fce9f9e5ed87d10800000000000000
+      internalID: 2123691722291466069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_2
+      name: Bowman_A_Sprites_158x173_2
       rect:
         serializedVersion: 2
         x: 316
@@ -333,14 +471,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bffb155691ee65e80800000000000000
-      internalID: -8190097079485218821
+      spriteID: e488bb004a368cce0800000000000000
+      internalID: -1384747329378351026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_3
+      name: Bowman_A_Sprites_158x173_3
       rect:
         serializedVersion: 2
         x: 474
@@ -354,14 +492,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbc2fe27f238b7d10800000000000000
-      internalID: 2124435889050299583
+      spriteID: ce43c0f78ca0486e0800000000000000
+      internalID: -1836330891819076372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_4
+      name: Bowman_A_Sprites_158x173_4
       rect:
         serializedVersion: 2
         x: 632
@@ -375,14 +513,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5176637d8faa99bf0800000000000000
-      internalID: -317034313013631211
+      spriteID: b40cbb8af19fb2600800000000000000
+      internalID: 444722902596304971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_5
+      name: Bowman_A_Sprites_158x173_5
       rect:
         serializedVersion: 2
         x: 790
@@ -396,14 +534,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0024ab0f61a5591f0800000000000000
-      internalID: -1038825084464512512
+      spriteID: a96d53e1fd91dbd90800000000000000
+      internalID: -7080474593081305446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_6
+      name: Bowman_A_Sprites_158x173_6
       rect:
         serializedVersion: 2
         x: 948
@@ -417,14 +555,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec352f99e03db7ed0800000000000000
-      internalID: -2415104715488341042
+      spriteID: 1ae59eb0f9bff92a0800000000000000
+      internalID: -6728382657750016351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_7
+      name: Bowman_A_Sprites_158x173_7
       rect:
         serializedVersion: 2
         x: 1106
@@ -438,14 +576,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d17e9fdb0efec5390800000000000000
-      internalID: -7828118303737780451
+      spriteID: c97a7641836314b30800000000000000
+      internalID: 4269753536212346780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_8
+      name: Bowman_A_Sprites_158x173_8
       rect:
         serializedVersion: 2
         x: 0
@@ -459,14 +597,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b9d62915ee2c1e00800000000000000
-      internalID: 1016739177383254448
+      spriteID: 6b26f7b2029fba320800000000000000
+      internalID: 2570421928909038262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_9
+      name: Bowman_A_Sprites_158x173_9
       rect:
         serializedVersion: 2
         x: 158
@@ -480,14 +618,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72ba4ca46b8fae8e0800000000000000
-      internalID: -1663243650537837785
+      spriteID: 6ef27295cb1010290800000000000000
+      internalID: -7926051960734142490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_10
+      name: Bowman_A_Sprites_158x173_10
       rect:
         serializedVersion: 2
         x: 316
@@ -501,14 +639,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a7b0f27d1d8a7020800000000000000
-      internalID: 2340338113994340260
+      spriteID: ebf48dcbb3219f200800000000000000
+      internalID: 214222505057472446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_11
+      name: Bowman_A_Sprites_158x173_11
       rect:
         serializedVersion: 2
         x: 474
@@ -522,14 +660,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f5e909a61b515460800000000000000
-      internalID: 7228659029789763061
+      spriteID: 55756184a260ea370800000000000000
+      internalID: 8335606738977183573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_12
+      name: Bowman_A_Sprites_158x173_12
       rect:
         serializedVersion: 2
         x: 632
@@ -543,14 +681,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 377c1af0cba6b8e50800000000000000
-      internalID: 6812656217276663667
+      spriteID: 92c9156d496f781d0800000000000000
+      internalID: -3348436678815409111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_13
+      name: Bowman_A_Sprites_158x173_13
       rect:
         serializedVersion: 2
         x: 790
@@ -564,14 +702,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60373d46888228660800000000000000
-      internalID: 7386510905113277190
+      spriteID: 7542cfc170b7b6380800000000000000
+      internalID: -8976946161751677865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_14
+      name: Bowman_A_Sprites_158x173_14
       rect:
         serializedVersion: 2
         x: 948
@@ -585,14 +723,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4329fbcf916048b40800000000000000
-      internalID: 5441480958454764084
+      spriteID: 6669031bf21e45d70800000000000000
+      internalID: 9031090747737151078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_15
+      name: Bowman_A_Sprites_158x173_15
       rect:
         serializedVersion: 2
         x: 1106
@@ -606,14 +744,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38f617dfbfe0326a0800000000000000
-      internalID: -6475315363776991357
+      spriteID: 128a6c91ad14696e0800000000000000
+      internalID: -1831203793488402399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_16
+      name: Bowman_A_Sprites_158x173_16
       rect:
         serializedVersion: 2
         x: 0
@@ -627,14 +765,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c27d8d67c4df8e3d0800000000000000
-      internalID: -3177011032256620756
+      spriteID: ccd63462be123dce0800000000000000
+      internalID: -1381723366829625908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_17
+      name: Bowman_A_Sprites_158x173_17
       rect:
         serializedVersion: 2
         x: 158
@@ -648,14 +786,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4357d9251f9b821d0800000000000000
-      internalID: -3375243474589878988
+      spriteID: 77577d202a2a088d0800000000000000
+      internalID: -2846096147782077065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_18
+      name: Bowman_A_Sprites_158x173_18
       rect:
         serializedVersion: 2
         x: 316
@@ -669,14 +807,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0be54aa45e355bd80800000000000000
-      internalID: -8235584099312181584
+      spriteID: 8249b637496c54110800000000000000
+      internalID: 1244619212931699752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_19
+      name: Bowman_A_Sprites_158x173_19
       rect:
         serializedVersion: 2
         x: 474
@@ -690,14 +828,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aced15e9072f1b7d0800000000000000
-      internalID: -2904273719170834742
+      spriteID: 34e65b260b38049c0800000000000000
+      internalID: -3945008479983014333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_20
+      name: Bowman_A_Sprites_158x173_20
       rect:
         serializedVersion: 2
         x: 632
@@ -711,14 +849,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d7ad0b3ec6cb1950800000000000000
-      internalID: 6420944282803087313
+      spriteID: 62e8921d74275c2a0800000000000000
+      internalID: -6717837616375820762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_21
+      name: Bowman_A_Sprites_158x173_21
       rect:
         serializedVersion: 2
         x: 790
@@ -732,14 +870,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f8210e05d400b400800000000000000
-      internalID: 337775285162289396
+      spriteID: e45339664a1785730800000000000000
+      internalID: 3988062420946072910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_22
+      name: Bowman_A_Sprites_158x173_22
       rect:
         serializedVersion: 2
         x: 948
@@ -753,14 +891,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e5ea542bd3ad5210800000000000000
-      internalID: 1323394027119896035
+      spriteID: d4f2a37b43dd9a4c0800000000000000
+      internalID: -4275643152729493683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_23
+      name: Bowman_A_Sprites_158x173_23
       rect:
         serializedVersion: 2
         x: 1106
@@ -774,14 +912,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f859702b778100190800000000000000
-      internalID: -7998366035842984561
+      spriteID: a8b1a4ee30b881180800000000000000
+      internalID: -9144406194376795254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_24
+      name: Bowman_A_Sprites_158x173_24
       rect:
         serializedVersion: 2
         x: 0
@@ -795,14 +933,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70581b25a87619460800000000000000
-      internalID: 7246687119206352135
+      spriteID: af8982e26df9aa1f0800000000000000
+      internalID: -1032837422281877254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_25
+      name: Bowman_A_Sprites_158x173_25
       rect:
         serializedVersion: 2
         x: 158
@@ -816,14 +954,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65a4a3b8663310e70800000000000000
-      internalID: 9079594839271164502
+      spriteID: 64f647c5305327030800000000000000
+      internalID: 3490910949717864262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_26
+      name: Bowman_A_Sprites_158x173_26
       rect:
         serializedVersion: 2
         x: 316
@@ -837,14 +975,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 320ddc6ca312773f0800000000000000
-      internalID: -903216663937298397
+      spriteID: 07059bdc035a62eb0800000000000000
+      internalID: -4744923528359751568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_27
+      name: Bowman_A_Sprites_158x173_27
       rect:
         serializedVersion: 2
         x: 474
@@ -858,14 +996,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e86b30e152b301e0800000000000000
-      internalID: -2232744925521549080
+      spriteID: 7ca7d10a5e384d140800000000000000
+      internalID: 4743561329785010887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_28
+      name: Bowman_A_Sprites_158x173_28
       rect:
         serializedVersion: 2
         x: 632
@@ -879,14 +1017,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 868a13b5bc4f61320800000000000000
-      internalID: 2528477395060631656
+      spriteID: 4c9fbf44bfe239d90800000000000000
+      internalID: -7092273331449366076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_29
+      name: Bowman_A_Sprites_158x173_29
       rect:
         serializedVersion: 2
         x: 790
@@ -900,14 +1038,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14a066dc380287d80800000000000000
-      internalID: -8252810566697612735
+      spriteID: 342fae229cd6eb5e0800000000000000
+      internalID: -1891954082807352765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_30
+      name: Bowman_A_Sprites_158x173_30
       rect:
         serializedVersion: 2
         x: 948
@@ -921,14 +1059,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb7709d65a6591b90800000000000000
-      internalID: -7270684854905178181
+      spriteID: 5352ddddf575b2040800000000000000
+      internalID: 4623885511681713461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_31
+      name: Bowman_A_Sprites_158x173_31
       rect:
         serializedVersion: 2
         x: 1106
@@ -942,14 +1080,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ab2b46109c628f80800000000000000
-      internalID: -8105797013208355928
+      spriteID: aead07772c25bb7f0800000000000000
+      internalID: -595791530515440918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_32
+      name: Bowman_A_Sprites_158x173_32
       rect:
         serializedVersion: 2
         x: 0
@@ -963,14 +1101,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9b4ff8b533ceef30800000000000000
-      internalID: 4606834104351017886
+      spriteID: e49baf9f50d65a5a0800000000000000
+      internalID: -6510677813857961650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_33
+      name: Bowman_A_Sprites_158x173_33
       rect:
         serializedVersion: 2
         x: 158
@@ -984,14 +1122,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d267d8eff89217830800000000000000
-      internalID: 4067077636920014381
+      spriteID: 98e3cf16662c73350800000000000000
+      internalID: 5996475173853478537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_34
+      name: Bowman_A_Sprites_158x173_34
       rect:
         serializedVersion: 2
         x: 316
@@ -1005,14 +1143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44d27df280b296b90800000000000000
-      internalID: -7248214811113738940
+      spriteID: 53a664a558b74b200800000000000000
+      internalID: 194916496559204917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_35
+      name: Bowman_A_Sprites_158x173_35
       rect:
         serializedVersion: 2
         x: 474
@@ -1026,14 +1164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ae8fd454b16d6e90800000000000000
-      internalID: -7030856016109531482
+      spriteID: fc9bf4b29b58eb3b0800000000000000
+      internalID: -5494807465003337265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_36
+      name: Bowman_A_Sprites_158x173_36
       rect:
         serializedVersion: 2
         x: 632
@@ -1047,14 +1185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60dc51d4536e11100800000000000000
-      internalID: 77095785242938630
+      spriteID: 359cd0caeb1650e00800000000000000
+      internalID: 1010321162972809555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_37
+      name: Bowman_A_Sprites_158x173_37
       rect:
         serializedVersion: 2
         x: 790
@@ -1068,14 +1206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53f6e4a9d1c165140800000000000000
-      internalID: 4707981373930893109
+      spriteID: 10eb86f08c23887b0800000000000000
+      internalID: -5221867933102719487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_38
+      name: Bowman_A_Sprites_158x173_38
       rect:
         serializedVersion: 2
         x: 948
@@ -1089,14 +1227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6903e19c60c1a110800000000000000
-      internalID: 1270508142431766890
+      spriteID: c9bea0bbbae3251b0800000000000000
+      internalID: -5669400073607648356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_39
+      name: Bowman_A_Sprites_158x173_39
       rect:
         serializedVersion: 2
         x: 1106
@@ -1110,14 +1248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac1a3bf92763fb120800000000000000
-      internalID: 2431722189736878538
+      spriteID: a946eb972b0b35c00800000000000000
+      internalID: 888247832115307674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_40
+      name: Bowman_A_Sprites_158x173_40
       rect:
         serializedVersion: 2
         x: 0
@@ -1131,14 +1269,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f920f950e770754c0800000000000000
-      internalID: -4298959081460268385
+      spriteID: 18d9ab1b2b5085160800000000000000
+      internalID: 7014362684673662337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_41
+      name: Bowman_A_Sprites_158x173_41
       rect:
         serializedVersion: 2
         x: 158
@@ -1152,14 +1290,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdfa99c3832659270800000000000000
-      internalID: 8256613485528068060
+      spriteID: 6fa1d956cb4260bb0800000000000000
+      internalID: -4970244747179517194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_42
+      name: Bowman_A_Sprites_158x173_42
       rect:
         serializedVersion: 2
         x: 316
@@ -1173,14 +1311,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4d125fec6710c000800000000000000
-      internalID: 54068952167488845
+      spriteID: ec393f1322b8c71d0800000000000000
+      internalID: -3351651043687296050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_43
+      name: Bowman_A_Sprites_158x173_43
       rect:
         serializedVersion: 2
         x: 474
@@ -1194,14 +1332,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45ddaf17351a099c0800000000000000
-      internalID: -3922457895673078444
+      spriteID: 70a4e7d854be8e2b0800000000000000
+      internalID: -5554931456402372089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_44
+      name: Bowman_A_Sprites_158x173_44
       rect:
         serializedVersion: 2
         x: 632
@@ -1215,14 +1353,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe379eee6ca9a0120800000000000000
-      internalID: 2380885532221207535
+      spriteID: f56fb2680fa8176b0800000000000000
+      internalID: -5300302520790550945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-158x173_45
+      name: Bowman_A_Sprites_158x173_45
       rect:
         serializedVersion: 2
         x: 790
@@ -1236,8 +1374,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de6f340f4c10b09b0800000000000000
-      internalID: -5112991006592862483
+      spriteID: 5cf76704c49616460800000000000000
+      internalID: 7233178252753665989
       vertices: []
       indices: 
       edges: []

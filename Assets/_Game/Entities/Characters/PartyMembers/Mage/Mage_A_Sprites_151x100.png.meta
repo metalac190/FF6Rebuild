@@ -50,6 +50,54 @@ TextureImporter:
   - first:
       213: 6281984774095893433
     second: sprite-sheet-151x100_15
+  - first:
+      213: -1328046320827901995
+    second: Mage_A_Sprites_151x100_0
+  - first:
+      213: -192546952352423084
+    second: Mage_A_Sprites_151x100_1
+  - first:
+      213: 5270290705356587842
+    second: Mage_A_Sprites_151x100_2
+  - first:
+      213: -7507893371412346495
+    second: Mage_A_Sprites_151x100_3
+  - first:
+      213: 5010217507516130637
+    second: Mage_A_Sprites_151x100_4
+  - first:
+      213: 7053016847208216984
+    second: Mage_A_Sprites_151x100_5
+  - first:
+      213: -1745125571835298216
+    second: Mage_A_Sprites_151x100_6
+  - first:
+      213: -8606892065475584795
+    second: Mage_A_Sprites_151x100_7
+  - first:
+      213: -3144971189539633902
+    second: Mage_A_Sprites_151x100_8
+  - first:
+      213: -9126843794602741996
+    second: Mage_A_Sprites_151x100_9
+  - first:
+      213: 4793159995717465590
+    second: Mage_A_Sprites_151x100_10
+  - first:
+      213: -3758060775316375688
+    second: Mage_A_Sprites_151x100_11
+  - first:
+      213: 4641045567846109217
+    second: Mage_A_Sprites_151x100_12
+  - first:
+      213: -5173007416863161861
+    second: Mage_A_Sprites_151x100_13
+  - first:
+      213: -2143341534548105437
+    second: Mage_A_Sprites_151x100_14
+  - first:
+      213: 2386437610166666806
+    second: Mage_A_Sprites_151x100_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -187,7 +235,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite-sheet-151x100_0
+      name: Mage_A_Sprites_151x100_0
       rect:
         serializedVersion: 2
         x: 0
@@ -201,14 +249,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98de98ba457b4e5f0800000000000000
-      internalID: -728255665444098679
+      spriteID: 5d7d9c158e4d19de0800000000000000
+      internalID: -1328046320827901995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-151x100_1
+      name: Mage_A_Sprites_151x100_1
       rect:
         serializedVersion: 2
         x: 151
@@ -222,14 +270,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8101edee97d7e1c30800000000000000
-      internalID: 4332037854229041176
+      spriteID: 4532376219fe35df0800000000000000
+      internalID: -192546952352423084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-151x100_2
+      name: Mage_A_Sprites_151x100_2
       rect:
         serializedVersion: 2
         x: 302
@@ -243,14 +291,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bfdee3bccc5d25d0800000000000000
-      internalID: -3085708135417061453
+      spriteID: 24382db2975d32940800000000000000
+      internalID: 5270290705356587842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-151x100_3
+      name: Mage_A_Sprites_151x100_3
       rect:
         serializedVersion: 2
         x: 453
@@ -264,14 +312,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc05fd909d7858e00800000000000000
-      internalID: 1046391854676791499
+      spriteID: 1890579d1ca9ec790800000000000000
+      internalID: -7507893371412346495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-151x100_4
+      name: Mage_A_Sprites_151x100_4
       rect:
         serializedVersion: 2
         x: 604
@@ -285,14 +333,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8f78bf2290548420800000000000000
-      internalID: 2631316671087280011
+      spriteID: d4521fe174ed78540800000000000000
+      internalID: 5010217507516130637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-151x100_5
+      name: Mage_A_Sprites_151x100_5
       rect:
         serializedVersion: 2
         x: 0
@@ -306,14 +354,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8776e9ff0377e5ef0800000000000000
-      internalID: -117525487934347400
+      spriteID: 899f0bc347951e160800000000000000
+      internalID: 7053016847208216984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-151x100_6
+      name: Mage_A_Sprites_151x100_6
       rect:
         serializedVersion: 2
         x: 151
@@ -327,14 +375,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 312f7306b15740ec0800000000000000
-      internalID: -3601625041550708205
+      spriteID: 85e7e4ad98118c7e0800000000000000
+      internalID: -1745125571835298216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-151x100_7
+      name: Mage_A_Sprites_151x100_7
       rect:
         serializedVersion: 2
         x: 302
@@ -348,14 +396,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e10b72d98f9df060800000000000000
-      internalID: 6988917611039490532
+      spriteID: 5ec1339844d2e8880800000000000000
+      internalID: -8606892065475584795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-151x100_8
+      name: Mage_A_Sprites_151x100_8
       rect:
         serializedVersion: 2
         x: 453
@@ -369,14 +417,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d140a86a146784420800000000000000
-      internalID: 2614469608027587613
+      spriteID: 21507aaad51da54d0800000000000000
+      internalID: -3144971189539633902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-151x100_9
+      name: Mage_A_Sprites_151x100_9
       rect:
         serializedVersion: 2
         x: 604
@@ -390,14 +438,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b3a59fb314c38210800000000000000
-      internalID: 1334125503729476528
+      spriteID: 41fa936ccefe65180800000000000000
+      internalID: -9126843794602741996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-151x100_10
+      name: Mage_A_Sprites_151x100_10
       rect:
         serializedVersion: 2
         x: 0
@@ -411,14 +459,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e526b5aa10113f50800000000000000
-      internalID: 6859281414097348066
+      spriteID: 6f53a50fe99b48240800000000000000
+      internalID: 4793159995717465590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-151x100_11
+      name: Mage_A_Sprites_151x100_11
       rect:
         serializedVersion: 2
         x: 151
@@ -432,14 +480,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3376fa8b4fdc479f0800000000000000
-      internalID: -471525610012842189
+      spriteID: 87730fac2afa8dbc0800000000000000
+      internalID: -3758060775316375688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-151x100_12
+      name: Mage_A_Sprites_151x100_12
       rect:
         serializedVersion: 2
         x: 302
@@ -453,14 +501,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93a17ec0bac2f3a50800000000000000
-      internalID: 6502965500113787449
+      spriteID: 1205ed9ca5e486040800000000000000
+      internalID: 4641045567846109217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-151x100_13
+      name: Mage_A_Sprites_151x100_13
       rect:
         serializedVersion: 2
         x: 453
@@ -474,14 +522,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 128e59b06bf2ff3f0800000000000000
-      internalID: -864920144506918879
+      spriteID: bf109618929c538b0800000000000000
+      internalID: -5173007416863161861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-151x100_14
+      name: Mage_A_Sprites_151x100_14
       rect:
         serializedVersion: 2
         x: 604
@@ -495,14 +543,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 470146e7278d13870800000000000000
-      internalID: 8660941544668532852
+      spriteID: 3276be0fa325142e0800000000000000
+      internalID: -2143341534548105437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-sheet-151x100_15
+      name: Mage_A_Sprites_151x100_15
       rect:
         serializedVersion: 2
         x: 0
@@ -516,8 +564,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b3f5606ed71e2750800000000000000
-      internalID: 6281984774095893433
+      spriteID: 636cd90dc545e1120800000000000000
+      internalID: 2386437610166666806
       vertices: []
       indices: 
       edges: []

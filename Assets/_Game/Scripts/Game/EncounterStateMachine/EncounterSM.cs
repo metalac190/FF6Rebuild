@@ -5,9 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(EncounterController))]
 public class EncounterSM : StateMachineMB
 {
-    [SerializeField] InputController _input = null;
-
-    EncounterController _levelController = null;
+    EncounterController _encounterController = null;
 
     // states
     public EncounterIntroState IntroState { get; private set; }
@@ -22,13 +20,13 @@ public class EncounterSM : StateMachineMB
     private void Awake()
     {
         // get references
-        _levelController = GetComponent<EncounterController>();
+        _encounterController = GetComponent<EncounterController>();
         // initialize states
-        IntroState = new EncounterIntroState(this);
-        ActiveState = new EncounterActiveState(this, _input);
+        IntroState = new EncounterIntroState(this, _encounterController.PartySpawner, _encounterController.PartyDataToLoad);
+        ActiveState = new EncounterActiveState(this, _encounterController.Input);
         WinState = new EncounterWinState(this);
         LoseState = new EncounterLoseState(this);
-        PauseState = new EncounterPauseState(this, _input);
+        PauseState = new EncounterPauseState(this, _encounterController.Input);
         StoryState = new EncounterStoryState(this);
         FleeState = new EncounterFleeState(this);
         ExitState = new EncounterExitState(this);
@@ -36,6 +34,7 @@ public class EncounterSM : StateMachineMB
 
     private void Start()
     {
+        Debug.Log("SM Start");
         Initialize(IntroState);
     }
 }

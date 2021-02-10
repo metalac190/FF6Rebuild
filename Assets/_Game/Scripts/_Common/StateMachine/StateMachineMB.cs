@@ -21,8 +21,9 @@ public abstract class StateMachineMB : MonoBehaviour
 
     public void Initialize(IState startingState)
     {
-        CurrentState = startingState;
-        _previousState = startingState;
+        ChangeState(startingState);
+        //CurrentState = startingState;
+        //_previousState = startingState;
     }
 
 	public void ChangeState(IState newState)

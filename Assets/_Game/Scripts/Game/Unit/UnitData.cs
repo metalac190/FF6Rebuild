@@ -6,6 +6,9 @@ using UnityEngine;
 public class UnitData : ScriptableObject
 {
     [Header("Base Data")]
+    [SerializeField] string _name = "...";
+    public string Name => _name;
+
     [SerializeField] int _maxHP = 1;
     public int MaxHP => _maxHP;
 
@@ -18,8 +21,8 @@ public class UnitData : ScriptableObject
     [SerializeField] int _startingMP = 1;
     public int StartingMP => _maxMP;
 
-    [SerializeField] int _currentAT = 20;
-    public int CurrentAT => _currentAT;
+    [SerializeField] int _ct = 20;
+    public int StartingCT => _ct;
 
     [SerializeField] int _level = 1;
     public int Level => _level;
