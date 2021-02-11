@@ -9,7 +9,6 @@ public class AreaEncounterData : ScriptableObject
     [SerializeField] AudioClip _music;
     [SerializeField] Sprite _background;
 
-    [Header("Enemy Groups")]
     [SerializeField] List<EncounterGroup> _encounterGroups = new List<EncounterGroup>();
     public List<EncounterGroup> EncounterGroups => _encounterGroups;
 }

@@ -25,5 +25,3 @@ MonoBehaviour:
     - _data: {fileID: 11400000, guid: 4efe0388f013cd2488930465020d3f0a, type: 2}
       _xPos: 0
       _yPos: 0
-  - _enemies: []
-  - _enemies: []

@@ -6,6 +6,7 @@ using UnityEngine;
 public struct EncounterGroup
 {
     [SerializeField] List<EncounterEnemy> _enemies;
+    public List<EncounterEnemy> Enemies => _enemies;
 
     public EncounterGroup(List<EncounterEnemy> enemies)
     {

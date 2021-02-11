@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310d52c9632c8074bb2138585fcbee56, type: 3}
   m_Name: EnemyData_BlueMushroom
   m_EditorClassIdentifier: 
+  _name: Blue Mushroom
   _maxHP: 1
-  _currentHP: 1
+  _startingHP: 1
   _maxMP: 1
-  _currentMP: 1
-  _currentAT: 20
+  _startingMP: 1
+  _ct: 20
   _level: 1
   _graphic: {fileID: 4048958864468088247, guid: bcd3fb9a6fef9f94bb93ad2b2eb0204d, type: 3}
   _invertFaceDirection: 0

@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(EncounterController))]
+[RequireComponent(typeof(EncounterManager))]
 public class EncounterSM : StateMachineMB
 {
-    EncounterController _encounterController = null;
+    EncounterManager _encounterController = null;
 
     // states
     public EncounterIntroState IntroState { get; private set; }
@@ -20,9 +20,10 @@ public class EncounterSM : StateMachineMB
     private void Awake()
     {
         // get references
-        _encounterController = GetComponent<EncounterController>();
+        _encounterController = GetComponent<EncounterManager>();
         // initialize states
-        IntroState = new EncounterIntroState(this, _encounterController.PartySpawner, _encounterController.PartyDataToLoad);
+        IntroState = new EncounterIntroState(this, _encounterController.PartySpawner, 
+            _encounterController.EnemySpawner, _encounterController.EncounterLoader);
         ActiveState = new EncounterActiveState(this, _encounterController.Input);
         WinState = new EncounterWinState(this);
         LoseState = new EncounterLoseState(this);

@@ -6,20 +6,27 @@ public class EncounterIntroState : IState
 {
     EncounterSM _stateMachine = null;
     PartySpawner _partySpawner = null;
-    List<PartyMemberData> _partyData = null;
+    EnemySpawner _enemySpawner = null;
+    EncounterLoader _encounterLoader = null;
 
-    public EncounterIntroState(EncounterSM stateMachine, PartySpawner partySpawner, List<PartyMemberData> partyData)
+    public EncounterIntroState(EncounterSM stateMachine, PartySpawner partySpawner, 
+        EnemySpawner enemySpawner, EncounterLoader encounterLoader)
     {
         _stateMachine = stateMachine;
         _partySpawner = partySpawner;
-        _partyData = partyData;
+        _enemySpawner = enemySpawner;
+        _encounterLoader = encounterLoader;
     }
 
     public void Enter()
     {
         Debug.Log("STATE: Encounter Intro");
-        _partySpawner.SpawnParty(_partyData);
-        Debug.Log("Setup Encounter Units");
+        // configure encounter data
+        EncounterGroup newEncounterGroup = _encounterLoader.LoadEnemyEncounter();
+        _enemySpawner.SpawnNewEnemies(newEncounterGroup.Enemies);
+
+        _partySpawner.SpawnNewParty(_encounterLoader.PartyDataToLoad);
+
         Debug.Log("Play intro animations");
     }
 

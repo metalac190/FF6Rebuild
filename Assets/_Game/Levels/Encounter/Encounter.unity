@@ -1235,7 +1235,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &444889684
 Transform:
   m_ObjectHideFlags: 0
@@ -1720,6 +1720,7 @@ GameObject:
   - component: {fileID: 638928853}
   - component: {fileID: 638928855}
   - component: {fileID: 638928854}
+  - component: {fileID: 638928856}
   m_Layer: 0
   m_Name: EncounterController
   m_TagString: Untagged
@@ -1767,6 +1768,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _input: {fileID: 316478206}
   _partySpawner: {fileID: 2004011234}
+  _enemySpawner: {fileID: 1372876099}
+  _encounterLoader: {fileID: 638928856}
+--- !u!114 &638928856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638928852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b365493557994eb4c87a3673966f9a2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _encounterData: {fileID: 11400000, guid: 91554392e8d01fe4bac6fab81871c584, type: 2}
   _partyMembersToLoad:
   - {fileID: 11400000, guid: afe5a3423316e6b4a9d41fec2751b516, type: 2}
@@ -2137,7 +2152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &711041009
 Transform:
   m_ObjectHideFlags: 0
@@ -2381,7 +2396,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &846443977
 Transform:
   m_ObjectHideFlags: 0
@@ -3690,8 +3705,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1372876098}
+  - component: {fileID: 1372876099}
   m_Layer: 0
-  m_Name: Enemies
+  m_Name: EnemySpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3714,6 +3730,20 @@ Transform:
   m_Father: {fileID: 2027258739}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1372876099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372876097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d2525de323844409f6bb3997d958f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyPrefab: {fileID: -4066451029282098180, guid: 24afdf3af4b379f4b81b957cc21f9ad8, type: 3}
+  _parentGameObject: {fileID: 1372876098}
 --- !u!1 &1383414318
 GameObject:
   m_ObjectHideFlags: 3
@@ -5693,7 +5723,7 @@ GameObject:
   - component: {fileID: 2004011233}
   - component: {fileID: 2004011234}
   m_Layer: 0
-  m_Name: PartyMembers
+  m_Name: PartySpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5727,6 +5757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _partyMemberPrefab: {fileID: 5928769725887808560, guid: ecd9bcdf65353f0448264db6fb3a1e1a, type: 3}
+  _parentGameObject: {fileID: 2004011233}
   _spawnLocations:
   - {fileID: 943716520}
   - {fileID: 2104433189}

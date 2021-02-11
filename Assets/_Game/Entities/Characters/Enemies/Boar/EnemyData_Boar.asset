@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310d52c9632c8074bb2138585fcbee56, type: 3}
   m_Name: EnemyData_Boar
   m_EditorClassIdentifier: 
-  _maxHP: 1
-  _currentHP: 1
+  _name: Boar
+  _maxHP: 1000
+  _startingHP: 1000
   _maxMP: 1
-  _currentMP: 1
-  _currentAT: 20
-  _level: 1
+  _startingMP: 1
+  _ct: 20
+  _level: 10
   _graphic: {fileID: -2823480831135095000, guid: 2db987c561b4cf042a688b5be69ec3f7, type: 3}
   _invertFaceDirection: 0
