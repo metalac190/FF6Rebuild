@@ -5,17 +5,18 @@ using UnityEngine;
 public class EncounterIntroState : IState
 {
     EncounterSM _stateMachine = null;
+
     PartySpawner _partySpawner = null;
     EnemySpawner _enemySpawner = null;
     EncounterLoader _encounterLoader = null;
 
-    public EncounterIntroState(EncounterSM stateMachine, PartySpawner partySpawner, 
-        EnemySpawner enemySpawner, EncounterLoader encounterLoader)
+    public EncounterIntroState(EncounterSM stateMachine, EncounterController controller)
     {
         _stateMachine = stateMachine;
-        _partySpawner = partySpawner;
-        _enemySpawner = enemySpawner;
-        _encounterLoader = encounterLoader;
+        // dependencies
+        _partySpawner = controller.PartySpawner;
+        _enemySpawner = controller.EnemySpawner;
+        _encounterLoader = controller.EncounterLoader;
     }
 
     public void Enter()
@@ -35,12 +36,12 @@ public class EncounterIntroState : IState
         
     }
 
-    public void FixedTick()
+    public void FixedUpdate()
     {
         
     }
 
-    public void Tick()
+    public void Update()
     {
         SetupComplete();    // currently no setup, transition immediately
     }

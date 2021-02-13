@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(EncounterManager))]
+[RequireComponent(typeof(EncounterController))]
 public class EncounterSM : StateMachineMB
 {
-    EncounterManager _encounterController = null;
-
+    EncounterController _controller;
     // states
     public EncounterIntroState IntroState { get; private set; }
     public EncounterActiveState ActiveState { get; private set; }
@@ -19,15 +18,13 @@ public class EncounterSM : StateMachineMB
 
     private void Awake()
     {
-        // get references
-        _encounterController = GetComponent<EncounterManager>();
+        _controller = GetComponent<EncounterController>();
         // initialize states
-        IntroState = new EncounterIntroState(this, _encounterController.PartySpawner, 
-            _encounterController.EnemySpawner, _encounterController.EncounterLoader);
-        ActiveState = new EncounterActiveState(this, _encounterController.Input);
+        IntroState = new EncounterIntroState(this, _controller);
+        ActiveState = new EncounterActiveState(this, _controller);
         WinState = new EncounterWinState(this);
         LoseState = new EncounterLoseState(this);
-        PauseState = new EncounterPauseState(this, _encounterController.Input);
+        PauseState = new EncounterPauseState(this, _controller);
         StoryState = new EncounterStoryState(this);
         FleeState = new EncounterFleeState(this);
         ExitState = new EncounterExitState(this);
@@ -35,7 +32,6 @@ public class EncounterSM : StateMachineMB
 
     private void Start()
     {
-        Debug.Log("SM Start");
-        Initialize(IntroState);
+        ChangeState(IntroState);
     }
 }

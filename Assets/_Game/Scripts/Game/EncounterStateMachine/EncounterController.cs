@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EncounterManager : MonoBehaviour
+public class EncounterController : MonoBehaviour
 {
     [Header("Dependences")]
     [SerializeField] InputController _input = null;

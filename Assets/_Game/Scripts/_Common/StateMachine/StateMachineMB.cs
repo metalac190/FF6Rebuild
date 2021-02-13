@@ -22,8 +22,6 @@ public abstract class StateMachineMB : MonoBehaviour
     public void Initialize(IState startingState)
     {
         ChangeState(startingState);
-        //CurrentState = startingState;
-        //_previousState = startingState;
     }
 
 	public void ChangeState(IState newState)
@@ -50,7 +48,7 @@ public abstract class StateMachineMB : MonoBehaviour
         if (CurrentState != null)
             CurrentState.Exit();
         // save our current state, in case we want to return to it
-        SaveToPreviousState(newState);
+        StoreStateAsPrevious(newState);
 
         CurrentState = newState;
 
@@ -61,7 +59,7 @@ public abstract class StateMachineMB : MonoBehaviour
         _inTransition = false;
     }
 
-    private void SaveToPreviousState(IState newState)
+    private void StoreStateAsPrevious(IState newState)
     {
         if (_previousState == null)
         {
@@ -78,13 +76,13 @@ public abstract class StateMachineMB : MonoBehaviour
 	{
 		// simulate update ticks in states
 		if (CurrentState != null && !_inTransition)
-			CurrentState.Tick();
+			CurrentState.Update();
 	}
 
     public void FixedUpdate()
     {
 		// simulate update ticks in states
 		if (CurrentState != null && !_inTransition)
-			CurrentState.FixedTick();
+			CurrentState.FixedUpdate();
 	}
 }

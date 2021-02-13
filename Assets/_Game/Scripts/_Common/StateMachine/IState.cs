@@ -6,9 +6,9 @@ public interface IState
     // automatically gets called in the State machine. Allows you to delay flow if desired
     void Enter();
     // allows simulation of Update() method without a MonoBehaviour attached
-    void Tick();
+    void Update();
     // simulation of FixedUpdate() method
-    void FixedTick();
+    void FixedUpdate();
     // automatically gets called in the State machine. Allows you to delay flow if desired
     void Exit();
 }

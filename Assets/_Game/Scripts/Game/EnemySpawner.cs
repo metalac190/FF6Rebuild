@@ -6,6 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] Enemy _enemyPrefab;
     [SerializeField] Transform _parentGameObject;
+    [SerializeField] Collider _spawnPlane;
 
     public List<Enemy> Enemies { get; private set; } = new List<Enemy>();
 
@@ -39,4 +40,11 @@ public class EnemySpawner : MonoBehaviour
 
         Enemies.Add(newEnemy);
     }
+
+    /*
+    public Vector3 DetermineWorldPosition(EncounterEnemy enemy)
+    {
+
+    }
+    */
 }

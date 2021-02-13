@@ -6,12 +6,14 @@ using UnityEngine.InputSystem;
 public class EncounterPauseState : IState
 {
     EncounterSM _stateMachine = null;
+
     InputController _input = null;
 
-    public EncounterPauseState(EncounterSM stateMachine, InputController input)
+    public EncounterPauseState(EncounterSM stateMachine, EncounterController controller)
     {
         _stateMachine = stateMachine;
-        _input = input;
+        // dependencies
+        _input = controller.Input;
     }
 
     public void Enter()
@@ -25,12 +27,12 @@ public class EncounterPauseState : IState
         _input.Controls.Encounter.Pause.performed -= OnPauseInput;
     }
 
-    public void FixedTick()
+    public void FixedUpdate()
     {
         
     }
 
-    public void Tick()
+    public void Update()
     {
         
     }

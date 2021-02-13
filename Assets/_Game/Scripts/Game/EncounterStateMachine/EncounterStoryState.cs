@@ -21,12 +21,12 @@ public class EncounterStoryState : IState
         
     }
 
-    public void FixedTick()
+    public void FixedUpdate()
     {
         
     }
 
-    public void Tick()
+    public void Update()
     {
         
     }

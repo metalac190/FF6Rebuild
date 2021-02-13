@@ -21,12 +21,12 @@ public class EncounterFleeState : IState
         
     }
 
-    public void FixedTick()
+    public void FixedUpdate()
     {
         
     }
 
-    public void Tick()
+    public void Update()
     {
         
     }

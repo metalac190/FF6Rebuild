@@ -6,12 +6,14 @@ using UnityEngine.InputSystem;
 public class EncounterActiveState : IState
 {
     EncounterSM _stateMachine = null;
+
     InputController _input = null;
 
-    public EncounterActiveState(EncounterSM stateMachine, InputController input)
+    public EncounterActiveState(EncounterSM stateMachine, EncounterController controller)
     {
         _stateMachine = stateMachine;
-        _input = input;
+
+        _input = controller.Input;
     }
 
     public void Enter()
@@ -51,12 +53,12 @@ public class EncounterActiveState : IState
         _input.Controls.Encounter.Pause.performed -= OnPauseInput;
     }
 
-    public void FixedTick()
+    public void FixedUpdate()
     {
         
     }
 
-    public void Tick()
+    public void Update()
     {
         // check if win condition is met
     }
