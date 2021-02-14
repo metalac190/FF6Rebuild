@@ -15,7 +15,7 @@ public struct EncounterEnemy
 
     public EnemyData Data => _data;
     // convert position to 3D Space
-    public Vector3 SpawnPosition => new Vector3(_xPos, 0, _yPos);
+    public Vector3 NormalizedPosition => new Vector3(_xPos, 0, _yPos);
 
     public EncounterEnemy(EnemyData data, float xPos, float yPos)
     {

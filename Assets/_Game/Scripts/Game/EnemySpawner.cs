@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] Enemy _enemyPrefab;
     [SerializeField] Transform _parentGameObject;
-    [SerializeField] Collider _spawnPlane;
+    [SerializeField] SpawnArea _spawnPlane;
 
     public List<Enemy> Enemies { get; private set; } = new List<Enemy>();
 
@@ -32,7 +32,10 @@ public class EnemySpawner : MonoBehaviour
     {
         Debug.Log("Spawn: " + enemySpawn.Data.Name);
         //TODO normalize spawn position
-        Enemy newEnemy = Instantiate(_enemyPrefab, enemySpawn.SpawnPosition, Quaternion.identity);
+        Vector3 newEnemyPosition = enemySpawn.NormalizedPosition;
+        newEnemyPosition = _spawnPlane.GetSpawnLocation(newEnemyPosition);
+
+        Enemy newEnemy = Instantiate(_enemyPrefab, newEnemyPosition, Quaternion.identity);
         newEnemy.Initialize(enemySpawn.Data);
 
         newEnemy.gameObject.name = "Enemy_" + enemySpawn.Data.Name;
