@@ -20,6 +20,8 @@ public class PartyMember : UnitBase
     public Action<int> LevelChanged;
 
     public string Name { get; private set; }
+    public int MaxCT { get; private set; } = 100;
+    public int MaxLevel { get; private set; } = 99;
 
     int _maxHP;
     public int MaxHP
@@ -87,7 +89,7 @@ public class PartyMember : UnitBase
         get => _ct;
         private set
         {
-            value = Mathf.Clamp(value, 0, 100);
+            value = Mathf.Clamp(value, 0, MaxCT);
             if (value != _mp)
                 CTChanged?.Invoke(value);
             _ct = value;
@@ -100,7 +102,7 @@ public class PartyMember : UnitBase
         get => _level;
         private set
         {
-            value = Mathf.Clamp(value, 1, 99);
+            value = Mathf.Clamp(value, 1, MaxLevel);
             if (value != _level)
                 LevelChanged?.Invoke(value);
             _level = value;

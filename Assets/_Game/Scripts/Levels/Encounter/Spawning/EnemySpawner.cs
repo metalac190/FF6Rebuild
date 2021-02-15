@@ -17,20 +17,19 @@ public class EnemySpawner : MonoBehaviour
             _parentGameObject = gameObject.transform;
     }
 
-    public void SpawnNewEnemies(List<EncounterEnemy> enemySpawns)
+    public void SpawnNewEnemies(List<EnemySpawn> enemySpawns)
     {
         Enemies.Clear();
         // spawn each enemy in our received enemy data list
-        foreach(EncounterEnemy enemySpawn in enemySpawns)
+        foreach(EnemySpawn enemySpawn in enemySpawns)
         {
             SpawnEnemy(enemySpawn, _parentGameObject);
         }
     }
 
 
-    public void SpawnEnemy(EncounterEnemy enemySpawn, Transform parentGameObject)
+    public void SpawnEnemy(EnemySpawn enemySpawn, Transform parentGameObject)
     {
-        Debug.Log("Spawn: " + enemySpawn.Data.Name);
         //TODO normalize spawn position
         Vector3 newEnemyPosition = enemySpawn.NormalizedPosition;
         newEnemyPosition = _spawnPlane.GetSpawnLocation(newEnemyPosition);

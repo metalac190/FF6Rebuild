@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Data_Mage
   m_EditorClassIdentifier: 
   _name: Mage
-  _maxHP: 1
-  _startingHP: 1
+  _maxHP: 700
+  _startingHP: 410
   _maxMP: 1
   _startingMP: 1
   _ct: 20

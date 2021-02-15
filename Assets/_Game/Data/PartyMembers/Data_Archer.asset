@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Data_Archer
   m_EditorClassIdentifier: 
   _name: Archer
-  _maxHP: 1
-  _startingHP: 1
+  _maxHP: 1000
+  _startingHP: 550
   _maxMP: 1
   _startingMP: 1
-  _ct: 20
+  _ct: 35
   _level: 1
   _graphic: {fileID: 1328089099890217899, guid: 7f6a73726bed52b4aaa05d527450ec3d, type: 3}
   _invertFaceDirection: 0
