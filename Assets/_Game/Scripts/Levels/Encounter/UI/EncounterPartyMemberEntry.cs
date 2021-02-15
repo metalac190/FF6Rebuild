@@ -3,18 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class EncounterPartyMemberHUD : MonoBehaviour
+public class EncounterPartyMemberEntry : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI _nameView;
     [SerializeField] TextMeshProUGUI _hpView;
     [SerializeField] CTGauge _ctGauge;
 
-    PartyMember _partyMember;
-    
-    string _name = "...";
-    int _hp = 0;
+    PartyMember _partyMember;   // hold the reference for when data updates
 
-    public void Initialize(PartyMember partyMember)
+    public void Display(PartyMember partyMember)
     {
         _partyMember = partyMember;
 

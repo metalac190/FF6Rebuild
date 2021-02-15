@@ -11,6 +11,7 @@ public class EncounterIntroState : IState
     EnemySpawner _enemySpawner = null;
     EncounterLoader _encounterLoader = null;
     EncounterPartyHUD _partyHUD = null;
+    EncounterEnemyListHUD _enemyListHUD = null;
 
     public EncounterIntroState(EncounterSM stateMachine, EncounterController controller)
     {
@@ -21,6 +22,7 @@ public class EncounterIntroState : IState
         _enemySpawner = controller.EnemySpawner;
         _encounterLoader = controller.EncounterLoader;
         _partyHUD = controller.PartyHUD;
+        _enemyListHUD = controller.EnemyHUD;
     }
 
     public void Enter()
@@ -28,8 +30,26 @@ public class EncounterIntroState : IState
         Debug.Log("STATE: Encounter Intro");
         // configure encounter data
         SpawnUnits();
-        _partyHUD.CreatePartyHUD(_controller.PartyMembers);
+        SetupUI();
         Debug.Log("Play intro animations");
+    }
+
+    void SetupUI()
+    {
+        CreatePartyUI();
+        CreateEnemyUI();
+    }
+
+    private void CreateEnemyUI()
+    {
+        _enemyListHUD.CreateEnemyListHUD(_controller.Enemies);
+        _enemyListHUD.Show();
+    }
+
+    private void CreatePartyUI()
+    {
+        _partyHUD.CreatePartyHUD(_controller.PartyMembers);
+        _partyHUD.Show();
     }
 
     private void SpawnUnits()
