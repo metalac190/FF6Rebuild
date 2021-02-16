@@ -7,6 +7,7 @@ public class EncounterIntroState : IState
     EncounterSM _stateMachine = null;
     EncounterController _controller = null;
 
+    EnvironmentSpawner _environmentSpawner = null;
     PartySpawner _partySpawner = null;
     EnemySpawner _enemySpawner = null;
     EncounterLoader _encounterLoader = null;
@@ -18,6 +19,7 @@ public class EncounterIntroState : IState
         _stateMachine = stateMachine;
         _controller = controller;
         // dependencies
+        _environmentSpawner = controller.EnvironmentSpawner;
         _partySpawner = controller.PartySpawner;
         _enemySpawner = controller.EnemySpawner;
         _encounterLoader = controller.EncounterLoader;
@@ -28,16 +30,15 @@ public class EncounterIntroState : IState
     public void Enter()
     {
         Debug.Log("STATE: Encounter Intro");
-        // configure encounter data
-        SpawnUnits();
-        SetupUI();
-        Debug.Log("Play intro animations");
-    }
+        //TODO load encounter from file, instead of asset
 
-    void SetupUI()
-    {
+        SpawnEnvironment();
+        SpawnParty();
+        SpawnEnemies();
+
         CreatePartyUI();
         CreateEnemyUI();
+        Debug.Log("Play intro animations");
     }
 
     private void CreateEnemyUI()
@@ -52,12 +53,20 @@ public class EncounterIntroState : IState
         _partyHUD.Show();
     }
 
-    private void SpawnUnits()
+    void SpawnEnvironment()
     {
-        EncounterGroup newEncounterGroup = _encounterLoader.LoadEnemyEncounter();
-        _enemySpawner.SpawnNewEnemies(newEncounterGroup.Enemies);
+        _environmentSpawner.Spawn(_encounterLoader.EncounterData.Environment);
+    }
 
+    void SpawnParty()
+    {
         _partySpawner.SpawnNewParty(_encounterLoader.PartyDataToLoad);
+    }
+
+    private void SpawnEnemies()
+    {
+        EncounterGroup newEncounterGroup = _encounterLoader.GetEnemyEncounter();
+        _enemySpawner.SpawnNewEnemies(newEncounterGroup.Enemies);
     }
 
     public void Exit()
@@ -72,7 +81,7 @@ public class EncounterIntroState : IState
 
     public void Update()
     {
-        SetupComplete();    // currently no setup, transition immediately
+        SetupComplete();    // currently no setup, transition immediately after Enter finishes
     }
 
     void SetupComplete()

@@ -11,7 +11,7 @@ public class EncounterLoader : MonoBehaviour
     public AreaEncounterData EncounterData => _encounterData;
     public List<PartyMemberData> PartyDataToLoad => _partyMembersToLoad;
 
-    public EncounterGroup LoadEnemyEncounter()
+    public EncounterGroup GetEnemyEncounter()
     {
         //TODO load encoutner from data instead of scene reference
         int randomIndex = Random.Range(0, _encounterData.EncounterGroups.Count);

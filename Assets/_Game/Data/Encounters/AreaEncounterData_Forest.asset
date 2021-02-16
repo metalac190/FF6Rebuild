@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa37463d1112a0d49b195d7b99909a88, type: 3}
-  m_Name: AreaEncounterData_New
+  m_Name: AreaEncounterData_Forest
   m_EditorClassIdentifier: 
   _music: {fileID: 8300000, guid: 87f87b4912fe7a4489ed3f1be0f1c9e0, type: 3}
-  _background: {fileID: 21300000, guid: ee2b444946e4f114e9729c8c9f6a62a3, type: 3}
+  _encounterEnvironmentPrefab: {fileID: 4617036276885970141, guid: 4b670fbf56e0b5d40992e9b40207c171, type: 3}
   _encounterGroups:
   - _enemies:
     - _data: {fileID: 11400000, guid: 665f62d48cb756d408d6a6619f87a7c2, type: 2}

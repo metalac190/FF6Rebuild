@@ -7,7 +7,8 @@ public class AreaEncounterData : ScriptableObject
 {
     [Header("Area Settings")]
     [SerializeField] AudioClip _music;
-    [SerializeField] Sprite _background;
+    [SerializeField] GameObject _encounterEnvironmentPrefab;
+    public GameObject Environment => _encounterEnvironmentPrefab;
 
     [SerializeField] List<EncounterGroup> _encounterGroups = new List<EncounterGroup>();
     public List<EncounterGroup> EncounterGroups => _encounterGroups;
