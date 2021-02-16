@@ -7,6 +7,7 @@ public class EncounterController : MonoBehaviour
     [Header("General")]
     [SerializeField] InputController _input = null;
     [SerializeField] EncounterLoader _encounterLoader = null;
+    [SerializeField] MusicPlayer _musicPlayer = null;
 
     [Header("Spawning")]
     [SerializeField] EnvironmentSpawner _environmentSpawner = null;
@@ -20,6 +21,7 @@ public class EncounterController : MonoBehaviour
     // Systems
     public InputController Input => _input;
     public EncounterLoader EncounterLoader => _encounterLoader;
+    public MusicPlayer MusicPlayer => _musicPlayer;
     // Spawning
     public EnvironmentSpawner EnvironmentSpawner => _environmentSpawner;
     public PartySpawner PartySpawner => _partySpawner;

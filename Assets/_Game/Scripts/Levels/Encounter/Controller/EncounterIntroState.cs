@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This state sets up the primary game systems and does all the necessary loading of assets.
+/// If it's required Setup for the Encounter to run properly, it should probably go here.
+/// </summary>
+
 public class EncounterIntroState : IState
 {
     EncounterSM _stateMachine = null;
@@ -13,6 +18,7 @@ public class EncounterIntroState : IState
     EncounterLoader _encounterLoader = null;
     EncounterPartyHUD _partyHUD = null;
     EncounterEnemyListHUD _enemyListHUD = null;
+    MusicPlayer _musicPlayer = null;
 
     public EncounterIntroState(EncounterSM stateMachine, EncounterController controller)
     {
@@ -25,6 +31,7 @@ public class EncounterIntroState : IState
         _encounterLoader = controller.EncounterLoader;
         _partyHUD = controller.PartyHUD;
         _enemyListHUD = controller.EnemyHUD;
+        _musicPlayer = controller.MusicPlayer;
     }
 
     public void Enter()
@@ -38,7 +45,14 @@ public class EncounterIntroState : IState
 
         CreatePartyUI();
         CreateEnemyUI();
+
+        PlayMusic();
         Debug.Log("Play intro animations");
+    }
+
+    void PlayMusic()
+    {
+        _musicPlayer.Play(_encounterLoader.EncounterData.Music);
     }
 
     private void CreateEnemyUI()
