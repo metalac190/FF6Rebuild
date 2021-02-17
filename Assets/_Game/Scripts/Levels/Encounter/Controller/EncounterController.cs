@@ -17,6 +17,8 @@ public class EncounterController : MonoBehaviour
     [Header("UI")]
     [SerializeField] EncounterPartyHUD _partyHUD = null;
     [SerializeField] EncounterEnemyListHUD _enemyListHUD = null;
+    [SerializeField] EncounterTextDisplayHUD _textDisplayHUD = null;
+    [SerializeField] EncounterActionMenuHUD _actionMenuHUD = null;
 
     // Systems
     public InputController Input => _input;
@@ -28,8 +30,10 @@ public class EncounterController : MonoBehaviour
     public EnemySpawner EnemySpawner => _enemySpawner;
     // UI
     public EncounterPartyHUD PartyHUD => _partyHUD;
-    public EncounterEnemyListHUD EnemyHUD => _enemyListHUD;
+    public EncounterEnemyListHUD EnemyListHUD => _enemyListHUD;
+    public EncounterTextDisplayHUD TextDisplayHUD => _textDisplayHUD;
     // Spawned Units
     public List<PartyMember> PartyMembers => _partySpawner.Party;
     public List<Enemy> Enemies => _enemySpawner.Enemies;
+    public AreaEncounterData EncounterData => _encounterLoader.EncounterData;
 }

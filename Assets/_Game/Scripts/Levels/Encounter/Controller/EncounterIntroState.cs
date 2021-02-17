@@ -30,7 +30,7 @@ public class EncounterIntroState : IState
         _enemySpawner = controller.EnemySpawner;
         _encounterLoader = controller.EncounterLoader;
         _partyHUD = controller.PartyHUD;
-        _enemyListHUD = controller.EnemyHUD;
+        _enemyListHUD = controller.EnemyListHUD;
         _musicPlayer = controller.MusicPlayer;
     }
 
