@@ -2,24 +2,62 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MusicPlayer : MonoBehaviour
+public class MusicPlayer : Singleton<MusicPlayer>
 {
-    [SerializeField] AudioSource _musicSource;
+    [SerializeField] AudioSource _source;
 
-    private void Awake()
+    Coroutine _fadeRoutine = null;
+
+    public float Volume
     {
-        ConfigurePlayer();
+        get => _source.volume;
+        private set
+        {
+            value = Mathf.Clamp(value, 0, 1);
+            _source.volume = value;
+        }
     }
 
-    public void Play(AudioClip newSong)
+    public void PlaySong(AudioClip clip)
     {
-        _musicSource.clip = newSong;
-        _musicSource.Play();
+        _source.clip = clip;
+        _source.Play();
     }
 
-    private void ConfigurePlayer()
+    public void Continue()
     {
-        _musicSource.spatialBlend = 0;
-        _musicSource.loop = true;
+        _source.Play();
+    }
+
+    public void Pause()
+    {
+        _source.Pause();
+    }
+
+    public void Stop()
+    {
+        _source.Stop();
+    }
+
+    public void FadeVolume(float targetVolume, float fadeTime)
+    {
+        if (_fadeRoutine != null)
+            StopCoroutine(_fadeRoutine);
+        _fadeRoutine = StartCoroutine(FadeVolumeRoutine(targetVolume, fadeTime));
+    }
+
+    IEnumerator FadeVolumeRoutine(float targetVolume, float fadeTime)
+    {
+        float startingVolume = Volume;
+        // fade volume over time
+        for (float elapsedTime = 0; elapsedTime <= fadeTime; elapsedTime += Time.deltaTime)
+        {
+            float newVolume = Mathf.Lerp(startingVolume, targetVolume, elapsedTime / fadeTime);
+            _source.volume = newVolume;
+            // wait for next cycle
+            yield return null;
+        }
+        // ensure we hit the target
+        Volume = targetVolume;
     }
 }

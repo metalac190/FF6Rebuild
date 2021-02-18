@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3997ab5fef09e418dc0a2751413a16, type: 3}
+  m_Name: EncounterData_Audio
+  m_EditorClassIdentifier: 
+  _pauseSound: {fileID: 8300000, guid: 308e0790e1e706a4987a501f025c7854, type: 3}
+  _unPauseSound: {fileID: 8300000, guid: 796eb076026749c4d8ac30e104aed6ff, type: 3}
+  _unitActivatedSound: {fileID: 8300000, guid: 6f983d14d6548c2429c5909de7ba72a6, type: 3}
+  _moveCursorSound: {fileID: 8300000, guid: 493dbb9e8214662428d428fce6c9001a, type: 3}
+  _menuConfirmSound: {fileID: 8300000, guid: 6f983d14d6548c2429c5909de7ba72a6, type: 3}
+  _menuCancelSound: {fileID: 8300000, guid: b01b8d7adfd678b40bdaa54f1125afd3, type: 3}
+  _victoryMusic: {fileID: 8300000, guid: 40844fcf6749766498d6f6befca04302, type: 3}

@@ -18,7 +18,6 @@ public class EncounterIntroState : IState
     EncounterLoader _encounterLoader = null;
     EncounterPartyHUD _partyHUD = null;
     EncounterEnemyListHUD _enemyListHUD = null;
-    MusicPlayer _musicPlayer = null;
 
     public EncounterIntroState(EncounterSM stateMachine, EncounterController controller)
     {
@@ -31,7 +30,6 @@ public class EncounterIntroState : IState
         _encounterLoader = controller.EncounterLoader;
         _partyHUD = controller.PartyHUD;
         _enemyListHUD = controller.EnemyListHUD;
-        _musicPlayer = controller.MusicPlayer;
     }
 
     public void Enter()
@@ -52,7 +50,7 @@ public class EncounterIntroState : IState
 
     void PlayMusic()
     {
-        _musicPlayer.Play(_encounterLoader.EncounterData.Music);
+        MusicPlayer.Instance.PlaySong(_controller.EncounterData.Music);
     }
 
     private void CreateEnemyUI()
