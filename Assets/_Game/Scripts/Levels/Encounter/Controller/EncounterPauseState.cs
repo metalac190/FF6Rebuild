@@ -3,54 +3,52 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class EncounterPauseState : IState
+namespace RPG.Levels.Encounter
 {
-    EncounterSM _stateMachine = null;
-
-    InputController _input = null;
-    SoundPlayer _soundPlayer;
-    EncounterAudioData _audioData;
-
-    public EncounterPauseState(EncounterSM stateMachine, EncounterController controller)
+    public class EncounterPauseState : IState
     {
-        _stateMachine = stateMachine;
-        // dependencies
-        _input = controller.Input;
-        _soundPlayer = controller.SoundPlayer;
-        _audioData = controller.AudioData;
-    }
+        EncounterController _stateMachine = null;
 
-    public void Enter()
-    {
-        Debug.Log("STATE: Encounter Pause");
-        _input.Controls.Encounter.Pause.performed += OnPauseInput;
-        PlayAudio(_audioData.PauseSound);
-    }
+        InputController _input = null;
+        SoundPlayer _soundPlayer;
 
-    private void PlayAudio(AudioClip clip)
-    {
-        _soundPlayer.Play(clip);
-    }
+        public EncounterPauseState(EncounterController stateMachine, InputController input, SoundPlayer soundPlayer)
+        {
+            _stateMachine = stateMachine;
+            _input = input;
+            _soundPlayer = soundPlayer;
+        }
 
-    public void Exit()
-    {
-        _input.Controls.Encounter.Pause.performed -= OnPauseInput;
-        PlayAudio(_audioData.UnPauseSound);
-    }
+        public void Enter()
+        {
+            Debug.Log("STATE: Encounter Pause");
+            _input.Controls.Encounter.Pause.performed += OnPauseInput;
 
-    public void FixedUpdate()
-    {
-        
-    }
+            AudioClip pauseSound = _soundPlayer.Sounds.PauseSound;
+            _soundPlayer.Play(pauseSound);
+        }
 
-    public void Update()
-    {
-        
-    }
+        public void Exit()
+        {
+            _input.Controls.Encounter.Pause.performed -= OnPauseInput;
+            _soundPlayer.Play(_soundPlayer.Sounds.UnPauseSound);
+        }
 
-    void OnPauseInput(InputAction.CallbackContext context)
-    {
-        Debug.Log("Input: Pause");
-        _stateMachine.ChangeStateToPrevious();
+        public void FixedUpdate()
+        {
+
+        }
+
+        public void Update()
+        {
+
+        }
+
+        void OnPauseInput(InputAction.CallbackContext context)
+        {
+            Debug.Log("Input: Pause");
+            _stateMachine.ChangeStateToPrevious();
+        }
     }
 }
+

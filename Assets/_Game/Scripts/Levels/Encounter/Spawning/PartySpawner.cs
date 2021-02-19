@@ -2,45 +2,49 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PartySpawner : MonoBehaviour
+namespace RPG.Levels.Encounter
 {
-    [SerializeField] PartyMember _partyMemberPrefab;
-    [SerializeField] Transform _parentGameObject;
-    [SerializeField] List<Transform> _spawnLocations;
-
-    public List<PartyMember> Party { get; private set; } = new List<PartyMember>();
-
-    private void Awake()
+    public class PartySpawner : MonoBehaviour
     {
-        // validate
-        if (_parentGameObject == null)
-            _parentGameObject = gameObject.transform;
-    }
+        [SerializeField] PartyMember _partyMemberPrefab;
+        [SerializeField] Transform _parentGameObject;
+        [SerializeField] List<Transform> _spawnLocations;
 
-    public void SpawnNewParty(List<PartyMemberData> partyData)
-    {
-        Party.Clear();
-        // spawn each party member we have, as long as we're below max
-        for (int i = 0; i < partyData.Count && i < _spawnLocations.Count; i++)
+        public List<PartyMember> Party { get; private set; } = new List<PartyMember>();
+
+        private void Awake()
         {
-            if (partyData[i] != null && _spawnLocations[i] != null)
+            // validate
+            if (_parentGameObject == null)
+                _parentGameObject = gameObject.transform;
+        }
+
+        public void SpawnNewParty(List<PartyMemberData> partyData)
+        {
+            Party.Clear();
+            // spawn each party member we have, as long as we're below max
+            for (int i = 0; i < partyData.Count && i < _spawnLocations.Count; i++)
             {
-                PartyMember newMember = SpawnMember(i, partyData[i], _parentGameObject);
-                Party.Add(newMember);
+                if (partyData[i] != null && _spawnLocations[i] != null)
+                {
+                    PartyMember newMember = SpawnMember(i, partyData[i], _parentGameObject);
+                    Party.Add(newMember);
+                }
             }
         }
-    }
 
-    public PartyMember SpawnMember(int slotIndex, PartyMemberData data,  Transform parentGameObject)
-    {
-        PartyMember newPartyMember = Instantiate(_partyMemberPrefab, _spawnLocations[slotIndex].position, Quaternion.identity);
-        // load in party member data
-        newPartyMember.Initialize(data);
-        // organize it in hierarchy
-        newPartyMember.gameObject.name = "PartyMember_" + data.Name;
-        newPartyMember.transform.SetParent(parentGameObject.transform);
+        public PartyMember SpawnMember(int slotIndex, PartyMemberData data, Transform parentGameObject)
+        {
+            PartyMember newPartyMember = Instantiate(_partyMemberPrefab, _spawnLocations[slotIndex].position, Quaternion.identity);
+            // load in party member data
+            newPartyMember.Initialize(data);
+            // organize it in hierarchy
+            newPartyMember.gameObject.name = "PartyMember_" + data.Name;
+            newPartyMember.transform.SetParent(parentGameObject.transform);
 
-        return newPartyMember;
-        
+            return newPartyMember;
+
+        }
     }
 }
+

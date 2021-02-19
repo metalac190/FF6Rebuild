@@ -2,32 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EncounterStoryState : IState
+namespace RPG.Levels.Encounter
 {
-    EncounterSM _stateMachine = null;
-
-    public EncounterStoryState(EncounterSM stateMachine)
+    public class EncounterStoryState : IState
     {
-        _stateMachine = stateMachine;
-    }
+        EncounterController _stateMachine = null;
 
-    public void Enter()
-    {
-        Debug.Log("Encounter Story State");
-    }
+        public EncounterStoryState(EncounterController stateMachine)
+        {
+            _stateMachine = stateMachine;
+        }
 
-    public void Exit()
-    {
-        
-    }
+        public void Enter()
+        {
+            Debug.Log("Encounter Story State");
+        }
 
-    public void FixedUpdate()
-    {
-        
-    }
+        public void Exit()
+        {
 
-    public void Update()
-    {
-        
+        }
+
+        public void FixedUpdate()
+        {
+
+        }
+
+        public void Update()
+        {
+
+        }
     }
 }
+

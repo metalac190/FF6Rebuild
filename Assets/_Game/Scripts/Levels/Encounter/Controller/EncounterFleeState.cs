@@ -2,32 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EncounterFleeState : IState
+namespace RPG.Levels.Encounter
 {
-    EncounterSM _stateMachine = null;
-
-    public EncounterFleeState(EncounterSM stateMachine)
+    public class EncounterFleeState : IState
     {
-        _stateMachine = stateMachine;
-    }
+        EncounterController _stateMachine = null;
 
-    public void Enter()
-    {
-        Debug.Log("Encounter Flee State");
-    }
+        public EncounterFleeState(EncounterController stateMachine)
+        {
+            _stateMachine = stateMachine;
+        }
 
-    public void Exit()
-    {
-        
-    }
+        public void Enter()
+        {
+            Debug.Log("Encounter Flee State");
+        }
 
-    public void FixedUpdate()
-    {
-        
-    }
+        public void Exit()
+        {
 
-    public void Update()
-    {
-        
+        }
+
+        public void FixedUpdate()
+        {
+
+        }
+
+        public void Update()
+        {
+
+        }
     }
 }
+

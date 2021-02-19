@@ -3,100 +3,104 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class EncounterActiveState : IState
+namespace RPG.Levels.Encounter
 {
-    EncounterSM _stateMachine = null;
-
-    InputController _input = null;
-
-    public EncounterActiveState(EncounterSM stateMachine, EncounterController controller)
+    public class EncounterActiveState : IState
     {
-        _stateMachine = stateMachine;
+        EncounterController _stateMachine = null;
 
-        _input = controller.Input;
-    }
+        InputController _input = null;
 
-    public void Enter()
-    {
-        Debug.Log("STATE: Encounter Active");
-        SubscribeInput();
-    }
+        public EncounterActiveState(EncounterController stateMachine, InputController input)
+        {
+            _stateMachine = stateMachine;
 
-    public void Exit()
-    {
-        UnsubscribeInput();
-    }
+            _input = input;
+        }
 
-    private void SubscribeInput()
-    {
-        _input.Controls.Encounter.Up.performed += OnUpInput;
-        _input.Controls.Encounter.Down.performed += OnDownInput;
-        _input.Controls.Encounter.Left.performed += OnLeftInput;
-        _input.Controls.Encounter.Right.performed += OnRightInput;
+        public void Enter()
+        {
+            Debug.Log("STATE: Encounter Active");
+            SubscribeInput();
+        }
 
-        _input.Controls.Encounter.Confirm.performed += OnConfirmInput;
-        _input.Controls.Encounter.Cancel.performed += OnCancelInput;
+        public void Exit()
+        {
+            UnsubscribeInput();
+        }
 
-        _input.Controls.Encounter.Pause.performed += OnPauseInput;
-    }
+        private void SubscribeInput()
+        {
+            _input.Controls.Encounter.Up.performed += OnUpInput;
+            _input.Controls.Encounter.Down.performed += OnDownInput;
+            _input.Controls.Encounter.Left.performed += OnLeftInput;
+            _input.Controls.Encounter.Right.performed += OnRightInput;
 
-    private void UnsubscribeInput()
-    {
-        _input.Controls.Encounter.Up.performed -= OnUpInput;
-        _input.Controls.Encounter.Down.performed -= OnDownInput;
-        _input.Controls.Encounter.Left.performed -= OnLeftInput;
-        _input.Controls.Encounter.Right.performed -= OnRightInput;
+            _input.Controls.Encounter.Confirm.performed += OnConfirmInput;
+            _input.Controls.Encounter.Cancel.performed += OnCancelInput;
 
-        _input.Controls.Encounter.Confirm.performed -= OnConfirmInput;
-        _input.Controls.Encounter.Cancel.performed -= OnCancelInput;
+            _input.Controls.Encounter.Pause.performed += OnPauseInput;
+        }
 
-        _input.Controls.Encounter.Pause.performed -= OnPauseInput;
-    }
+        private void UnsubscribeInput()
+        {
+            _input.Controls.Encounter.Up.performed -= OnUpInput;
+            _input.Controls.Encounter.Down.performed -= OnDownInput;
+            _input.Controls.Encounter.Left.performed -= OnLeftInput;
+            _input.Controls.Encounter.Right.performed -= OnRightInput;
 
-    public void FixedUpdate()
-    {
-        
-    }
+            _input.Controls.Encounter.Confirm.performed -= OnConfirmInput;
+            _input.Controls.Encounter.Cancel.performed -= OnCancelInput;
 
-    public void Update()
-    {
-        // check if win condition is met
-    }
+            _input.Controls.Encounter.Pause.performed -= OnPauseInput;
+        }
 
-    void OnUpInput(InputAction.CallbackContext context)
-    {
-        Debug.Log("Input: Up");
-    }
+        public void FixedUpdate()
+        {
 
-    void OnDownInput(InputAction.CallbackContext context)
-    {
-        Debug.Log("Input: Down");
-    }
+        }
 
-    void OnLeftInput(InputAction.CallbackContext context)
-    {
-        Debug.Log("Input: Left");
-    }
+        public void Update()
+        {
+            // check if win condition is met
+        }
 
-    void OnRightInput(InputAction.CallbackContext context)
-    {
-        Debug.Log("Input: Right");
-    }
+        void OnUpInput(InputAction.CallbackContext context)
+        {
+            Debug.Log("Input: Up");
+        }
 
-    void OnConfirmInput(InputAction.CallbackContext context)
-    {
-        Debug.Log("Input: Confirm");
-    }
+        void OnDownInput(InputAction.CallbackContext context)
+        {
+            Debug.Log("Input: Down");
+        }
 
-    void OnCancelInput(InputAction.CallbackContext context)
-    {
-        Debug.Log("Input: Cancel");
-    }
+        void OnLeftInput(InputAction.CallbackContext context)
+        {
+            Debug.Log("Input: Left");
+        }
 
-    void OnPauseInput(InputAction.CallbackContext context)
-    {
-        Debug.Log("Input: Pause");
-        
-        _stateMachine.ChangeState(_stateMachine.PauseState);
+        void OnRightInput(InputAction.CallbackContext context)
+        {
+            Debug.Log("Input: Right");
+        }
+
+        void OnConfirmInput(InputAction.CallbackContext context)
+        {
+            Debug.Log("Input: Confirm");
+        }
+
+        void OnCancelInput(InputAction.CallbackContext context)
+        {
+            Debug.Log("Input: Cancel");
+        }
+
+        void OnPauseInput(InputAction.CallbackContext context)
+        {
+            Debug.Log("Input: Pause");
+
+            _stateMachine.ChangeState(_stateMachine.PauseState);
+        }
     }
 }
+

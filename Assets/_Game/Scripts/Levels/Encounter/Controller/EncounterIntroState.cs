@@ -7,97 +7,101 @@ using UnityEngine;
 /// If it's required Setup for the Encounter to run properly, it should probably go here.
 /// </summary>
 
-public class EncounterIntroState : IState
+namespace RPG.Levels.Encounter
 {
-    EncounterSM _stateMachine = null;
-    EncounterController _controller = null;
-
-    EnvironmentSpawner _environmentSpawner = null;
-    PartySpawner _partySpawner = null;
-    EnemySpawner _enemySpawner = null;
-    EncounterLoader _encounterLoader = null;
-    EncounterPartyHUD _partyHUD = null;
-    EncounterEnemyListHUD _enemyListHUD = null;
-
-    public EncounterIntroState(EncounterSM stateMachine, EncounterController controller)
+    public class EncounterIntroState : IState
     {
-        _stateMachine = stateMachine;
-        _controller = controller;
-        // dependencies
-        _environmentSpawner = controller.EnvironmentSpawner;
-        _partySpawner = controller.PartySpawner;
-        _enemySpawner = controller.EnemySpawner;
-        _encounterLoader = controller.EncounterLoader;
-        _partyHUD = controller.PartyHUD;
-        _enemyListHUD = controller.EnemyListHUD;
-    }
+        EncounterController _controller = null;
 
-    public void Enter()
-    {
-        Debug.Log("STATE: Encounter Intro");
-        //TODO load encounter from file, instead of asset
+        EnvironmentSpawner _environmentSpawner = null;
+        PartySpawner _partySpawner = null;
+        EnemySpawner _enemySpawner = null;
+        EncounterLoader _loader = null;
 
-        SpawnEnvironment();
-        SpawnParty();
-        SpawnEnemies();
+        PartyHUD _partyHUD = null;
+        EnemyListHUD _enemyListHUD = null;
 
-        CreatePartyUI();
-        CreateEnemyUI();
+        public EncounterIntroState(EncounterController controller, Spawner spawner, HUDController hud)
+        {
+            _controller = controller;
+            // dependencies
+            _environmentSpawner = spawner.EnvironmentSpawner;
+            _partySpawner = spawner.PartySpawner;
+            _enemySpawner = spawner.EnemySpawner;
+            _loader = spawner.Loader;
 
-        PlayMusic();
-        Debug.Log("Play intro animations");
-    }
+            _partyHUD = hud.PartyHUD;
+            _enemyListHUD = hud.EnemyListHUD;
+        }
 
-    void PlayMusic()
-    {
-        MusicPlayer.Instance.PlaySong(_controller.EncounterData.Music);
-    }
+        public void Enter()
+        {
+            Debug.Log("STATE: Encounter Intro");
+            //TODO load encounter from file, instead of asset
 
-    private void CreateEnemyUI()
-    {
-        _enemyListHUD.CreateEnemyListHUD(_controller.Enemies);
-        _enemyListHUD.Show();
-    }
+            SpawnEnvironment();
+            SpawnParty();
+            SpawnEnemies();
 
-    private void CreatePartyUI()
-    {
-        _partyHUD.CreatePartyHUD(_controller.PartyMembers);
-        _partyHUD.Show();
-    }
+            CreatePartyUI();
+            CreateEnemyUI();
 
-    void SpawnEnvironment()
-    {
-        _environmentSpawner.Spawn(_encounterLoader.EncounterData.Environment);
-    }
+            PlayMusic();
+            Debug.Log("Play intro animations");
+        }
 
-    void SpawnParty()
-    {
-        _partySpawner.SpawnNewParty(_encounterLoader.PartyDataToLoad);
-    }
+        void PlayMusic()
+        {
+            MusicPlayer.Instance.PlaySong(_loader.EncounterData.Music);
+        }
 
-    private void SpawnEnemies()
-    {
-        EncounterGroup newEncounterGroup = _encounterLoader.GetEnemyEncounter();
-        _enemySpawner.SpawnNewEnemies(newEncounterGroup.Enemies);
-    }
+        private void CreateEnemyUI()
+        {
+            _enemyListHUD.CreateEnemyListHUD(_controller.Enemies);
+            _enemyListHUD.Show();
+        }
 
-    public void Exit()
-    {
-        
-    }
+        private void CreatePartyUI()
+        {
+            _partyHUD.CreatePartyHUD(_controller.Party);
+            _partyHUD.Show();
+        }
 
-    public void FixedUpdate()
-    {
-        
-    }
+        void SpawnEnvironment()
+        {
+            _environmentSpawner.Spawn(_loader.EncounterData.Environment);
+        }
 
-    public void Update()
-    {
-        SetupComplete();    // currently no setup, transition immediately after Enter finishes
-    }
+        void SpawnParty()
+        {
+            _partySpawner.SpawnNewParty(_loader.PartyDataToLoad);
+        }
 
-    void SetupComplete()
-    {
-        _stateMachine.ChangeState(_stateMachine.ActiveState);
+        private void SpawnEnemies()
+        {
+            EncounterGroup newEncounterGroup = _loader.GetEnemyEncounter();
+            _enemySpawner.SpawnNewEnemies(newEncounterGroup.Enemies);
+        }
+
+        public void Exit()
+        {
+
+        }
+
+        public void FixedUpdate()
+        {
+
+        }
+
+        public void Update()
+        {
+            SetupComplete();    // currently no setup, transition immediately after Enter finishes
+        }
+
+        void SetupComplete()
+        {
+            _controller.ChangeState(_controller.ActiveState);
+        }
     }
 }
+

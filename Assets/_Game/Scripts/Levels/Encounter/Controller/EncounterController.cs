@@ -2,44 +2,46 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EncounterController : MonoBehaviour
+namespace RPG.Levels.Encounter
 {
-    [Header("General")]
-    [SerializeField] InputController _input = null;
-    [SerializeField] EncounterLoader _encounterLoader = null;
-    
-    [Header("Spawning")]
-    [SerializeField] EnvironmentSpawner _environmentSpawner = null;
-    [SerializeField] PartySpawner _partySpawner = null;
-    [SerializeField] EnemySpawner _enemySpawner = null;
-    
-    [Header("UI")]
-    [SerializeField] EncounterPartyHUD _partyHUD = null;
-    [SerializeField] EncounterEnemyListHUD _enemyListHUD = null;
-    [SerializeField] EncounterTextDisplayHUD _textDisplayHUD = null;
-    [SerializeField] EncounterActionMenuHUD _actionMenuHUD = null;
+    public class EncounterController : StateMachineMB
+    {
+        [Header("General")]
+        [SerializeField] InputController _input = null;
+        [SerializeField] Spawner _spawner = null;
+        [SerializeField] HUDController _hudController = null;
+        [SerializeField] SoundPlayer _soundPlayer = null;
 
-    [Header("Audio")]
-    [SerializeField] SoundPlayer _soundPlayer = null;
-    [SerializeField] EncounterAudioData _encounterAudioData = null;
+        public List<PartyMember> Party => _spawner.Party;
+        public List<Enemy> Enemies => _spawner.Enemies;
 
-    // Systems
-    public InputController Input => _input;
-    public EncounterLoader EncounterLoader => _encounterLoader;
-    // Spawning
-    public EnvironmentSpawner EnvironmentSpawner => _environmentSpawner;
-    public PartySpawner PartySpawner => _partySpawner;
-    public EnemySpawner EnemySpawner => _enemySpawner;
-    // UI
-    public EncounterPartyHUD PartyHUD => _partyHUD;
-    public EncounterEnemyListHUD EnemyListHUD => _enemyListHUD;
-    public EncounterTextDisplayHUD TextDisplayHUD => _textDisplayHUD;
-    public EncounterActionMenuHUD ActionMenuHUD => _actionMenuHUD;
-    // Spawned Units
-    public List<PartyMember> PartyMembers => _partySpawner.Party;
-    public List<Enemy> Enemies => _enemySpawner.Enemies;
-    public AreaEncounterData EncounterData => _encounterLoader.EncounterData;
-    // Sounds
-    public SoundPlayer SoundPlayer => _soundPlayer;
-    public EncounterAudioData AudioData => _encounterAudioData;
+        // states
+        public EncounterIntroState IntroState { get; private set; }
+        public EncounterActiveState ActiveState { get; private set; }
+        public EncounterWinState WinState { get; private set; }
+        public EncounterLoseState LoseState { get; private set; }
+        public EncounterPauseState PauseState { get; private set; }
+        public EncounterStoryState StoryState { get; private set; }
+        public EncounterFleeState FleeState { get; private set; }
+        public EncounterExitState ExitState { get; private set; }
+
+        private void Awake()
+        {
+            // initialize states
+            IntroState = new EncounterIntroState(this, _spawner, _hudController);
+            ActiveState = new EncounterActiveState(this, _input);
+            WinState = new EncounterWinState(this);
+            LoseState = new EncounterLoseState(this);
+            PauseState = new EncounterPauseState(this, _input, _soundPlayer);
+            StoryState = new EncounterStoryState(this);
+            FleeState = new EncounterFleeState(this);
+            ExitState = new EncounterExitState(this);
+        }
+
+        private void Start()
+        {
+            ChangeState(IntroState);
+        }
+    }
 }
+

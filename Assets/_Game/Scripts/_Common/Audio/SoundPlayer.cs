@@ -2,23 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundPlayer : MonoBehaviour
+namespace RPG.Levels.Encounter
 {
-    [SerializeField] AudioSource _audioSource;
-
-    private void Awake()
+    public class SoundPlayer : MonoBehaviour
     {
-        ConfigurePlayer();
-    }
+        [SerializeField] AudioSource _soundSource;
+        [SerializeField] EncounterSoundData _encounterSounds;
 
-    public void Play(AudioClip clip)
-    {
-        _audioSource.PlayOneShot(clip);
-    }
+        public EncounterSoundData Sounds => _encounterSounds;
 
-    void ConfigurePlayer()
-    {
-        _audioSource.spatialBlend = 0;
-        _audioSource.playOnAwake = false;
+        private void Awake()
+        {
+            ConfigurePlayer();
+        }
+
+        public void Play(AudioClip clip)
+        {
+            _soundSource.PlayOneShot(clip);
+        }
+
+        void ConfigurePlayer()
+        {
+            _soundSource.spatialBlend = 0;
+            _soundSource.playOnAwake = false;
+        }
     }
 }
+

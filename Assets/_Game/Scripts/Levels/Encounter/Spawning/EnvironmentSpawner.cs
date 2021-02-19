@@ -2,16 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnvironmentSpawner : MonoBehaviour
+namespace RPG.Levels.Encounter
 {
-    [SerializeField] Transform _parentGroup;
-    [SerializeField] Transform _spawnPoint;
-    
-    public void Spawn(GameObject environment)
+    public class EnvironmentSpawner : MonoBehaviour
     {
-        GameObject newEnvironment = Instantiate(environment, _spawnPoint.position, _spawnPoint.rotation);
+        [SerializeField] Transform _parentGroup;
+        [SerializeField] Transform _spawnPoint;
 
-        newEnvironment.transform.SetParent(_parentGroup);
-        newEnvironment.gameObject.name = environment.name;
+        public void Spawn(GameObject environment)
+        {
+            GameObject newEnvironment = Instantiate(environment, _spawnPoint.position, _spawnPoint.rotation);
+
+            newEnvironment.transform.SetParent(_parentGroup);
+            newEnvironment.gameObject.name = environment.name;
+        }
     }
 }
+

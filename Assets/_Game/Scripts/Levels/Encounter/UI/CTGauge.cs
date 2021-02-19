@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CTGauge : MonoBehaviour
+namespace RPG.Levels.Encounter
 {
-    [SerializeField] Image _fillImageView;
-
-    public void SetScale(float newAmount, float maxAmount)
+    public class CTGauge : MonoBehaviour
     {
-        float newXScale = (1 / maxAmount) * newAmount;
-        newXScale = Mathf.Clamp(newXScale, 0, 1);
-        _fillImageView.transform.localScale = new Vector3(newXScale, 1, 1);
+        [SerializeField] Image _fillImageView;
+
+        public void SetScale(float newAmount, float maxAmount)
+        {
+            float newXScale = (1 / maxAmount) * newAmount;
+            newXScale = Mathf.Clamp(newXScale, 0, 1);
+            _fillImageView.transform.localScale = new Vector3(newXScale, 1, 1);
+        }
     }
 }
+
