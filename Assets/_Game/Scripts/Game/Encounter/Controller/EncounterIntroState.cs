@@ -11,6 +11,8 @@ namespace RPG.Encounter
 {
     public class EncounterIntroState : IState
     {
+        int _fadeInDuration = 1;
+
         EncounterController _controller = null;
 
         EnvironmentSpawner _environmentSpawner = null;
@@ -20,6 +22,7 @@ namespace RPG.Encounter
 
         PartyHUD _partyHUD = null;
         EnemyListHUD _enemyListHUD = null;
+        ScreenFader _fader = null;
 
         public EncounterIntroState(EncounterController controller)
         {
@@ -32,6 +35,7 @@ namespace RPG.Encounter
 
             _partyHUD = controller.HUD.PartyHUD;
             _enemyListHUD = controller.HUD.EnemyListHUD;
+            _fader = controller.HUD.Fader;
         }
 
         public void Enter()
@@ -47,6 +51,9 @@ namespace RPG.Encounter
             CreateEnemyUI();
 
             PlayMusic();
+
+            _fader.Fade(1, 0, _fadeInDuration);
+
             Debug.Log("Play intro animations");
         }
 

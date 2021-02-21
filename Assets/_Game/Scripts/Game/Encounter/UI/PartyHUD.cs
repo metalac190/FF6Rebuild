@@ -7,18 +7,18 @@ namespace RPG.Encounter
     public class PartyHUD : HUD
     {
         [Header("Party")]
-        [SerializeField] PartyMemberEntry _partyMemberHUDPrefab;
-        [SerializeField] Transform _partyMemberHUDParent;
+        [SerializeField] HeroEntry _heroDisplayPrefab;
+        [SerializeField] Transform _herDisplayParent;
 
-        public void CreatePartyHUD(List<PartyMember> partyMembers)
+        public void CreatePartyHUD(List<Hero> party)
         {
             // create a HUD for each member
-            for (int i = 0; i < partyMembers.Count; i++)
+            for (int i = 0; i < party.Count; i++)
             {
-                PartyMemberEntry newMemberHUD
-                    = Instantiate(_partyMemberHUDPrefab, _partyMemberHUDParent);
-                newMemberHUD.Display(partyMembers[i]);
-                newMemberHUD.gameObject.name = "PartyMemberHUD_" + i.ToString();
+                HeroEntry newHeroDisplay
+                    = Instantiate(_heroDisplayPrefab, _herDisplayParent);
+                newHeroDisplay.Initialize(party[i]);
+                newHeroDisplay.gameObject.name = "HeroDisplay_" + i.ToString();
             }
         }
     }

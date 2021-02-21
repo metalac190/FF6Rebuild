@@ -7,9 +7,6 @@ namespace RPG.Encounter
     public class SoundPlayer : MonoBehaviour
     {
         [SerializeField] AudioSource _soundSource;
-        [SerializeField] EncounterSoundData _encounterSounds;
-
-        public EncounterSoundData Sounds => _encounterSounds;
 
         private void Awake()
         {

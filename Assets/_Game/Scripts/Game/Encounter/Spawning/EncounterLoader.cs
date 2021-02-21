@@ -8,10 +8,10 @@ namespace RPG.Encounter
     {
         [Header("Data Assets - Save/Load later on")]
         [SerializeField] AreaEncounterData _encounterData;
-        [SerializeField] List<PartyMemberData> _partyMembersToLoad = new List<PartyMemberData>();
+        [SerializeField] List<HeroData> _partyMembersToLoad = new List<HeroData>();
 
         public AreaEncounterData EncounterData => _encounterData;
-        public List<PartyMemberData> PartyDataToLoad => _partyMembersToLoad;
+        public List<HeroData> PartyDataToLoad => _partyMembersToLoad;
 
         public EncounterGroup GetEnemyEncounter()
         {

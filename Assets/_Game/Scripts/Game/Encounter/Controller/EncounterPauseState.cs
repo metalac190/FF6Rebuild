@@ -26,7 +26,7 @@ namespace RPG.Encounter
 
             _input.Controls.Encounter.Pause.performed += OnPauseInput;
 
-            AudioClip pauseSound = _soundPlayer.Sounds.PauseSound;
+            AudioClip pauseSound = _controller.Sounds.PauseSound;
             _soundPlayer.Play(pauseSound);
 
             _pauseHUD.Show();
@@ -36,7 +36,7 @@ namespace RPG.Encounter
         {
             _input.Controls.Encounter.Pause.performed -= OnPauseInput;
 
-            AudioClip unPauseSound = _soundPlayer.Sounds.UnPauseSound;
+            AudioClip unPauseSound = _controller.Sounds.UnPauseSound;
             _soundPlayer.Play(unPauseSound);
 
             _pauseHUD.Hide();

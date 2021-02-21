@@ -8,21 +8,20 @@ using System;
 /// This is also the 'HUB' for gaining access to anything related to this party member
 /// </summary>
 
-public class PartyMember : UnitBase
+public class Hero : Unit
 {
+    [Header("Hero Settings")]
     [SerializeField] SpriteRenderer _spriteView;
 
-    public Action<int> MaxHPChanged;
-    public Action<int> HPChanged;
-    public Action<int> MaxMPChanged;
-    public Action<int> MPChanged;
-    public Action<int> CTChanged;
-    public Action<int> LevelChanged;
-
     public string Name { get; private set; }
-    public int MaxCT { get; private set; } = 100;
-    public int MaxLevel { get; private set; } = 99;
 
+    public int Level { get; private set; }
+    public int HP { get; private set; }
+    public int HPMax { get; private set; }
+    public int MP { get; private set; }
+    public int MPMax { get; private set; }
+
+    /*
     int _maxHP;
     public int MaxHP
     {
@@ -41,7 +40,9 @@ public class PartyMember : UnitBase
             _maxHP = value;
         }
     }
+    */
 
+    /*
     int _hp;
     public int HP 
     {
@@ -54,7 +55,9 @@ public class PartyMember : UnitBase
             _hp = value;
         } 
     }
+    */
 
+    /*
     int _maxMP;
     public int MaxMP 
     {
@@ -69,7 +72,9 @@ public class PartyMember : UnitBase
             _maxMP = value;
         }
     }
+    */
 
+    /*
     int _mp;
     public int MP 
     {
@@ -82,7 +87,9 @@ public class PartyMember : UnitBase
             _mp = value;
         }
     }
+    */
 
+    /*
     int _ct;
     public int CT 
     {
@@ -95,7 +102,9 @@ public class PartyMember : UnitBase
             _ct = value;
         } 
     }
+    */
 
+    /*
     int _level;
     public int Level 
     {
@@ -108,19 +117,20 @@ public class PartyMember : UnitBase
             _level = value;
         }
     }
+    */
 
     public Sprite Graphic { get; private set; }
 
-    public void Initialize(PartyMemberData data)
+    public void Initialize(HeroData data)
     {
         // initialize values
         Name = data.Name;
-        _maxHP = data.MaxHP;
-        _hp = data.StartingHP;
-        _maxHP = data.MaxMP;
-        _mp = data.StartingMP;
-        _ct = data.StartingCT;
-        _level = data.Level;
+        HPMax = data.MaxHP;
+        HP = data.StartingHP;
+        MPMax = data.MaxMP;
+        MP = data.StartingMP;
+        Level = data.Level;
+        CT = data.StartingCT;
 
         Graphic = data.Graphic;
 

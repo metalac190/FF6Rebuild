@@ -6,11 +6,11 @@ namespace RPG.Encounter
 {
     public class PartySpawner : MonoBehaviour
     {
-        [SerializeField] PartyMember _partyMemberPrefab;
+        [SerializeField] Hero _partyMemberPrefab;
         [SerializeField] Transform _parentGameObject;
         [SerializeField] List<Transform> _spawnLocations;
 
-        public List<PartyMember> Party { get; private set; } = new List<PartyMember>();
+        public List<Hero> Party { get; private set; } = new List<Hero>();
 
         private void Awake()
         {
@@ -19,7 +19,7 @@ namespace RPG.Encounter
                 _parentGameObject = gameObject.transform;
         }
 
-        public void SpawnNewParty(List<PartyMemberData> partyData)
+        public void SpawnNewParty(List<HeroData> partyData)
         {
             Party.Clear();
             // spawn each party member we have, as long as we're below max
@@ -27,15 +27,15 @@ namespace RPG.Encounter
             {
                 if (partyData[i] != null && _spawnLocations[i] != null)
                 {
-                    PartyMember newMember = SpawnMember(i, partyData[i], _parentGameObject);
+                    Hero newMember = SpawnMember(i, partyData[i], _parentGameObject);
                     Party.Add(newMember);
                 }
             }
         }
 
-        public PartyMember SpawnMember(int slotIndex, PartyMemberData data, Transform parentGameObject)
+        public Hero SpawnMember(int slotIndex, HeroData data, Transform parentGameObject)
         {
-            PartyMember newPartyMember = Instantiate(_partyMemberPrefab, _spawnLocations[slotIndex].position, Quaternion.identity);
+            Hero newPartyMember = Instantiate(_partyMemberPrefab, _spawnLocations[slotIndex].position, Quaternion.identity);
             // load in party member data
             newPartyMember.Initialize(data);
             // organize it in hierarchy

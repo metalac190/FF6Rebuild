@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewPartyMember", menuName = "Units/PartyMember")]
-public class PartyMemberData : UnitData
+[CreateAssetMenu(fileName = "HeroData_", menuName = "Units/Hero")]
+public class HeroData : UnitData
 {
     //[Header("Party Member Data")]
 

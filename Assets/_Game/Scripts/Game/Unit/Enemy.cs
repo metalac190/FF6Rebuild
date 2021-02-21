@@ -7,7 +7,7 @@ using System;
 /// This class defines a basic 'enemy' type, and holds its data. It is generic by default,
 /// but you can Initialize() it if you give it the appropriate enemy data
 /// </summary>
-public class Enemy : UnitBase
+public class Enemy : Unit
 {
     [SerializeField] SpriteRenderer _spriteView;
 
@@ -15,7 +15,6 @@ public class Enemy : UnitBase
     public Action<int> HPChanged;
     public Action<int> MaxMPChanged;
     public Action<int> MPChanged;
-    public Action<int> CTChanged;
     public Action<int> LevelChanged;
 
     public string Name { get; private set; }
@@ -80,19 +79,6 @@ public class Enemy : UnitBase
         }
     }
 
-    int _ct;
-    public int CT
-    {
-        get => _ct;
-        private set
-        {
-            value = Mathf.Clamp(value, 0, 100);
-            if (value != _mp)
-                CTChanged?.Invoke(value);
-            _ct = value;
-        }
-    }
-
     int _level;
     public int Level
     {
@@ -116,7 +102,7 @@ public class Enemy : UnitBase
         _hp = data.StartingHP;
         _maxHP = data.MaxMP;
         _mp = data.StartingMP;
-        _ct = data.StartingCT;
+        CT = data.StartingCT;
         _level = data.Level;
 
         Graphic = data.Graphic;
