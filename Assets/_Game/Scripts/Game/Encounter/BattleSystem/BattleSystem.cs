@@ -36,11 +36,11 @@ namespace RPG.Encounter
         {
             foreach(Hero hero in Party)
             {
-                hero.ShouldProgress = true;
+                hero.Active = true;
             }
             foreach(Enemy enemy in Enemies)
             {
-                enemy.ShouldProgress = true;
+                enemy.Active = true;
             }
         }
 
@@ -49,11 +49,11 @@ namespace RPG.Encounter
         {
             foreach (Hero hero in Party)
             {
-                hero.ShouldProgress = false;
+                hero.Active = false;
             }
             foreach (Enemy enemy in Enemies)
             {
-                enemy.ShouldProgress = false;
+                enemy.Active = false;
             }
         }
     }

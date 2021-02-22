@@ -76,13 +76,13 @@ namespace RPG.Encounter
 
         private void CreateEnemyUI()
         {
-            _enemyListHUD.CreateEnemyListHUD(_controller.Enemies);
+            _enemyListHUD.CreateEnemyListHUD(_battleSystem.Enemies);
             _enemyListHUD.Show();
         }
 
         private void CreatePartyUI()
         {
-            _partyHUD.CreatePartyHUD(_controller.Party);
+            _partyHUD.CreatePartyHUD(_battleSystem.Party);
             _partyHUD.Show();
         }
 

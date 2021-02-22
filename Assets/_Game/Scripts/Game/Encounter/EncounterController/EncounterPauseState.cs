@@ -11,6 +11,7 @@ namespace RPG.Encounter
         InputController _input = null;
         SoundPlayer _soundPlayer;
         PauseHUD _pauseHUD;
+        BattleSystem _battleSystem;
 
         public EncounterPauseState(EncounterSM controller)
         {
@@ -18,11 +19,14 @@ namespace RPG.Encounter
             _input = controller.Input;
             _soundPlayer = controller.SoundPlayer;
             _pauseHUD = controller.HUD.PauseHUD;
+            _battleSystem = controller.BattleSystem;
         }
 
         public void Enter()
         {
             Debug.Log("STATE: Encounter Pause");
+
+            _battleSystem.PauseProgression();
 
             _input.Controls.Encounter.Pause.performed += OnPauseInput;
 
@@ -40,6 +44,8 @@ namespace RPG.Encounter
             _soundPlayer.Play(unPauseSound);
 
             _pauseHUD.Hide();
+
+            _battleSystem.Progress();
         }
 
         public void FixedUpdate()

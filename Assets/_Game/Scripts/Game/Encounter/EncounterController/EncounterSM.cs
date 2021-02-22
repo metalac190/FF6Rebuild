@@ -21,12 +21,10 @@ namespace RPG.Encounter
         public EncounterSoundData Sounds => _encounterSounds;
         public BattleSystem BattleSystem => _battleSystem;
 
-        public List<Hero> Party => _battleSystem.Party;
-        public List<Enemy> Enemies => _battleSystem.Enemies;
-
         // states
         public EncounterIntroState IntroState { get; private set; }
         public EncounterIdleState IdleState { get; private set; }
+        public EncounterExecutingActionState ExecutingActionState { get; private set; }
         public EncounterWinState WinState { get; private set; }
         public EncounterLoseState LoseState { get; private set; }
         public EncounterPauseState PauseState { get; private set; }
@@ -39,6 +37,7 @@ namespace RPG.Encounter
             // initialize states
             IntroState = new EncounterIntroState(this);
             IdleState = new EncounterIdleState(this);
+            ExecutingActionState = new EncounterExecutingActionState(this);
             WinState = new EncounterWinState(this);
             LoseState = new EncounterLoseState(this);
             PauseState = new EncounterPauseState(this);
