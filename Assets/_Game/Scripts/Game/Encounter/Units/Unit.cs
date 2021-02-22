@@ -3,40 +3,51 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Unit : MonoBehaviour
+namespace RPG.Encounter
 {
-    public event Action<float> CTChanged = delegate { };
-    public event Action<Unit> CTMaxed = delegate { };
-
-    int _speed = 20;
-    public int MaxCT { get; private set; } = 100;
-
-    float _ct;
-    public float CT
+    public class Unit : MonoBehaviour
     {
-        get => _ct;
-        set
+        [SerializeField] SpriteRenderer _spriteView;
+
+        public string Name { get; private set; }
+
+        public int HPMax { get; private set; }
+        public int HP { get; private set; }
+        public int MPMax { get; private set; }
+        public int MP { get; private set; }
+        public int Level { get; private set; }
+        public int StartingActionTime { get; private set; }
+
+        //TODO pull this from stats later
+        public int Speed { get; private set; } = 20;
+        public ActionTimer ActionTimer { get; private set; }
+        public bool Active { get; set; } = false;
+
+        public Sprite Graphic { get; private set; }
+
+        private void Awake()
         {
-            value = Mathf.Clamp(value, 0, MaxCT);
-            // if we weren't at max, but are about to be...
-            if(_ct != MaxCT && value == MaxCT)
-            {
-                CTMaxed.Invoke(this);
-            }
-            // if our new value is different than previous value...
-            if (value != _ct)
-            {
-                CTChanged.Invoke(value);
-            }
-
-            _ct = value;
+            ActionTimer = new ActionTimer(Speed, StartingActionTime);
         }
+
+        public void Initialize(UnitData unitData)
+        {
+            // initialize values
+            Name = unitData.Name;
+            HPMax = unitData.MaxHP;
+            HP = unitData.StartingHP;
+            HPMax = unitData.MaxMP;
+            MP = unitData.StartingMP;
+            StartingActionTime = unitData.StartingCT;
+            Level = unitData.Level;
+
+            Graphic = unitData.Graphic;
+            _spriteView.sprite = unitData.Graphic;
+        }
+
+        // events
+        // state machine
+        // unit data
     }
-
-    public bool Active { get; set; } = false;
-
-
-    // events
-    // state machine
-    // unit data
 }
+

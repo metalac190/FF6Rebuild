@@ -11,6 +11,7 @@ namespace RPG.Encounter
         [SerializeField] TextMeshProUGUI _hpView;
         [SerializeField] CTGauge _ctGauge;
 
+        ActionTimer _actionTimer;
         Hero _hero;   // hold the reference for when data updates
 
         private void OnEnable()
@@ -29,17 +30,18 @@ namespace RPG.Encounter
         {
             //Debug.Log("Init");
             _hero = hero;
+            _actionTimer = hero.ActionTimer;
 
             _nameView.text = hero.Name;
             _hpView.text = hero.HP.ToString();
-            _ctGauge.SetScale(hero.CT, hero.MaxCT);
+            _ctGauge.SetScale(_actionTimer.CT, _actionTimer.MaxCT);
         }
 
         private void SubscribeEvents()
         {
             if (_hero != null)
             {
-                _hero.CTChanged += OnCTChanged;
+                _actionTimer.CTChanged += OnCTChanged;
             }  
         }
 
@@ -47,13 +49,13 @@ namespace RPG.Encounter
         {
             if (_hero != null)
             {
-                _hero.CTChanged -= OnCTChanged;
+                _actionTimer.CTChanged -= OnCTChanged;
             }  
         }
 
         void OnCTChanged(float value)
         {
-            _ctGauge.SetScale(_hero.CT, _hero.MaxCT);
+            _ctGauge.SetScale(_actionTimer.CT, _actionTimer.MaxCT);
         }
     }
 }

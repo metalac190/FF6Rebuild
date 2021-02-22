@@ -8,35 +8,15 @@ using System;
 /// This is also the 'HUB' for gaining access to anything related to this party member
 /// </summary>
 
-public class Hero : Unit
+namespace RPG.Encounter
 {
-    [Header("Hero Settings")]
-    [SerializeField] SpriteRenderer _spriteView;
-
-    public string Name { get; private set; }
-
-    public int Level { get; private set; }
-    public int HP { get; private set; }
-    public int HPMax { get; private set; }
-    public int MP { get; private set; }
-    public int MPMax { get; private set; }
-
-    public Sprite Graphic { get; private set; }
-
-    public void Initialize(HeroData data)
+    public class Hero : Unit
     {
-        // initialize values
-        Name = data.Name;
-        HPMax = data.MaxHP;
-        HP = data.StartingHP;
-        MPMax = data.MaxMP;
-        MP = data.StartingMP;
-        Level = data.Level;
-        CT = data.StartingCT;
 
-        Graphic = data.Graphic;
-
-        // update object
-        _spriteView.sprite = data.Graphic;
+        public void Initialize(HeroData data)
+        {
+            base.Initialize(data);
+        }
     }
 }
+

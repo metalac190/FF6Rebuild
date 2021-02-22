@@ -10,20 +10,24 @@ namespace RPG.Encounter
         UnitSM _stateMachine;
         Unit _unit;
 
+        ActionTimer _actionTimer;
+
         public UnitIdleState(UnitSM stateMachine, Unit unit)
         {
             _stateMachine = stateMachine;
             _unit = unit;
+
+            _actionTimer = unit.ActionTimer;
         }
 
         public void Enter()
         {
-            _unit.CTMaxed += OnCTMaxed;
+            _actionTimer.CTMaxed += OnCTMaxed;
         }
 
         public void Exit()
         {
-            _unit.CTMaxed -= OnCTMaxed;
+            _actionTimer.CTMaxed -= OnCTMaxed;
         }
 
         public void FixedUpdate()
@@ -39,7 +43,7 @@ namespace RPG.Encounter
             }
         }
 
-        void OnCTMaxed(Unit unit)
+        void OnCTMaxed()
         {
             _stateMachine.ChangeState(_stateMachine.ReadyForActionState);
         }
@@ -49,7 +53,7 @@ namespace RPG.Encounter
             //int ctAdjust = (96 * (_speed + 20)) / 16;
             //float ctAdjust = ((1 / 255) * _speed) * MaxCT * Time.deltaTime;
             float ctAdjust = 20 * Time.deltaTime;
-            _unit.CT += ctAdjust;
+            _actionTimer.CT += ctAdjust;
         }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 namespace RPG.Encounter
 {
@@ -10,6 +11,8 @@ namespace RPG.Encounter
     /// </summary>
     public class UnitReadyForActionState : IState
     {
+        public event Action<Unit> ReadyForAction = delegate { };
+
         UnitSM _stateMachine;
         Unit _unit;
 
@@ -21,7 +24,8 @@ namespace RPG.Encounter
 
         public void Enter()
         {
-            
+            ReadyForAction.Invoke(_unit);
+            // listen for action
         }
 
         public void Exit()

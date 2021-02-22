@@ -29,7 +29,6 @@ namespace RPG.Encounter
         public EncounterLoseState LoseState { get; private set; }
         public EncounterPauseState PauseState { get; private set; }
         public EncounterStoryState StoryState { get; private set; }
-        public EncounterFleeState FleeState { get; private set; }
         public EncounterExitState ExitState { get; private set; }
 
         private void Awake()
@@ -42,7 +41,6 @@ namespace RPG.Encounter
             LoseState = new EncounterLoseState(this);
             PauseState = new EncounterPauseState(this);
             StoryState = new EncounterStoryState(this);
-            FleeState = new EncounterFleeState(this);
             ExitState = new EncounterExitState(this);
         }
 
