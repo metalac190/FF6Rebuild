@@ -11,7 +11,7 @@ public class Unit : MonoBehaviour
     public event Action<float> CTChanged = delegate { };
 
     float _ct;
-    public float CT 
+    public float CT
     {
         get => _ct;
         protected set
@@ -23,17 +23,17 @@ public class Unit : MonoBehaviour
         }
     }
 
-    public bool Active { get; set; } = true;
+    public bool ShouldProgress { get; set; } = false;
 
     private void Update()
     {
-        if (!Active)
-            return;
-
-        Progress();
+        if (ShouldProgress)
+        {
+            IncrementTurn();
+        }
     }
 
-    void Progress()
+    void IncrementTurn()
     {
         //int ctAdjust = (96 * (_speed + 20)) / 16;
         //float ctAdjust = ((1 / 255) * _speed) * MaxCT * Time.deltaTime;

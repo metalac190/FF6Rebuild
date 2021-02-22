@@ -11,10 +11,13 @@ namespace RPG.Encounter
 {
     public class EncounterIntroState : IState
     {
-        int _fadeInDuration = 1;
+        float _fadeInDuration = .5f;
+        const float IntroDelayTime = 1.5f;
+        float _elapsedTime = 0;
 
-        EncounterController _controller = null;
+        EncounterSM _controller = null;
 
+        BattleSystem _battleSystem = null;
         EnvironmentSpawner _environmentSpawner = null;
         PartySpawner _partySpawner = null;
         EnemySpawner _enemySpawner = null;
@@ -24,10 +27,11 @@ namespace RPG.Encounter
         EnemyListHUD _enemyListHUD = null;
         ScreenFader _fader = null;
 
-        public EncounterIntroState(EncounterController controller)
+        public EncounterIntroState(EncounterSM controller)
         {
             _controller = controller;
             // dependencies
+            _battleSystem = controller.BattleSystem;
             _environmentSpawner = controller.Spawner.EnvironmentSpawner;
             _partySpawner = controller.Spawner.PartySpawner;
             _enemySpawner = controller.Spawner.EnemySpawner;
@@ -43,18 +47,26 @@ namespace RPG.Encounter
             Debug.Log("STATE: Encounter Intro");
             //TODO load encounter from file, instead of asset
 
+            SetupBattleSystem();
             SpawnEnvironment();
-            SpawnParty();
-            SpawnEnemies();
 
             CreatePartyUI();
             CreateEnemyUI();
 
             PlayMusic();
 
-            _fader.Fade(1, 0, _fadeInDuration);
+            _elapsedTime = 0;
+            IntroAnimations();
+        }
 
-            Debug.Log("Play intro animations");
+        private void IntroAnimations()
+        {
+            _fader.Fade(1, 0, _fadeInDuration);
+        }
+
+        private void SetupBattleSystem()
+        {
+            _battleSystem.Initialize(SpawnParty(), SpawnEnemies());
         }
 
         void PlayMusic()
@@ -79,15 +91,15 @@ namespace RPG.Encounter
             _environmentSpawner.Spawn(_loader.EncounterData.Environment);
         }
 
-        void SpawnParty()
+        private List<Hero> SpawnParty()
         {
-            _partySpawner.SpawnNewParty(_loader.PartyDataToLoad);
+            return _partySpawner.SpawnNewParty(_loader.PartyDataToLoad);
         }
 
-        private void SpawnEnemies()
+        private List<Enemy> SpawnEnemies()
         {
             EncounterGroup newEncounterGroup = _loader.GetEnemyEncounter();
-            _enemySpawner.SpawnNewEnemies(newEncounterGroup.Enemies);
+            return _enemySpawner.SpawnNewEnemies(newEncounterGroup.Enemies);
         }
 
         public void Exit()
@@ -102,12 +114,12 @@ namespace RPG.Encounter
 
         public void Update()
         {
-            SetupComplete();    // currently no setup, transition immediately after Enter finishes
-        }
-
-        void SetupComplete()
-        {
-            _controller.ChangeState(_controller.IdleState);
+            // wait a bit before starting battle
+            _elapsedTime += Time.deltaTime;
+            if(_elapsedTime >= IntroDelayTime)
+            {
+                _controller.ChangeState(_controller.IdleState);
+            }
         }
     }
 }

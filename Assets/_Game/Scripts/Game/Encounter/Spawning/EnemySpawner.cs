@@ -10,8 +10,6 @@ namespace RPG.Encounter
         [SerializeField] Transform _parentGameObject;
         [SerializeField] SpawnArea _spawnPlane;
 
-        public List<Enemy> Enemies { get; private set; } = new List<Enemy>();
-
         private void Awake()
         {
             // validate
@@ -19,18 +17,21 @@ namespace RPG.Encounter
                 _parentGameObject = gameObject.transform;
         }
 
-        public void SpawnNewEnemies(List<EnemySpawn> enemySpawns)
+        public List<Enemy> SpawnNewEnemies(List<EnemySpawn> enemySpawns)
         {
-            Enemies.Clear();
+            List<Enemy> newEnemies = new List<Enemy>();
             // spawn each enemy in our received enemy data list
-            foreach (EnemySpawn enemySpawn in enemySpawns)
+            for (int i = 0; i < enemySpawns.Count; i++)
             {
-                SpawnEnemy(enemySpawn, _parentGameObject);
+                Enemy newEnemy = SpawnEnemy(enemySpawns[i], _parentGameObject);
+                newEnemies.Add(newEnemy);
             }
+
+            return newEnemies;
         }
 
 
-        public void SpawnEnemy(EnemySpawn enemySpawn, Transform parentGameObject)
+        public Enemy SpawnEnemy(EnemySpawn enemySpawn, Transform parentGameObject)
         {
             //TODO normalize spawn position
             Vector3 newEnemyPosition = enemySpawn.NormalizedPosition;
@@ -42,7 +43,7 @@ namespace RPG.Encounter
             newEnemy.gameObject.name = "Enemy_" + enemySpawn.Data.Name;
             newEnemy.transform.SetParent(parentGameObject.transform);
 
-            Enemies.Add(newEnemy);
+            return newEnemy;
         }
     }
 }

@@ -16,8 +16,8 @@ namespace RPG.Encounter
         public EnemySpawner EnemySpawner => _enemySpawner;
         public EncounterLoader Loader => _loader;
 
-        public List<Hero> Party => _partySpawner.Party;
-        public List<Enemy> Enemies => _enemySpawner.Enemies;
+        //public List<Hero> Party => _partySpawner.Party;
+        //public List<Enemy> Enemies => _enemySpawner.Enemies;
     }
 }
 

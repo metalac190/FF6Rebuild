@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace RPG.Encounter
 {
-    public class EncounterController : StateMachineMB
+    public class EncounterSM : StateMachineMB
     {
         [Header("General")]
         [SerializeField] InputController _input = null;
@@ -12,15 +12,17 @@ namespace RPG.Encounter
         [SerializeField] HUDController _hud = null;
         [SerializeField] SoundPlayer _soundPlayer = null;
         [SerializeField] EncounterSoundData _encounterSounds = null;
+        [SerializeField] BattleSystem _battleSystem = null;
         
         public InputController Input => _input;
         public Spawner Spawner => _spawner;
         public HUDController HUD => _hud;
         public SoundPlayer SoundPlayer => _soundPlayer;
         public EncounterSoundData Sounds => _encounterSounds;
+        public BattleSystem BattleSystem => _battleSystem;
 
-        public List<Hero> Party => _spawner.Party;
-        public List<Enemy> Enemies => _spawner.Enemies;
+        public List<Hero> Party => _battleSystem.Party;
+        public List<Enemy> Enemies => _battleSystem.Enemies;
 
         // states
         public EncounterIntroState IntroState { get; private set; }

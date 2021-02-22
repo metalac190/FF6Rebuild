@@ -10,26 +10,30 @@ namespace RPG.Encounter
 {
     public class EncounterIdleState : IState
     {
-        EncounterController _controller = null;
+        EncounterSM _controller = null;
 
         InputController _input = null;
+        BattleSystem _battleSystem = null;
 
-        public EncounterIdleState(EncounterController controller)
+        public EncounterIdleState(EncounterSM controller)
         {
             _controller = controller;
 
             _input = controller.Input;
+            _battleSystem = controller.BattleSystem;
         }
 
         public void Enter()
         {
             Debug.Log("STATE: Encounter Active");
             SubscribeInput();
+            _battleSystem.Progress();
         }
 
         public void Exit()
         {
             UnsubscribeInput();
+            _battleSystem.PauseProgression();
         }
 
         private void SubscribeInput()

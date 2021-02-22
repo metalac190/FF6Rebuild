@@ -10,8 +10,6 @@ namespace RPG.Encounter
         [SerializeField] Transform _parentGameObject;
         [SerializeField] List<Transform> _spawnLocations;
 
-        public List<Hero> Party { get; private set; } = new List<Hero>();
-
         private void Awake()
         {
             // validate
@@ -19,18 +17,21 @@ namespace RPG.Encounter
                 _parentGameObject = gameObject.transform;
         }
 
-        public void SpawnNewParty(List<HeroData> partyData)
+        public List<Hero> SpawnNewParty(List<HeroData> partyData)
         {
-            Party.Clear();
+            List<Hero> newParty = new List<Hero>();
+            //Party.Clear();
             // spawn each party member we have, as long as we're below max
             for (int i = 0; i < partyData.Count && i < _spawnLocations.Count; i++)
             {
                 if (partyData[i] != null && _spawnLocations[i] != null)
                 {
                     Hero newMember = SpawnMember(i, partyData[i], _parentGameObject);
-                    Party.Add(newMember);
+                    newParty.Add(newMember);
                 }
             }
+
+            return newParty;
         }
 
         public Hero SpawnMember(int slotIndex, HeroData data, Transform parentGameObject)

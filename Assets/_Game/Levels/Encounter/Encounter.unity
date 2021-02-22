@@ -213,11 +213,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02fb56953dd24754b976a00dad787765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animateInTime: 0.5
-  _startInScale: {x: 0.5, y: 0.5, z: 0.5}
+  _animateInTime: 1
+  _startInScale: {x: 1, y: 0.5, z: 1}
   _startFade: 0
-  _animateOutTime: 0.25
-  _endOutScale: {x: 0.5, y: 0.5, z: 0.5}
+  _animateOutTime: 0.5
+  _endOutScale: {x: 1, y: 0.5, z: 1}
   _endFade: 0
 --- !u!225 &186735500
 CanvasGroup:
@@ -1095,7 +1095,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442462107}
-  m_LocalRotation: {x: 0.17602108, y: 0.000000008468864, z: -0.0000000015143429, w: 0.98438644}
+  m_LocalRotation: {x: 0.17602108, y: -0.000000008468866, z: 0.0000000015143431, w: 0.98438644}
   m_LocalPosition: {x: 0, y: 7.03, z: -18.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1318,6 +1318,7 @@ MonoBehaviour:
   _hud: {fileID: 1517472971}
   _soundPlayer: {fileID: 1824209634}
   _encounterSounds: {fileID: 11400000, guid: 827cb6fefafe43a409b6c38939215fc9, type: 2}
+  _battleSystem: {fileID: 1085894546}
 --- !u!1 &650831200
 GameObject:
   m_ObjectHideFlags: 0
@@ -2403,11 +2404,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02fb56953dd24754b976a00dad787765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animateInTime: 0.5
-  _startInScale: {x: 0.5, y: 0.5, z: 0.5}
+  _animateInTime: 1
+  _startInScale: {x: 1, y: 0.5, z: 1}
   _startFade: 0
-  _animateOutTime: 0.25
-  _endOutScale: {x: 0.5, y: 0.5, z: 0.5}
+  _animateOutTime: 0.5
+  _endOutScale: {x: 1, y: 0.5, z: 1}
   _endFade: 0
 --- !u!225 &1021883727
 CanvasGroup:
@@ -4524,7 +4525,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1970084460}
-  m_LocalRotation: {x: 0.17602108, y: 0.000000008468864, z: -0.0000000015143429, w: 0.98438644}
+  m_LocalRotation: {x: 0.17602108, y: -0.000000008468866, z: 0.0000000015143431, w: 0.98438644}
   m_LocalPosition: {x: 0, y: 7.03, z: -18.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

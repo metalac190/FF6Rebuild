@@ -4,18 +4,18 @@ using UnityEngine;
 
 namespace RPG.Encounter
 {
-    public class EncounterExitState : IState
+    public class EncounterWinState : IState
     {
-        EncounterController _stateMachine = null;
+        EncounterSM _stateMachine = null;
 
-        public EncounterExitState(EncounterController stateMachine)
+        public EncounterWinState(EncounterSM stateMachine)
         {
             _stateMachine = stateMachine;
         }
 
         public void Enter()
         {
-            Debug.Log("Encounter Exit State");
+            Debug.Log("STATE: Encounter Win");
         }
 
         public void Exit()

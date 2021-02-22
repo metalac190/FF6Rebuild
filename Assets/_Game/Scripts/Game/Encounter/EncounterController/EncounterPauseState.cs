@@ -7,12 +7,12 @@ namespace RPG.Encounter
 {
     public class EncounterPauseState : IState
     {
-        EncounterController _controller = null;
+        EncounterSM _controller = null;
         InputController _input = null;
         SoundPlayer _soundPlayer;
         PauseHUD _pauseHUD;
 
-        public EncounterPauseState(EncounterController controller)
+        public EncounterPauseState(EncounterSM controller)
         {
             _controller = controller;
             _input = controller.Input;
