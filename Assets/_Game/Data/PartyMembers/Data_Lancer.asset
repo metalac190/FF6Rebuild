@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Lancer
   _maxHP: 800
-  _startingHP: 750
+  _startingHP: 600
   _maxMP: 10
   _startingMP: 5
   _ct: 20

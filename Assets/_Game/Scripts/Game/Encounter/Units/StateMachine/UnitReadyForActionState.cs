@@ -24,13 +24,12 @@ namespace RPG.Encounter
 
         public void Enter()
         {
-            ReadyForAction.Invoke(_unit);
-            // listen for action
+            // add to queue
         }
 
         public void Exit()
         {
-            
+            // remove from queue
         }
 
         public void FixedUpdate()

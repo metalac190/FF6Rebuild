@@ -6,9 +6,9 @@ namespace RPG.Encounter
 {
     public class BattleSystem : MonoBehaviour
     {
-        [SerializeField] TurnTracker _turnTracker;
+        [SerializeField] LoopedList _turnTracker;
 
-        public TurnTracker TurnTracker => _turnTracker;
+        public LoopedList TurnTracker => _turnTracker;
 
         public List<Hero> Party { get; private set; } = new List<Hero>();
         public List<Enemy> Enemies { get; private set; } = new List<Enemy>();
