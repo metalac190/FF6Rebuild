@@ -8,13 +8,14 @@ using UnityEngine;
 /// selection through a list of items
 /// </summary>
 /// <typeparam name="T"></typeparam>
-public class LoopedList<T>
+public class LoopedSelector<T>
 {
     // we kind of want a queue, but we may need to remove objects from the middle
     // so we'll be faking it with a List
     List<T> _items = new List<T>();
 
     int _selectionIndex = 0;
+    public T CurrentSelection => _items[_selectionIndex];
 
     public bool HasItems()
     {
@@ -24,13 +25,13 @@ public class LoopedList<T>
             return false;
     }
 
-    public void AddReady(T item)
+    public void Add(T item)
     {
         _items.Add(item);
     }
 
     // look through Unit List and remove the requested unit
-    public void RemoveUnit(T item)
+    public void Remove(T item)
     {
         // if no items, or item not contained in list
         if (!HasItems() || !_items.Contains(item))
@@ -42,7 +43,7 @@ public class LoopedList<T>
         _items.Remove(item);
     }
 
-    public T GetNext()
+    public T SelectNext()
     {
         if (!HasItems())
         {
@@ -64,7 +65,7 @@ public class LoopedList<T>
         return _items[_selectionIndex];
     }
 
-    public T GetPrevious()
+    public T SelectPrevious()
     {
         if (!HasItems())
         {

@@ -7,12 +7,10 @@ namespace RPG.Encounter
 {
     public class UnitExitState : IState
     {
-        UnitSM _stateMachine;
         Unit _unit;
 
-        public UnitExitState(UnitSM stateMachine, Unit unit)
+        public UnitExitState(Unit unit)
         {
-            _stateMachine = stateMachine;
             _unit = unit;
         }
 

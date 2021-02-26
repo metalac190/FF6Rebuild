@@ -13,11 +13,17 @@ MonoBehaviour:
   m_Name: Data_Mage
   m_EditorClassIdentifier: 
   _name: Mage
-  _maxHP: 700
-  _startingHP: 410
-  _maxMP: 1
-  _startingMP: 1
-  _ct: 20
-  _level: 1
   _graphic: {fileID: -1328046320827901995, guid: e44d20629feeeec4592c0fa11c069766, type: 3}
+  _level: 12
+  _hp: 400
+  _hpMax: 450
+  _mp: 1
+  _mpMax: 1
+  _attack: 1
+  _ability: 1
+  _speed: 1
+  _stamina: 1
+  _defense: 1
+  _barrier: 1
+  _initiative: 1
   _invertFaceDirection: 0

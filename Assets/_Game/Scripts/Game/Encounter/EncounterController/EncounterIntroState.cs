@@ -12,7 +12,7 @@ namespace RPG.Encounter
     public class EncounterIntroState : IState
     {
         float _fadeInDuration = .5f;
-        const float IntroDelayTime = 1.5f;
+        const float IntroDelayTime = 1;
         float _elapsedTime = 0;
 
         EncounterSM _controller = null;

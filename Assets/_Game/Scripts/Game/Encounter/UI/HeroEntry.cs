@@ -14,15 +14,8 @@ namespace RPG.Encounter
         ActionTimer _actionTimer;
         Hero _hero;   // hold the reference for when data updates
 
-        private void OnEnable()
+        private void OnDestroy()
         {
-            //Debug.Log("Sub");
-            SubscribeEvents();
-        }
-
-        private void OnDisable()
-        {
-            //Debug.Log("UnSub");
             UnSubscribeEvents();
         }
 
@@ -33,8 +26,12 @@ namespace RPG.Encounter
             _actionTimer = hero.ActionTimer;
 
             _nameView.text = hero.Name;
-            _hpView.text = hero.HP.ToString();
+            _hpView.text = hero.Stats.HP.Value.ToString();
+
             _ctGauge.SetScale(_actionTimer.CT, _actionTimer.MaxCT);
+
+            //Debug.Log("Sub");
+            SubscribeEvents();
         }
 
         private void SubscribeEvents()

@@ -7,12 +7,10 @@ namespace RPG.Encounter
 {
     public class UnitPausedState : IState
     {
-        UnitSM _stateMachine;
         Unit _unit;
 
-        public UnitPausedState(UnitSM stateMachine, Unit unit)
+        public UnitPausedState(Unit unit)
         {
-            _stateMachine = stateMachine;
             _unit = unit;
         }
 

@@ -7,12 +7,10 @@ namespace RPG.Encounter
 {
     public class UnitIntroState : IState
     {
-        UnitSM _stateMachine;
         Unit _unit;
 
-        public UnitIntroState(UnitSM stateMachine, Unit unit)
+        public UnitIntroState(Unit unit)
         {
-            _stateMachine = stateMachine;
             _unit = unit;
         }
 
@@ -34,9 +32,9 @@ namespace RPG.Encounter
         public void Update()
         {
             // wait until we start progressign
-            if(_unit.Active == true)
+            if(_unit.IsActive == true)
             {
-                _stateMachine.ChangeState(_stateMachine.IdleState);
+                _unit.ChangeState(_unit.IdleState);
             }
         }
     }

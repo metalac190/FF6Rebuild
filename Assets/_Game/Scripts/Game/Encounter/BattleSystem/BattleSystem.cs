@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 namespace RPG.Encounter
 {
     public class BattleSystem : MonoBehaviour
     {
-        [SerializeField] LoopedList _turnTracker;
+        public event Action<ICommand> NewCommand = delegate { };
 
-        public LoopedList TurnTracker => _turnTracker;
+        public LoopedSelector<Unit> UnitsReady { get; private set; } = new LoopedSelector<Unit>();
 
         public List<Hero> Party { get; private set; } = new List<Hero>();
         public List<Enemy> Enemies { get; private set; } = new List<Enemy>();
@@ -17,6 +18,38 @@ namespace RPG.Encounter
         {
             SetupHeroes(party);
             SetupEnemies(enemies);
+            Subscribe();
+        }
+
+        private void OnDestroy()
+        {
+            Unsubscribe();
+        }
+
+        void Subscribe()
+        {
+            // cycle through and subscribe
+            foreach(Unit unit in Party)
+            {
+                unit.ReadyForActionState.ReadyChanged += OnUnitReadyChanged;
+            }
+            foreach(Unit unit in Enemies)
+            {
+                unit.ReadyForActionState.ReadyChanged += OnUnitReadyChanged;
+            }
+        }
+
+        void Unsubscribe()
+        {
+            // cycle through and subscribe
+            foreach (Unit unit in Party)
+            {
+                unit.ReadyForActionState.ReadyChanged -= OnUnitReadyChanged;
+            }
+            foreach (Unit unit in Enemies)
+            {
+                unit.ReadyForActionState.ReadyChanged -= OnUnitReadyChanged;
+            }
         }
 
         private void SetupEnemies(List<Enemy> enemies)
@@ -36,11 +69,11 @@ namespace RPG.Encounter
         {
             foreach(Hero hero in Party)
             {
-                hero.Active = true;
+                hero.IsActive = true;
             }
             foreach(Enemy enemy in Enemies)
             {
-                enemy.Active = true;
+                enemy.IsActive = true;
             }
         }
 
@@ -49,12 +82,22 @@ namespace RPG.Encounter
         {
             foreach (Hero hero in Party)
             {
-                hero.Active = false;
+                hero.IsActive = false;
             }
             foreach (Enemy enemy in Enemies)
             {
-                enemy.Active = false;
+                enemy.IsActive = false;
             }
+        }
+
+        public void CommandUnit(Unit unit, ICommand command)
+        {
+
+        }
+
+        void OnUnitReadyChanged(bool isReady, Unit unit)
+        {
+            Debug.Log("Unit Ready: " + unit.Name);
         }
     }
 }

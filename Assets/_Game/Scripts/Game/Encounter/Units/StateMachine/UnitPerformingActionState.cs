@@ -7,12 +7,10 @@ namespace RPG.Encounter
 {
     public class UnitPerformingActionState : IState
     {
-        UnitSM _stateMachine;
         Unit _unit;
 
-        public UnitPerformingActionState(UnitSM stateMachine, Unit unit)
+        public UnitPerformingActionState(Unit unit)
         {
-            _stateMachine = stateMachine;
             _unit = unit;
         }
 

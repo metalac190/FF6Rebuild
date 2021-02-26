@@ -8,14 +8,15 @@ public class Stat
 {
     public event Action<int> Changed = delegate { };
 
-    int _value;
-    int _min = 0;
+    [SerializeField] int _value = 1;
+
+    int _min = 1;
     int _max = 255;
 
     public int Value
     {
         get => _value;
-        private set
+        set
         {
             value = Mathf.Clamp(value, _min, _max);
 
@@ -26,10 +27,10 @@ public class Stat
         }
     }
 
-    public Stat(int value, int min = 0, int max = 255)
+    public Stat(int value, int min, int max)
     {
-        _value = value;
         _min = min;
         _max = max;
+        Value = value;
     }
 }

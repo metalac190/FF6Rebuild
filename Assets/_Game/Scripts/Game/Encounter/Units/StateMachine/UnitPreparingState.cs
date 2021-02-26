@@ -7,12 +7,10 @@ namespace RPG.Encounter
 {
     public class UnitPreparingState : IState
     {
-        UnitSM _stateMachine;
         Unit _unit;
 
-        public UnitPreparingState(UnitSM stateMachine, Unit unit)
+        public UnitPreparingState(Unit unit)
         {
-            _stateMachine = stateMachine;
             _unit = unit;
         }
 

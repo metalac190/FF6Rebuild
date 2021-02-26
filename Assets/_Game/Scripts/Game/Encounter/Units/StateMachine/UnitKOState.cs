@@ -7,12 +7,10 @@ namespace RPG.Encounter
 {
     public class UnitKOState : IState
     {
-        UnitSM _stateMachine;
         Unit _unit;
 
-        public UnitKOState(UnitSM stateMachine, Unit unit)
+        public UnitKOState(Unit unit)
         {
-            _stateMachine = stateMachine;
             _unit = unit;
         }
 

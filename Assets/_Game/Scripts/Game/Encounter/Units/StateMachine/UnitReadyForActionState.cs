@@ -11,25 +11,38 @@ namespace RPG.Encounter
     /// </summary>
     public class UnitReadyForActionState : IState
     {
-        public event Action<Unit> ReadyForAction = delegate { };
+        public event Action<bool,Unit> ReadyChanged = delegate { };
 
-        UnitSM _stateMachine;
         Unit _unit;
 
-        public UnitReadyForActionState(UnitSM stateMachine, Unit unit)
+        bool _isReadyToAct = false;
+        public bool IsReadyToAct 
         {
-            _stateMachine = stateMachine;
+            get => _isReadyToAct; 
+            private set
+            {
+                // notify if changed
+                if (value != _isReadyToAct)
+                    ReadyChanged(value, _unit);
+                _isReadyToAct = value;
+            }
+        }
+
+        public UnitReadyForActionState(Unit unit)
+        {
             _unit = unit;
         }
 
         public void Enter()
         {
             // add to queue
+            IsReadyToAct = true;
         }
 
         public void Exit()
         {
             // remove from queue
+            IsReadyToAct = false;
         }
 
         public void FixedUpdate()
@@ -39,7 +52,10 @@ namespace RPG.Encounter
 
         public void Update()
         {
-            
+            if (!IsReadyToAct)
+            {
+                _unit.ChangeState(_unit.IdleState);
+            }
         }
     }
 }

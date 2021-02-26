@@ -10,12 +10,10 @@ namespace RPG.Encounter
     /// </summary>
     public class UnitWaitingForActionState : IState
     {
-        UnitSM _stateMachine;
         Unit _unit;
 
-        public UnitWaitingForActionState(UnitSM stateMachine, Unit unit)
+        public UnitWaitingForActionState(Unit unit)
         {
-            _stateMachine = stateMachine;
             _unit = unit;
         }
 

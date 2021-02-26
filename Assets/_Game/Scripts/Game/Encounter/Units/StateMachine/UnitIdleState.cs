@@ -7,14 +7,12 @@ namespace RPG.Encounter
 {
     public class UnitIdleState : IState
     {
-        UnitSM _stateMachine;
         Unit _unit;
 
         ActionTimer _actionTimer;
 
-        public UnitIdleState(UnitSM stateMachine, Unit unit)
+        public UnitIdleState(Unit unit)
         {
-            _stateMachine = stateMachine;
             _unit = unit;
 
             _actionTimer = unit.ActionTimer;
@@ -37,7 +35,7 @@ namespace RPG.Encounter
 
         public void Update()
         {
-            if (_unit.Active)
+            if (_unit.IsActive)
             {
                 IncrementTurn();
             }
@@ -45,7 +43,7 @@ namespace RPG.Encounter
 
         void OnCTMaxed()
         {
-            _stateMachine.ChangeState(_stateMachine.ReadyForActionState);
+            _unit.ChangeState(_unit.ReadyForActionState);
         }
 
         void IncrementTurn()
