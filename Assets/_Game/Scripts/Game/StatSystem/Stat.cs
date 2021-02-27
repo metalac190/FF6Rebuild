@@ -105,6 +105,7 @@ public class Stat
         float finalValue = BaseValue;
         float sumPercentAdd = 0;    // so that we can add %'s before final multiply
 
+        //TODO these enums should be converted into a class
         for (int i = 0; i < StatModifiers.Count; i++)
         {
             StatModifier modifier = StatModifiers[i];
@@ -119,14 +120,16 @@ public class Stat
                 // if we're at the end of th elist OR the next modifier isn't of this type
                 if (i + 1 >= StatModifiers.Count || StatModifiers[i + 1].Type != StatModifierType.PercentAdd)
                 {
-                    finalValue *= 1 + sumPercentAdd;    // multiply our running percentage so far
+                    float percentAsProportion = 1 + (sumPercentAdd / 100);
+                    finalValue *= percentAsProportion;    // multiply our running percentage so far
                     sumPercentAdd = 0;
                 }
             }
             else if (modifier.Type == StatModifierType.PercentMultiply)
             {
                 // calculate decimal from 1 and multiply (Ex. 1 + -.2 = -.8)
-                finalValue *= 1 + modifier.Value;
+                float percentAsProportion = 1 + (modifier.Value / 100);
+                finalValue *= percentAsProportion;
             }
         }
         // round for cleanliness, and to avoid float calc messiness

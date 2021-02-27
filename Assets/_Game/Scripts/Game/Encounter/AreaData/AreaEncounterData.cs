@@ -15,6 +15,13 @@ namespace RPG.Encounter
         public AudioClip Music => _music;
         public GameObject Environment => _encounterEnvironmentPrefab;
         public List<EncounterGroup> EncounterGroups => _encounterGroups;
+
+        public EncounterGroup GetEnemyEncounter()
+        {
+            //TODO load encoutner from file
+            int randomIndex = Random.Range(0, _encounterGroups.Count);
+            return _encounterGroups[randomIndex];
+        }
     }
 }
 

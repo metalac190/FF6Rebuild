@@ -7,6 +7,7 @@ public class HeroData : UnitData
 {
     //[Header("Party Member Data")]
 
+    
     // spells
     // special
     // equipment

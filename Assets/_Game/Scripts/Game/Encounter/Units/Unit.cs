@@ -15,6 +15,7 @@ namespace RPG.Encounter
         //public int HP { get; private set; }
         //public int MPMax { get; private set; }
         //public int MP { get; private set; }
+
         public UnitStats Stats { get; private set; }
 
         public HealthSystem Health { get; private set; }

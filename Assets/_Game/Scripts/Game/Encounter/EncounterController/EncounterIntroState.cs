@@ -22,6 +22,7 @@ namespace RPG.Encounter
         PartySpawner _partySpawner = null;
         EnemySpawner _enemySpawner = null;
         EncounterLoader _loader = null;
+        AreaEncounterData _encounterData = null;
 
         PartyHUD _partyHUD = null;
         EnemyListHUD _enemyListHUD = null;
@@ -36,6 +37,7 @@ namespace RPG.Encounter
             _partySpawner = controller.Spawner.PartySpawner;
             _enemySpawner = controller.Spawner.EnemySpawner;
             _loader = controller.Spawner.Loader;
+            _encounterData = controller.Spawner.Loader.EncounterData;
 
             _partyHUD = controller.HUD.PartyHUD;
             _enemyListHUD = controller.HUD.EnemyListHUD;
@@ -98,7 +100,7 @@ namespace RPG.Encounter
 
         private List<Enemy> SpawnEnemies()
         {
-            EncounterGroup newEncounterGroup = _loader.GetEnemyEncounter();
+            EncounterGroup newEncounterGroup = _encounterData.GetEnemyEncounter();
             return _enemySpawner.SpawnNewEnemies(newEncounterGroup.Enemies);
         }
 

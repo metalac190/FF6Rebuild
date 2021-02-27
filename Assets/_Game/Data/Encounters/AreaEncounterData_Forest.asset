@@ -15,7 +15,8 @@ MonoBehaviour:
   _music: {fileID: 8300000, guid: a95baca14843bc6488c678694bdcf8ce, type: 3}
   _encounterEnvironmentPrefab: {fileID: 4617036276885970141, guid: 4b670fbf56e0b5d40992e9b40207c171, type: 3}
   _encounterGroups:
-  - _enemies:
+  - _name: Wild Boys
+    _enemies:
     - _data: {fileID: 11400000, guid: 665f62d48cb756d408d6a6619f87a7c2, type: 2}
       _xPos: 0.593
       _yPos: 0.764
@@ -25,3 +26,22 @@ MonoBehaviour:
     - _data: {fileID: 11400000, guid: 4efe0388f013cd2488930465020d3f0a, type: 2}
       _xPos: 0
       _yPos: 0
+  - _name: Shrooms
+    _enemies:
+    - _data: {fileID: 11400000, guid: 888c9ca5c823fef44a9807077a8342ec, type: 2}
+      _xPos: 1
+      _yPos: 0.778
+    - _data: {fileID: 11400000, guid: 888c9ca5c823fef44a9807077a8342ec, type: 2}
+      _xPos: 0.56
+      _yPos: 0.49
+    - _data: {fileID: 11400000, guid: 888c9ca5c823fef44a9807077a8342ec, type: 2}
+      _xPos: 1
+      _yPos: 0.275
+  - _name: Boaring Encounter
+    _enemies:
+    - _data: {fileID: 11400000, guid: 665f62d48cb756d408d6a6619f87a7c2, type: 2}
+      _xPos: 0.663
+      _yPos: 0.78
+    - _data: {fileID: 11400000, guid: 665f62d48cb756d408d6a6619f87a7c2, type: 2}
+      _xPos: 0.33
+      _yPos: 0.425

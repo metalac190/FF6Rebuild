@@ -12,12 +12,5 @@ namespace RPG.Encounter
 
         public AreaEncounterData EncounterData => _encounterData;
         public List<HeroData> PartyDataToLoad => _partyMembersToLoad;
-
-        public EncounterGroup GetEnemyEncounter()
-        {
-            //TODO load encoutner from data instead of scene reference
-            int randomIndex = Random.Range(0, _encounterData.EncounterGroups.Count);
-            return EncounterData.EncounterGroups[randomIndex];
-        }
     }
 }

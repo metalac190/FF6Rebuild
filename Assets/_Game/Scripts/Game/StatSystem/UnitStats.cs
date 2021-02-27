@@ -9,8 +9,18 @@ public class UnitStats
     const int MP_MAX = 999;
     const int LEVEL_MAX = 99;
     const int GENERAL_MAX = 255;
+
     // leveling
-    public Stat Level;
+    int _level = 1;
+    public int Level 
+    {
+        get => _level;
+        private set
+        {
+            value = Mathf.Clamp(value, 1, LEVEL_MAX);
+            _level = value;
+        }
+    }
     public Stat HPMax;
     public Stat MPMax;
 
@@ -30,12 +40,10 @@ public class UnitStats
 
     public UnitStats(UnitData unitData)
     {
-        Level = new Stat(unitData.Level, 1, LEVEL_MAX);
+        Level = unitData.Level;
         // primary stats
         HPMax = new Stat(unitData.HPMax, 1, HP_MAX);
-        //HP = new Stat(unitData.HP, 1, unitData.HPMax);
         MPMax = new Stat(unitData.MPMax, 1, MP_MAX);
-        //MP = new Stat(unitData.MP, 1, unitData.MPMax);
         
         // battle stats
         Attack = new Stat(unitData.Attack, 1, GENERAL_MAX);
