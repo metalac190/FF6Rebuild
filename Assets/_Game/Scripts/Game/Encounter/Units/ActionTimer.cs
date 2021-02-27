@@ -10,9 +10,9 @@ namespace RPG.Encounter
         public event Action<float> CTChanged = delegate { };
         public event Action CTMaxed = delegate { };
 
-        public int Speed { get; set; }
+        public float Speed { get; set; }
 
-        public int MaxCT { get; private set; } = 100;
+        public float MaxCT { get; private set; } = 100;
 
         float _ct;
         public float CT
@@ -36,7 +36,7 @@ namespace RPG.Encounter
             }
         }
         
-        public ActionTimer(int speed, float startingValue)
+        public ActionTimer(float speed, float startingValue)
         {
             Speed = speed;
             CT = startingValue;

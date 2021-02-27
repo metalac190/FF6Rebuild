@@ -26,7 +26,7 @@ namespace RPG.Encounter
             _actionTimer = hero.ActionTimer;
 
             _nameView.text = hero.Name;
-            _hpView.text = hero.Stats.HP.Value.ToString();
+            _hpView.text = hero.Health.CurrentHealth.ToString();
 
             _ctGauge.SetScale(_actionTimer.CT, _actionTimer.MaxCT);
 

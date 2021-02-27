@@ -15,13 +15,14 @@ namespace RPG.Encounter
         //public int HP { get; private set; }
         //public int MPMax { get; private set; }
         //public int MP { get; private set; }
-
         public UnitStats Stats { get; private set; }
+
+        public HealthSystem Health { get; private set; }
+        public ActionTimer ActionTimer { get; private set; }
 
         //TODO pull this from stats later
         //public int Speed { get; private set; } = 20;
-        public ActionTimer ActionTimer { get; private set; }
-
+        
         public bool IsActive { get; set; } = false;
 
         public Sprite Graphic { get; private set; }
@@ -37,37 +38,19 @@ namespace RPG.Encounter
         public UnitWaitingForActionState WaitingForActionState { get; private set; }
         public UnitExitState ExitState { get; private set; }
 
-        private void Awake()
-        {
-            
-
-        }
-
-        private void Start()
-        {
-            
-
-            ChangeState(IntroState);
-        }
-
         public virtual void Initialize(UnitData unitData)
         {
             // initialize values
             Name = unitData.Name;
+            Stats = new UnitStats(unitData);
 
+            Health = new HealthSystem(unitData.HP, (int)Stats.HPMax.Value);
+            ActionTimer = new ActionTimer(Stats.Speed.Value, Stats.Initiative.BaseValue);
 
-            Stats = new UnitStats(unitData);    // grab stats from data
-            //HPMax = unitData.HPMax;
-            //HP = unitData.HP;
-            //HPMax = unitData.MPMax;
-            //MP = unitData.MP;
-            //Level = unitData.Level;
-                        
             Graphic = unitData.Graphic;
             _spriteView.sprite = unitData.Graphic;
 
-            ActionTimer = new ActionTimer(Stats.Speed.Value, Stats.Initiative.Value);
-            // state
+            // states
             IntroState = new UnitIntroState(this);
             IdleState = new UnitIdleState(this);
             ReadyForActionState = new UnitReadyForActionState(this);
@@ -79,9 +62,10 @@ namespace RPG.Encounter
             ExitState = new UnitExitState(this);
         }
 
-
-
-
+        private void Start()
+        {
+            ChangeState(IntroState);
+        }
 
         // events
         // state machine

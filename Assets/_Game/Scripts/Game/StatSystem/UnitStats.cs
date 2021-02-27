@@ -11,11 +11,7 @@ public class UnitStats
     const int GENERAL_MAX = 255;
     // leveling
     public Stat Level;
-
-    // base stats
-    public Stat HP;
     public Stat HPMax;
-    public Stat MP;
     public Stat MPMax;
 
     // battle stats
@@ -23,14 +19,13 @@ public class UnitStats
     public Stat Ability;    // ability damage
     public Stat Speed;      // action timer speed
     public Stat Stamina;    // heatlh related
+
     public Stat Defense;    // standard battle defense
     public Stat Barrier;    // ability defense
     public Stat Initiative;     // modifier - start battle with higher action timer
 
     //TODO player stats
-    public Stat EXP;
     public Stat EXPForLevelUp;
-    public Stat AP;
     public Stat APForLevelUp;
 
     public UnitStats(UnitData unitData)
@@ -38,9 +33,9 @@ public class UnitStats
         Level = new Stat(unitData.Level, 1, LEVEL_MAX);
         // primary stats
         HPMax = new Stat(unitData.HPMax, 1, HP_MAX);
-        HP = new Stat(unitData.HP, 1, unitData.HPMax);
+        //HP = new Stat(unitData.HP, 1, unitData.HPMax);
         MPMax = new Stat(unitData.MPMax, 1, MP_MAX);
-        MP = new Stat(unitData.MP, 1, unitData.MPMax);
+        //MP = new Stat(unitData.MP, 1, unitData.MPMax);
         
         // battle stats
         Attack = new Stat(unitData.Attack, 1, GENERAL_MAX);
