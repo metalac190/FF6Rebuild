@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Turtle Shell Helm
   _icon: {fileID: 0}
-  _equipSlot: 4
+  _equipType: 4
   _modifications:
   - _statType: 3
     _value: 20
