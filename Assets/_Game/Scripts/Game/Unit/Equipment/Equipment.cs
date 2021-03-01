@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Equipment
 {
     public string Name { get; private set; }
@@ -17,15 +18,5 @@ public class Equipment
         EquipType = data.EquipType;
         GoldValue = data.GoldValue;
         Modifications = data.Modifications;
-    }
-
-    public void Equip(UnitStats unitStats)
-    {
-        //TODO
-    }
-
-    public void UnEquip(UnitStats unitStats)
-    {
-        //TODO
     }
 }

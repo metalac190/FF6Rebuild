@@ -1,110 +1,43 @@
 using UnityEngine;
 using System;
 
-public enum UnitEquipSlots
-{
-    RightHand = 0,
-    LeftHand,
-    Head,
-    Body,
-    Foot,
-    Relic01,
-    Relic02
-}
 /// <summary>
 /// Organize slots into a larger class. This is because sometimes equipping items
 /// can affect others... for example a 2H equipment could unequip a 1H, etc.
 /// </summary>
+
+[System.Serializable]
 public class EquipmentLoader
 {
-    public event Action<Equipment> EquippedNew = delegate { };
-    public event Action<Equipment> Unequipped = delegate { };
+    // event ("new equipment", "old equipment")
+    public event Action<Equipment,Equipment> EquipmentChanged = delegate { };
 
-    Equipment[] _equipment;
+    EquipSlot[] _equipSlots;
 
-    public EquipmentLoader()
+    public EquipmentLoader(EquipSlot[] equipSlots)
     {
         // setup equip slots from enum
-        //CreateSlots();
-        int numSlots = System.Enum.GetNames(typeof(UnitEquipSlots)).Length;
-        _equipment = new Equipment[numSlots];
+        _equipSlots = equipSlots;
     }
 
-    public void Equip(Equipment newEquipment, UnitEquipSlots targetSlot)
+    public void Equip(int equipSlotIndex, Equipment newEquipment)
     {
-        if (newEquipment == null || !CanEquip(targetSlot, newEquipment.EquipType))
-            return;
+        EquipSlot slot = _equipSlots[equipSlotIndex];
+        // equip it if we can, notify if successful
+        if (slot.Equip(newEquipment))
+        {
+            Equipment oldEquipment = slot.PreviouslyEquipped;
+            EquipmentChanged.Invoke(oldEquipment, newEquipment);
+        }
+    }
 
-        int slotIndex = (int)targetSlot;
-        // unequip old item
-        Equipment oldEquipment = _equipment[slotIndex];
+    public void Remove(int equipSlotIndex)
+    {
+        EquipSlot slot = _equipSlots[equipSlotIndex];
+        Equipment oldEquipment = slot.Remove();
         if(oldEquipment != null)
         {
-            Unequipped.Invoke(oldEquipment);
+            EquipmentChanged.Invoke(oldEquipment, null);
         }
-        // replace
-        _equipment[slotIndex] = newEquipment;
-
-        EquippedNew.Invoke(newEquipment);
-    }
-
-    public void UnEquip(UnitEquipSlots slotType)
-    {
-        int slotIndex = (int)slotType;
-        // unequip old item
-        Equipment oldEquipment = _equipment[slotIndex];
-    }
-
-    bool CanEquip(UnitEquipSlots targetSlot, EquipType equipType)
-    {
-        // check rules and exceptions for whether they can equip the item to the item slot
-        // consider moving this to inheritance later
-
-        bool canEquip = false;
-        switch (targetSlot)
-        {
-            case UnitEquipSlots.RightHand:
-                if(equipType == EquipType.OneHand)
-                    canEquip = true;
-                if (equipType == EquipType.TwoHand)
-                    canEquip = true;
-                if (equipType == EquipType.RightHand)
-                    canEquip = true;
-                break;
-
-            case UnitEquipSlots.LeftHand:
-                if (equipType == EquipType.OneHand)
-                    canEquip = true;
-                if (equipType == EquipType.TwoHand)
-                    canEquip = true;
-                break;
-
-            case UnitEquipSlots.Head:
-                if (equipType == EquipType.Head)
-                    canEquip = true;
-                break;
-
-            case UnitEquipSlots.Body:
-                if (equipType == EquipType.Body)
-                    canEquip = true;
-                break;
-
-            case UnitEquipSlots.Foot:
-                if (equipType == EquipType.Foot)
-                    canEquip = true;
-                break;
-
-            case UnitEquipSlots.Relic01:
-                if (equipType == EquipType.Relic)
-                    canEquip = true;
-                break;
-
-            case UnitEquipSlots.Relic02:
-                if (equipType == EquipType.Relic)
-                    canEquip = true;
-                break;
-        }
-
-        return canEquip;
     }
 }

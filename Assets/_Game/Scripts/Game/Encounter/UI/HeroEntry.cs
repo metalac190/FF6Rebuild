@@ -16,7 +16,16 @@ namespace RPG.Encounter
 
         private void OnDestroy()
         {
-            UnSubscribeEvents();
+            // TODO Unsubscribing is causing errors. I suspect this is because
+            // initializing happens after start of game, and not everything is subscribed/unsubscribed
+            // 1 to 1. Look into if subscribing without unsubscription is a bad idea or not
+            /*
+            //UnSubscribeEvents();
+            if (_hero != null)
+            {
+                _actionTimer.CTChanged -= OnCTChanged;
+            }
+            */
         }
 
         public void Initialize(Hero hero)
@@ -39,14 +48,6 @@ namespace RPG.Encounter
             if (_hero != null)
             {
                 _actionTimer.CTChanged += OnCTChanged;
-            }  
-        }
-
-        void UnSubscribeEvents()
-        {
-            if (_hero != null)
-            {
-                _actionTimer.CTChanged -= OnCTChanged;
             }  
         }
 
