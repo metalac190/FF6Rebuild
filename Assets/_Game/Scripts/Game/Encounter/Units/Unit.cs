@@ -10,20 +10,17 @@ namespace RPG.Encounter
         [SerializeField] SpriteRenderer _spriteView;
 
         public string Name { get; private set; }
-
-        //public int HPMax { get; private set; }
-        //public int HP { get; private set; }
-        //public int MPMax { get; private set; }
-        //public int MP { get; private set; }
+        // these are values, not stats. The reason is because we don't really need
+        // 'modifiers' for current health or level... it just wouldn't make sense
+        public int Level { get; private set; }
+        // TODO add an MP System
+        public int MP { get; private set; }
 
         public UnitStats Stats { get; private set; }
 
         public HealthSystem Health { get; private set; }
         public ActionTimer ActionTimer { get; private set; }
 
-        //TODO pull this from stats later
-        //public int Speed { get; private set; } = 20;
-        
         public bool IsActive { get; set; } = false;
 
         public Sprite Graphic { get; private set; }
@@ -43,13 +40,16 @@ namespace RPG.Encounter
         {
             // initialize values
             Name = unitData.Name;
-            Stats = new UnitStats(unitData);
-
-            Health = new HealthSystem(unitData.HP, (int)Stats.HPMax.Value);
-            ActionTimer = new ActionTimer(Stats.Speed.Value, Stats.Initiative.BaseValue);
+            Level = unitData.Level;
+            MP = unitData.MP;
 
             Graphic = unitData.Graphic;
             _spriteView.sprite = unitData.Graphic;
+
+            Stats = new UnitStats(unitData);
+
+            SetupHealth(unitData.HP);
+            SetupActionTimer();
 
             // states
             IntroState = new UnitIntroState(this);
@@ -61,6 +61,33 @@ namespace RPG.Encounter
             PreparingState = new UnitPreparingState(this);
             WaitingForActionState = new UnitWaitingForActionState(this);
             ExitState = new UnitExitState(this);
+        }
+
+        private void SetupActionTimer()
+        {
+            if (Stats.Contains(StatType.Speed) && Stats.Contains(StatType.Initiative))
+            {
+                float speed = Stats.GetStat(StatType.Speed).Value;
+                float startValue = Stats.GetStat(StatType.Initiative).Value;
+                ActionTimer = new ActionTimer(speed, startValue);
+            }
+            else
+            {
+                Debug.LogError("No Speed Stat on Unit");
+            }
+        }
+
+        private void SetupHealth(int startingHP)
+        {
+            if (Stats.Contains(StatType.HPMax))
+            {
+                int maxHealth = (int)Stats.GetStat(StatType.HPMax).Value;
+                Health = new HealthSystem(startingHP, maxHealth);
+            }
+            else
+            {
+                Debug.LogError("No Health Stat in UnitStats");
+            }
         }
 
         private void Start()

@@ -18,10 +18,6 @@ public class Stat
     private float _min = 1;
     private float _max = 255;
 
-    //protected float _lastBaseValue = float.MinValue;
-    protected bool _isDirty = true;
-    protected float _value;
-
     public List<StatModifier> StatModifiers { get; protected set; }
 
     public float BaseValue
@@ -34,25 +30,13 @@ public class Stat
             if(_valueBase != value)
             {
                 _valueBase = value;
-                _isDirty = true;
                 BaseValueChanged.Invoke(value);
             }
         }
 
     }
 
-    public float Value
-    {
-        get
-        {
-            if (_isDirty)
-            {
-                _value = CalculateModifiedValue();
-                _isDirty = false;
-            }
-            return _value;
-        }
-    }
+    public float Value => CalculateModifiedValue();
 
     public Stat()
     {
@@ -69,7 +53,6 @@ public class Stat
 
     public virtual void AddModifier(StatModifier modifier)
     {
-        _isDirty = true;
         StatModifiers.Add(modifier);
         StatModifiers.Sort(CompareModifierOrder);
     }
@@ -78,7 +61,6 @@ public class Stat
     {
         if (StatModifiers.Remove(modifier))
         {
-            _isDirty = true;
             return true;
         }
         return false;
@@ -91,7 +73,6 @@ public class Stat
         {
             if(modifier.Source == source)
             {
-                _isDirty = true;
                 didRemove = true;
                 //TODO check this code
                 StatModifiers.Remove(modifier);
@@ -110,10 +91,12 @@ public class Stat
         {
             StatModifier modifier = StatModifiers[i];
             // todo use Inheritance for this later
+            // flat modifier
             if (modifier.Type == StatModifierType.Flat)
             {
                 finalValue += modifier.Value;
             }
+            // percent add modifider
             else if (modifier.Type == StatModifierType.PercentAdd)
             {
                 sumPercentAdd += modifier.Value;
@@ -125,6 +108,7 @@ public class Stat
                     sumPercentAdd = 0;
                 }
             }
+            // percent multiply modifier
             else if (modifier.Type == StatModifierType.PercentMultiply)
             {
                 // calculate decimal from 1 and multiply (Ex. 1 + -.2 = -.8)

@@ -24,6 +24,8 @@ namespace RPG.Encounter
         // states
         public EncounterIntroState IntroState { get; private set; }
         public EncounterIdleState IdleState { get; private set; }
+        public EncounterChoosingActionState ChoosingActionState { get; private set; }
+        public EncounterSelectTargetState SelectTargetState { get; private set; }
         public EncounterExecutingActionState ExecutingActionState { get; private set; }
         public EncounterWinState WinState { get; private set; }
         public EncounterLoseState LoseState { get; private set; }
@@ -36,6 +38,8 @@ namespace RPG.Encounter
             // initialize states
             IntroState = new EncounterIntroState(this);
             IdleState = new EncounterIdleState(this);
+            ChoosingActionState = new EncounterChoosingActionState(this);
+            SelectTargetState = new EncounterSelectTargetState(this);
             ExecutingActionState = new EncounterExecutingActionState(this);
             WinState = new EncounterWinState(this);
             LoseState = new EncounterLoseState(this);
